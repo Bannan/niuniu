@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>订单</title>
+  <!--公共样式与插件-->
+  <script type="text/javascript" src="__PUBLIC__js/rem.js"></script>
+  <link rel="stylesheet" href="__PUBLIC__css/common.css">
+  <!--公共样式与插件 end-->
+  <link rel="stylesheet" href="__PUBLIC__css/base.css">
+</head>
+<body>
+	<div class="wrap">
+		{include file="index/nav"/}
+		<div class="inputWrap">
+			<div class="item-list">
+				<div class="item">
+					<div class="form-label">查询库</div>
+					<div class="input-block">
+						<input type="text" name="site_title" id="site_title" value="<?php if(isset($_GET['site_title'])) echo $_GET['site_title'];?>" class="input">
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="search-time">
+			<label class="form-label">查询日期</label>
+			<div class="input-block">
+				<input type="text" name="site_title" value="<?php if(isset($_GET['date'])) echo $_GET['date'];?>" class="input" placeholder="请选择日期" id="test1">
+			</div>
+			<a href="javascript:;" class="search-btn" id="search_form_btn">查询</a>
+		</div>
+		<div class="main-details">
+			<table class="table">
+				<thead>
+					<tr>
+                      	<th>序列</th>
+                      	<th>库号、注册日期</th>
+                      <th>出单数量</th>
+                      <th>出单时间</th>
+                      <th>操作</th>
+					</tr>
+				</thead>
+				<tbody>
+
+				<?php if($list){foreach($list as $k=>$v){?>
+					<tr>
+                      	<td><?php echo $k+1 ?></td>
+                      	<td><?php echo $v['registrations']."、".$v["reg_date"];?></td>
+						<td><?php echo $v['num'];?></td>
+                      <td><?php echo $v['date'];?></td>
+                     <td> <button class="layui-btn layui-btn-sm layui-btn-opertion" data-id="{$v.id}" data-reg="{$v.reg_id}">回滚</button></td>
+					</tr> 
+				<?php }}?>
+
+
+				</tbody>
+	          </table>  
+	    </div>
+
+	</div>
+	
+	<script src="__PUBLIC__js/jquery.min.js"></script>
+	<script src="__PUBLIC__js/laydate/laydate.js"></script>
+	<script src="__PUBLIC__js/layer/layer.js"></script>
+	<script>
+		//执行一个laydate实例
+		laydate.render({
+		  elem: '#test1' //指定元素
+		});
+
+		$(function () {
+			$('#search_form_btn').on('click', function() {
+
+                window.location.href = "{:url('index/dd')}?date="+$('#test1').val()+"&site_title="+$("#site_title").val();
+			});
+          	$(".layui-btn-opertion").on("click",function(){
+            	$.post("{:url('index/dd')}",{"id":$(this).attr("data-id"),"reg_id":$(this).attr("data-reg")},function(){
+                	
+                window.location.reload();
+                });
+            
+            });
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<?php
+namespace app\index\controller;
+use think\Controller;
+use think\Session;
+use think\verify;
+class login extends Controller
+{
+        public function index()
+        {
+            return view();
+        }
+    /**
+     * 生成验证码
+     */
+    public static function verify1()
+    {
+
+            $Verify = verify::Verify();
+            $Verify->length = 4; //验证码位数
+$Verify->expire = 1800;
+$Verify->useZh= false; //中文验证码字符串
+$Verify->fontSize= 15; //验证码字体大小(px)
+$Verify->useCurve= true; //是否画混淆曲线
+$Verify->useNoise= true; //是否添加杂点
+$Verify->imageH= true; //是否添加杂点
+$Verify->imageW= true; //是否添加杂点
+$Verify->reset= true; //验证成功后是否重置
+           $Verify->entry();
+
+    }
+    /**
+     * 检测验证码是否正确
+     * @param $code
+     * @return bool
+     */
+    public static function check_verify($code)
+    {
+        return ($code == session('verify_code') && $code != '') ? true : false;
+    }
+        public function login()
+        {
+            if(IS_AJAX)
+            {
+                if($d = db('admin')->where(input('post.'))->find())
+                {
+                    Session::set('admin',$d);
+                    return ['status'=>1];
+                }else{
+                    return ['status'=>0];
+                }
+            }
+        }
+
+}
+
+?>

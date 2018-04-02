@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>新增原料</title>
+  <!--公共样式与插件-->
+  <link rel="stylesheet" href="__PUBLIC__js/layui/css/layui.css">
+  <link rel="stylesheet" href="__PUBLIC__css/common.css">
+  <!--公共样式与插件 end-->
+  <link rel="stylesheet" href="__PUBLIC__css/base.css">
+</head>
+<body>
+<div class="layui-layout layui-layout-admin">
+	{include file="public/head"/}
+	{include file="public/nav"/}
+	<!--主要内容-->
+	<div class="layui-body site-demo webWrap">
+		<!--tab标签-->
+		<div class="layui-main">
+			<blockquote class="layui-elem-quote">
+ 				<a class="layui-btn" href="{:url('stock/record_yl')}">返回</a>
+			</blockquote>
+			<fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+			  <legend>新增原料</legend>
+			</fieldset>
+			<div class="layui-tab-item layui-show layui-tab-item-20">
+				<form class="layui-form form-container" method="post" id="yan_add_form">
+					<div class="layui-form-item">
+						<label class="layui-form-label">品名</label>
+						<div class="layui-input-block">
+							<select  lay-verify="required" name="name" id="name">
+								<?php foreach(yl_name() as $k=>$v){?>
+									<option value="{$v.id}" <?php if($v['id'] == $edit['name'])echo "selected";?>>{$v.name}</option>
+								<?php }?>
+							</select>
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label">单位</label>
+						<div class="layui-form-mid layui-word-aux" id="unit">袋</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label">数量</label>
+						<div class="layui-input-block">
+							<input type="Number"  value="{$edit.number}" placeholder="请输入数量" class="layui-input" id="number">
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label">入库日期</label>
+						<div class="layui-input-block">
+							<input type="text"  value="{$edit.date}" placeholder="请输入生产日期" class="layui-input" id="time1" readonly="">
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<div class="layui-input-block">
+							<button class="layui-btn" id="yan_add_btn" type="button">保存</button>
+							<button type="reset" class="layui-btn layui-btn-primary">取消</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!--主要内容 end-->
+	{include file="public/footer"/}
+	<script>
+		$(function() {
+			$('#yan_add_btn').on('click', function() {
+                var url = "{:url('stock/add_yl')}?type=<?php if($edit){echo 'update&id='.$edit['id'];}else{echo 'add';}?>";
+                $.post(url,{"name":$("#name").val(),"number":$("#number").val(),"date":$("#time1").val()},function(result){
+					if(result.status == 1)
+					{
+					    layer.msg("操作成功！");
+                        setTimeout(function () {
+                            window.location.href = "{:url('stock/record_yl')}";
+                        }, 1000);
+					}else{
+					    layer.msg("操作失败！");
+					}
+                },"JSON");
+			});
+		});	
+	</script>
+</div>
+</body>
+</html>

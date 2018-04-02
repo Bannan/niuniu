@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>库存设置</title>
+  <!--公共样式与插件-->
+  <link rel="stylesheet" href="js/layui/css/layui.css">
+  <link rel="stylesheet" href="css/common.css">
+  <!--公共样式与插件 end-->
+  <link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+<div class="layui-layout layui-layout-admin">
+	<div class="layui-header header header-demo headerWrap">
+		<div class="layui-main">
+			<a class="logo" href="/">
+			<img src="images/admin_logo.png" alt="layui">
+			</a>
+			<ul class="layui-nav">
+				<li class="layui-nav-item"><a href="#">AdminUser<span class="layui-badge-dot"></span></a></li>
+				<li class="layui-nav-item">
+					<a href="javascript:;">退出登录</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="layui-side layui-bg-black slideWrap">
+		<ul class="layui-nav layui-nav-tree" id="layui_nav">
+			<li class="layui-nav-item">
+				<a href="/" target="_blank">
+					<i class="layui-icon">&#xe615;</i> 网站信息
+				</a>
+			</li>
+			<li class="layui-nav-item layui-nav-itemed">
+				<a href="javascript:;">
+					<i class="layui-icon">&#xe63c;</i>库存首页<span class="layui-nav-more"></span>
+				</a>
+				<dl class="layui-nav-child">
+					<dd class="layui-this">
+						<a href="main-kc-hp-l.html">库存记录</a>
+					</dd>
+					<dd class="">
+						<a href="main-kc-sz.html">库存设置</a>
+					</dd>
+				</dl>
+			</li>
+			<li class="layui-nav-item">
+				<a href="javascript:;">
+					<i class="layui-icon">&#xe64f;</i>订单首页<span class="layui-nav-more"></span>
+				</a>
+				<dl class="layui-nav-child">
+					<dd class="">
+						<a href="#">样品记录</a>
+					</dd>
+					<dd class="">
+						<a href="#">订单统计</a>
+					</dd>
+				</dl>
+			</li>
+			<li class="layui-nav-item">
+				<a href="javascript:;">
+					<i class="layui-icon">&#xe65e;</i>财务首页<span class="layui-nav-more"></span>
+				</a>
+				<dl class="layui-nav-child">
+					<dd class="">
+						<a href="#">已收账款</a>
+					</dd>
+					<dd class="">
+						<a href="#">应收账款</a>
+					</dd>
+				</dl>
+			</li>
+			<span class="layui-nav-bar" style="top: 22.5px; height: 0px; opacity: 0;"></span>
+		</ul>
+	</div>
+	<!--主要内容-->
+	<div class="layui-body site-demo webWrap">
+		<!--tab标签-->
+		<div class="layui-main">
+			<blockquote class="layui-elem-quote">
+ 				<a class="layui-btn" href="javascript:;">返回</a>
+			</blockquote>
+			<fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+			  <legend>库存设置</legend>
+			</fieldset>
+			<div class="layui-tab-item layui-show">
+				<form class="layui-form form-container" method="post" id="yan_add_form">
+					<div class="layui-form-item">
+						<label class="layui-form-label">品名</label>
+						<div class="layui-input-block">
+							<select name="parentid" lay-verify="required">
+								<option value="0">锡箔真空袋1</option>
+								<option value="10">锡箔真空袋2</option>
+								<option value="8">锡箔真空袋3</option>
+								<option value="11">锡箔真空袋4</option>		
+							</select>
+							<div class="layui-unselect layui-form-select">
+								<div class="layui-select-title">
+									<input type="text" placeholder="尚品牛肉100g麻辣味1" value="" readonly="" class="layui-input layui-unselect"><i class="layui-edge"></i>
+								</div>
+								<dl class="layui-anim layui-anim-upbit">
+									<dd lay-value="0" class="layui-this">锡箔真空袋1</dd>
+									<dd lay-value="10" class="">锡箔真空袋2</dd>
+									<dd lay-value="8" class="">锡箔真空袋3</dd>
+									<dd lay-value="11" class="">锡箔真空袋4</dd>
+								</dl>
+							</div>
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label">单位</label>
+						<div class="layui-form-mid layui-word-aux">个</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label">数量</label>
+						<div class="layui-input-block">
+							<input type="text" name="m" value="" placeholder="请输入数量" class="layui-input">
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label">入库日期</label>
+						<div class="layui-input-block">
+							<input type="text" name="time1" value="" placeholder="请输入生产日期" class="layui-input" id="time1">
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<div class="layui-input-block">
+							<button class="layui-btn" id="yan_add_btn" type="button">保存</button>
+							<button type="reset" class="layui-btn layui-btn-primary">取消</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!--主要内容 end-->
+	<div class="layui-footer footer footer-demo footerWrap">
+		<div class="layui-main">
+			<p>
+				2016 © <a href="#" target="_blank">Think Admin</a>
+			</p>
+		</div>
+	</div>
+	<script src="js/layui/layui.js"></script>
+	<script>layui.config({base: 'js/modules/' }).use('index');</script>
+</div>
+</body>
+</html>

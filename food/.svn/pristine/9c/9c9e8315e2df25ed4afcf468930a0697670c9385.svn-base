@@ -1,0 +1,93 @@
+<?php
+namespace app\index\controller;
+
+class index extends Common
+{
+    private $api_pass = 'jjxy610';
+
+    public function index()
+    {
+        echo md5('QAZwsx123');
+    }
+    //号库概览
+    public function hkgl(){
+        // $data['base_number'] = 0;
+        $data['number'] = 0;
+        $data['8day'] = 0;
+        $data['half_a_moon'] = 0;
+        $data['full_moon'] = 0;
+        $data['half_a_year'] = 0;
+        foreach ($this->ku_list() as $k=>$v)
+        {
+            //$data['base_number'] = $v['base_number']+ $data['base_number'];
+            $data['number'] = $v['number']+ $data['number'];
+            $data['8day'] = $v['8day']+ $data['8day'];
+            $data['half_a_moon'] = $v['half_a_moon']+ $data['half_a_moon'];
+            $data['full_moon'] = $v['full_moon']+ $data['full_moon'];
+            $data['half_a_year'] = $v['half_a_year']+ $data['half_a_year'];
+        }
+        //   print_r($data);
+        $this->assign('data',$data);
+        return view();
+    }
+    //号库详情
+    public function hkxq(){
+        $this->assign('data',$this->ku_list());
+        return view();
+    }
+    //注册
+    public function zc(){
+
+        if(input('post.'))
+        {
+            if(!db('register')->insert($_POST))  $this->error('添加失败！');
+        }
+        $list =  db('register')->paginate(1);
+        $list->render();
+        $this->assign('list',$list);
+        return view();
+    }
+    //预留
+    public function yl(){
+        return view();
+    }
+    //订单
+    public function dd(){
+        $data = file_get_contents("http://api.dindingame.com:5050/job/2/archive_new_user?uid=4000&pname=wxstock&date=20171212");
+
+        $data =  explode(" ",$data);
+
+        print_r($data);
+        //  return view();
+    }
+    //号库操作
+    public function hkcz(){
+        if(IS_AJAX)
+        {
+            //激活号库
+            if(input('post.jhhk') && input('num')) db('ku_num')->insert(['num'=>input('num')]);
+            //迁移号库
+            if(input('post.qyhk') && input('num'))
+            {
+
+            }
+
+        }
+        return view();
+    }
+    //号库列表
+    public function ku_list()
+    {
+        foreach(db('ku_num')->select() as $k=>$v)
+        {
+            $data[$k]['base_number'] = $v['num'];
+            $data[$k]['number'] = file_get_contents("http://api.dindingame.com:5050/wx/1/get_uid_count?uid=".$v['num']."&pw=".$this->api_pass);
+            $data[$k]['8day'] = file_get_contents("http://api.dindingame.com:5050/wx/1/stock_aged_wx_count?uid=".$v['num']."&pw=".$this->api_pass."&min=8&max=999999");
+            $data[$k]['half_a_moon'] = file_get_contents("http://api.dindingame.com:5050/wx/1/stock_aged_wx_count?uid=".$v['num']."&pw=".$this->api_pass."&min=15&max=999999");
+            $data[$k]['full_moon'] = file_get_contents("http://api.dindingame.com:5050/wx/1/stock_aged_wx_count?uid=".$v['num']."&pw=".$this->api_pass."&min=30&max=999999");
+            $data[$k]['half_a_year'] = file_get_contents("http://api.dindingame.com:5050/wx/1/stock_aged_wx_count?uid=".$v['num']."&pw=".$this->api_pass."&min=178&max=999999");
+        }
+        return $data;
+    }
+
+}

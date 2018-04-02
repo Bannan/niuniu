@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>样品记录</title>
+  <!--公共样式与插件-->
+  <link rel="stylesheet" href="js/layui/css/layui.css">
+  <link rel="stylesheet" href="css/common.css">
+  <!--公共样式与插件 end-->
+  <link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+<div class="layui-layout layui-layout-admin">
+	<div class="layui-header header header-demo headerWrap">
+		<div class="layui-main">
+			<a class="logo" href="/">
+			<img src="images/admin_logo.png" alt="layui">
+			</a>
+			<ul class="layui-nav">
+				<li class="layui-nav-item"><a href="#">AdminUser<span class="layui-badge-dot"></span></a></li>
+				<li class="layui-nav-item">
+					<a href="javascript:;">退出登录</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="layui-side layui-bg-black slideWrap">
+		<ul class="layui-nav layui-nav-tree" id="layui_nav">
+			<li class="layui-nav-item">
+				<a href="/" target="_blank">
+					<i class="layui-icon">&#xe615;</i> 网站信息
+				</a>
+			</li>
+			<li class="layui-nav-item">
+				<a href="javascript:;">
+					<i class="layui-icon">&#xe63c;</i>库存首页<span class="layui-nav-more"></span>
+				</a>
+				<dl class="layui-nav-child">
+					<dd class="">
+						<a href="main-kc-hp-l.html">库存记录</a>
+					</dd>
+					<dd class="">
+						<a href="#">库存设置</a>
+					</dd>
+				</dl>
+			</li>
+			<li class="layui-nav-item">
+				<a href="javascript:;">
+					<i class="layui-icon">&#xe64f;</i>订单首页<span class="layui-nav-more"></span>
+				</a>
+				<dl class="layui-nav-child layui-nav-itemed">
+					<dd class="">
+						<a href="#">订单记录</a>
+					</dd>
+					<dd class="layui-this">
+						<a href="#">样品记录</a>
+					</dd>
+					<dd class="">
+						<a href="#">订单统计</a>
+					</dd>
+				</dl>
+			</li>
+			<li class="layui-nav-item">
+				<a href="javascript:;">
+					<i class="layui-icon">&#xe65e;</i>财务首页<span class="layui-nav-more"></span>
+				</a>
+				<dl class="layui-nav-child">
+					<dd class="">
+						<a href="#">已收账款</a>
+					</dd>
+					<dd class="">
+						<a href="#">应收账款</a>
+					</dd>
+				</dl>
+			</li>
+			<span class="layui-nav-bar" style="top: 22.5px; height: 0px; opacity: 0;"></span>
+		</ul>
+	</div>
+	<!--主要内容-->
+	<div class="layui-body site-demo webWrap">
+		<!--tab标签-->
+		<div class="layui-main">
+			<blockquote class="layui-elem-quote">
+ 				<a class="layui-btn" href="main-kc-hp-l.html">样品记录</a>
+			</blockquote>
+			<div class="btnWrap" id="register_btn">
+				<a href="main-kc-hp-xz.html">新增样品</a>
+			</div>
+			<div class="layui-tab-item layui-show" id="yan_menu_list">
+				<table class="layui-table layui-table-w">
+					<thead>
+						<tr>
+							<th class="w">排序</th>
+							<th>订单号</th>
+							<th>订货人</th>
+							<th>套数</th>
+							<th>成本金额</th>
+							<th>经办人</th>
+							<th>下单日期</th>
+							<th>操作</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>2017121865896</td>
+							<td>小瓶子</td>
+							<td>100</td>
+							<td>800</td>
+							<td>大奔</td>
+							<td>2017年12月18日</td>
+							<td>
+			                    <a href="javascript:" class="layui-btn layui-btn-xs layui-btn-normal yan_menu_edit">编辑</a>
+			                    <a href="javascript:" class="layui-btn layui-btn-xs layui-btn-danger yan-menu-delete">删除</a>
+		                  	</td>
+						</tr> 
+						<tr>
+							<td>1</td>
+							<td>2017121865896</td>
+							<td>小瓶子</td>
+							<td>100</td>
+							<td>800</td>
+							<td>大奔</td>
+							<td>2017年12月18日</td>
+							<td>
+			                    <a href="javascript:" class="layui-btn layui-btn-xs layui-btn-normal yan_menu_edit">编辑</a>
+			                    <a href="javascript:" class="layui-btn layui-btn-xs layui-btn-danger yan-menu-delete">删除</a>
+		                  	</td>
+						</tr> 
+						
+					</tbody>
+				</table>
+				<!--分页-->
+				<div class="pageSize">
+					<div class="box">
+						<a href="javascript:;" class="page-prev" data-page="0">上一页</a>
+						<a href="javascript:;" data-page="1" class="active">1</a>
+						<a href="javascript:;" data-page="2">2</a>
+						<a href="javascript:;" data-page="3">3</a>
+						<a href="javascript:;" data-page="4">4</a>
+						<a href="javascript:;" class="page-next" data-page="2">下一页</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--主要内容 end-->
+	<div class="layui-footer footer footer-demo footerWrap">
+		<div class="layui-main">
+			<p>
+				2016 © <a href="#" target="_blank">Think Admin</a>
+			</p>
+		</div>
+	</div>
+	<script src="js/layui/layui.js"></script>
+	<script>layui.config({base: 'js/modules/' }).use('index');</script>
+</div>
+</body>
+</html>

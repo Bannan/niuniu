@@ -1,0 +1,9 @@
+2018-03-02 22:45:11:{"token":"054149a4ab51d528e3a0f8c4006e56a3","room":"961","act":"init"}
+2018-03-02 22:45:20:{"token":"a0c38155c82aee5299942ba4bce2cbdb","room":"961","act":"init"}
+2018-03-02 22:45:40:{"token":"3fcdafe563f5d8e57707edf0a3c9dbfe","room":"961","act":"init"}
+2018-03-02 22:45:50:{"token":"371a3aa5a96bd3da04c23ebd586fe140","room":"961","act":"init"}
+2018-03-02 22:46:05:{"token":"e00ce4c0155d74ffba08b9de1e1be091","room":"961","act":"init"}
+2018-03-02 22:46:06:{"token":"bab5de1ade42072865aa08b74b9c8473","room":"961","act":"init"}
+2018-03-02 22:46:27:23751{"act":"zhunbei"}
+2018-03-02 22:46:44:{"token":"504d1402b5eadb78620c589f44c7867d","room":"961","act":"init"}
+2018-03-02 22:48:45:{"token":"b602f74d298c02038835dae718d5df60","room":"961","act":"init"}

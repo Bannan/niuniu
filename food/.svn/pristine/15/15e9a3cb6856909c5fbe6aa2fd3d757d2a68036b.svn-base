@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>编辑价格</title>
+  <!--公共样式与插件-->
+  <link rel="stylesheet" href="__PUBLIC__js/layui/css/layui.css">
+  <link rel="stylesheet" href="__PUBLIC__css/common.css">
+  <!--公共样式与插件 end-->
+  <link rel="stylesheet" href="__PUBLIC__css/base.css">
+</head>
+<body>
+<div class="layui-layout layui-layout-admin">
+	{include file="public/head"/}
+	{include file="public/nav"/}
+	<!--主要内容-->
+	<div class="layui-body site-demo webWrap">
+		<!--tab标签-->
+		<div class="layui-main layui-main-xzjg">
+			<blockquote class="layui-elem-quote">
+				<a class="layui-btn" href="{:url('finance/price')}">返回</a>
+ 				<a class="layui-btn" href="javascript:;">编辑价格</a>
+			</blockquote>
+			<div class="layui-form">
+				<div class="layui-form-item">
+				    <label class="layui-form-label">价格名</label>
+				    <div class="layui-input-block">
+				      <input type="text" name="title" id="channel" lay-verify="title" autocomplete="off" placeholder="渠道商" class="layui-input" value="{$data.channel}">
+				   		<input type="hidden" id="sid" value="{$data.id}">
+				     </div>
+				</div>
+			</div>
+			<div class="layui-tab-item layui-show layui-tab-item-jgtx">
+				<form class="" method="post" id="yan_edit_form">
+					<table class="layui-table layui-table-w">
+						<thead>
+							<tr>
+								<th class="w">排序</th>
+								<th class="m">品名</th>
+								<th class="s">价格</th>
+								<th class="s">毛利</th>
+							</tr>
+						</thead>
+						<tbody  class="tbody">
+						<?php  foreach($option as $k=>$v){?>
+							<tr class="tr-{$k+1}">
+								<td>
+									{$k+1}<input type="hidden" name="id" value="{$v.id}" class="layui-input" >
+								</td>
+								<td>
+									<input type="text" name="name" value="{$v.name}" class="">
+								</td>
+								<td>
+									<input type="text" name="price" value="<?php echo isset($v['p1']) ? $v['p1'] : 0;?>" class="layui-input">
+								</td>
+								<td>
+									<input type="text" name="price-sm" value="<?php echo  isset($v['p2']) ? $v['p2'] : 0;?>" class="layui-input">
+								</td>
+							</tr> 
+						<?php }?>
+						</tbody>
+					</table>  
+				</form>
+			</div>
+			<div class="layui-form-item">
+				<div class="layui-input-block">
+					<?php if($type == "edit"){?>
+					<button class="layui-btn" id="yan_edit_btn" type="button">修改</button>
+					<?php }else{?>
+					<button class="layui-btn" id="yan_add_btn" type="button">添加</button>
+					<?php }?>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--主要内容 end-->
+	{include file="public/footer"/}
+	<script>
+		$(function() {
+		    $("#yan_edit_btn").click(function(){
+				$.post('{:url("finance/price_edit")}?type=update&id='+$("#sid").val(),{"price":postData(),"channel":$("#channel").val()},function(result){
+                    if(result.status == 1) {
+                        layer.msg('修改成功！');
+                        setTimeout(function () {
+                            window.location.href = "{:url('finance/price')}";
+                        }, 1000);
+                    }
+                    if(result.status == 0) {
+                        layer.msg('修改失败！');
+                    }
+				},"JSON");
+			});
+			$('#yan_add_btn').click(function() {
+
+			    var url = '{:url("finance/price_edit")}?type=add';
+			    $.post(url, {"price":postData(),"channel":$("#channel").val()}, function(result) {
+			      if(result.status == 1) {
+			        layer.msg('添加成功！');
+			        setTimeout(function () {
+			          window.location.href = "{:url('finance/price')}";
+			        }, 1000);
+			      }
+			      if(result.status == 0) {
+						layer.msg('添加失败！');
+			      }
+			    }, 'JSON');
+			  });
+			function postData()
+			{
+                var size = $(".tbody tr").size();
+                var postData = Object();
+                for (var i=1; i <= size; i++) {
+                    postData[i] = new Object();
+                    for (var j=0; j < 4; j++) {
+                        var s = $('.tbody .tr-'+i).find('.layui-input').eq(j).val();
+                        postData[i][j] = s;
+                    }
+                }
+                return JSON.stringify(postData);
+			}
+
+		});
+	</script>
+</div>
+</body>
+</html>

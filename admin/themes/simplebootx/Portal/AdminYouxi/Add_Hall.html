@@ -1,0 +1,51 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap js-check-wrap">
+		<ul class="nav nav-tabs">
+			<li><a href="{:U('AdminYouxi/hall')}">总大厅路由</a></li>
+			<li class="active"><a href="{:U('AdminYouxi/Add_Hall',['type'=>'add'])}">添加路由</a></li>
+		</ul>
+		<form class="form-horizontal js-ajax-form" action="{$action}" method="post">
+			<fieldset>
+
+				<div class="control-group" >
+					<label class="control-label">路由名称:</label>
+					<div class="controls" >
+                        <input type="text" style="color: red" name="theme_name" value="{$data.theme_name}" required >
+					</div>
+				</div>
+				<div class="control-group" >
+					<label class="control-label">路由地址:</label>
+					<div class="controls" >
+						<input type="text" style="color: red" name="url" value="{$data.url}" required >
+					</div>
+				</div>
+				<div class="control-group" >
+					<label class="control-label">主题参数:</label>
+					<div class="controls" >
+						关闭<input type="radio" style="color: red" name="status" value="0" <?php if($data['status'] == 0) echo 'checked';?>  >
+						&nbsp;&nbsp;&nbsp;&nbsp;
+						开启<input type="radio" style="color: red" name="status" value="1"  <?php if($data['status'] == 1) echo 'checked';?> >
+					</div>
+				</div>
+				<div class="control-group" >
+					<label class="control-label">主题参数:</label>
+					<div class="controls" >
+						<input type="text" style="color: red" name="skin" value="{$data.skin}" required >
+					</div>
+				</div>
+
+
+
+			</fieldset>
+			<div class="form-actions">
+				<?php $opertion = ['delete'=>'删除','add'=>'添加','update'=>'修改'];?>
+				<button type="submit" class="btn btn-primary  js-ajax-submit"><?php echo $opertion[$_GET['type']] ?  $opertion[$_GET['type']] :'添加'; ?></button>
+				<a class="btn" href="javascript:history.back(-1);">返回</a>
+			</div>
+		</form>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+</body>
+</html>

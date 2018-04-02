@@ -1,0 +1,1 @@
+<?php if (!defined('THINK_PATH')) exit();?><div class="alert"><div class="alertBack"></div> <img onclick="public('tishi')" src="/app/img/common/note.png" style="position: absolute; top: 20vh; width: 90vw; left: 5vw;"></div>

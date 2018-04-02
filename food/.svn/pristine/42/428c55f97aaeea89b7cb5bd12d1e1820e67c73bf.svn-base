@@ -1,0 +1,22 @@
+<div class="headerWrap">
+	<ul>
+		<li class="<?php if($action == 'hkgl') echo 'active';?>">
+			<a href="{:url('index/hkgl')}">号库概览</a>
+		</li>
+		<li class="<?php if($action == 'hkxq') echo 'active';?>">
+			<a href="{:url('index/hkxq')}">号库详情</a>
+		</li>
+		<li class="<?php if($action == 'zc') echo 'active';?>">
+			<a href="{:url('index/zc')}">注册</a>
+		</li>
+		<li class="<?php if($action == 'lc') echo 'active';?>">
+			<a href="{:url('index/cl')}">留存</a>
+		</li>
+		<li class="<?php if($action == 'dd') echo 'active';?>">
+			<a href="{:url('index/dd')}">订单</a>
+		</li>
+		<li class="<?php if($action == 'hkcz') echo 'active';?>">
+			<a href="{:url('index/hkcz')}">号库操作</a>
+		</li>
+	</ul>
+</div>

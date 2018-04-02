@@ -1,0 +1,155 @@
+<div class="layui-side layui-bg-black slideWrap">
+	<ul class="layui-nav layui-nav-tree" id="layui_nav">
+		<li class="layui-nav-item">
+			<a href="javascript:;" target="_blank">
+				<i class="layui-icon">&#xe615;</i> 首页
+			</a>
+		</li>
+		<li class="layui-nav-item">
+			<a href="javascript:;">
+				<i class="layui-icon">&#xe63c;</i>库存首页<span class="layui-nav-more"></span>
+			</a>
+			<dl class="layui-nav-child">
+				<dd class="<?php if($action == 'indexStock') echo 'layui-this';?>">
+					<a href="{:url('stock/index')}">当前库存</a>
+				</dd>
+				<dd class="<?php if($action == 'record_hpStock' || $action == 'add_foodStock') echo 'layui-this';?>">
+					<a href="{:url('stock/record_hp')}">货品列表</a>
+				</dd>
+				<dd class="<?php if($action == 'record_ylStock' || $action == 'add_ylStock') echo 'layui-this';?>">
+					<a href="{:url('stock/record_yl')}">原料列表</a>
+				</dd>
+			</dl>
+		</li>
+		<li class="layui-nav-item">
+			<a href="javascript:;">
+				<i class="layui-icon">&#xe64f;</i>订单首页<span class="layui-nav-more"></span>
+			</a>
+			<dl class="layui-nav-child">
+				<dd class="<?php if($action == 'indexOrder' || $action == 'order_editOrder' || $action == 'order_infoOrder') echo 'layui-this';?>">
+					<a href="{:url('order/index')}">订单记录</a>
+				</dd>
+				<dd class="<?php if($action == 'order_ypOrder' || $action == 'order_yp_editOrder') echo 'layui-this';?>">
+					<a href="{:url('order/order_yp')}">样品记录</a>
+				</dd>
+				<dd class="<?php if($action == 'order_statisOrder') echo 'layui-this';?>">
+					<a href="{:url('order/order_statis')}">订单统计</a>
+				</dd>
+			</dl>
+		</li>
+		<li class="layui-nav-item">
+			<a href="javascript:;">
+				<i class="layui-icon">&#xe65e;</i>财务首页<span class="layui-nav-more"></span>
+			</a>
+			<dl class="layui-nav-child ">
+				<dd class="<?php if($action == 'indexFinance') echo 'layui-this';?>">
+					<a href="{:url('finance/index')}">营业收入</a>
+				</dd>
+				<dd class="<?php if($action == 'accountFinance') echo 'layui-this';?>">
+					<a href="{:url('finance/account')}">已收账款</a>
+				</dd>
+				<dd class="<?php if($action == 'account_okFinance') echo 'layui-this';?>">
+					<a href="{:url('finance/account_ok')}">应收账款</a>
+				</dd>
+				<dd class="<?php if($action == 'priceFinance' || $action == 'price_editFinance') echo 'layui-this';?>">
+					<a href="{:url('finance/price')}">价格体系</a>
+				</dd>
+			</dl>
+		</li>
+		<span class="layui-nav-bar" style="top: 22.5px; height: 0px; opacity: 0;"></span>
+	</ul>
+</div>
+
+
+<!--手机端导航-->
+<div class="mNavWrap">
+<div class="mHeader">
+  <div class="toggle">
+    <a href="javascript:void(0)" class="burger-btn" id="burger-btn" data-on="on">
+      <span class="burger burger-1 trans"></span>
+      <span class="burger burger-3 trans"></span>
+    </a>
+  </div>
+  <a href="#" class="logo">后台管理系统</a>
+</div>
+<div class="mNavSecond openMneu">
+  <div class="main">
+    <ul class="menu" id="menu">
+    	<li>
+       		<a href="{:url('stock/index')}"><span class="ico">首页</span></a>
+        </li>
+      <li>
+        <a href="javascript:;"><span class="ico">库存首页</span></a>
+        <dl class="subMenu" style="display: none;">
+          	<dd class="<?php if($action == 'indexStock') echo 'layui-this';?>">
+				<a href="{:url('stock/index')}">当前库存</a>
+			</dd>
+			<dd class="<?php if($action == 'record_hpStock') echo 'layui-this';?>">
+				<a href="{:url('stock/record_hp')}">货品列表</a>
+			</dd>
+			<dd class="<?php if($action == 'record_ylStock') echo 'layui-this';?>">
+				<a href="{:url('stock/record_yl')}">原料列表</a>
+			</dd>
+        </dl>
+      </li>
+      <li>
+        <a href="javascript:;"><span class="ico">订单首页</span><i></i></a>
+        <dl class="subMenu" style="display: none;">
+          	<dd class="<?php if($action == 'indexOrder') echo 'layui-this';?>">
+				<a href="{:url('order/index')}">订单记录</a>
+			</dd>
+			<dd class="<?php if($action == 'order_ypOrder') echo 'layui-this';?>">
+				<a href="{:url('order/order_yp')}">样品记录</a>
+			</dd>
+			<dd class="<?php if($action == 'order_statisOrder') echo 'layui-this';?>">
+				<a href="{:url('order/order_statis')}">订单统计</a>
+			</dd>
+        </dl>
+      </li>
+      <li>
+        <a href="javascript:;"><span class="ico">财务首页</span><i></i></a>
+        <dl class="subMenu" style="display: none;">
+          	<dd class="<?php if($action == 'indexFinance') echo 'layui-this';?>">
+				<a href="{:url('finance/index')}">营业收入</a>
+			</dd>
+			<dd class="<?php if($action == 'accountFinance') echo 'layui-this';?>">
+				<a href="{:url('finance/account')}">已收账款</a>
+			</dd>
+			<dd class="<?php if($action == 'account_okFinance') echo 'layui-this';?>">
+				<a href="{:url('finance/account_ok')}">应收账款</a>
+			</dd>
+			<dd class="<?php if($action == 'priceFinance') echo 'layui-this';?>">
+				<a href="{:url('finance/price')}">价格体系</a>
+			</dd>
+        </dl>
+      </li>
+    </ul>
+    <p class="bottom"><a href="{:url('login/loginout')}"><span>退出登录</span></a></p>
+  </div>
+</div>
+</div>
+<!--手机端导航 end-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

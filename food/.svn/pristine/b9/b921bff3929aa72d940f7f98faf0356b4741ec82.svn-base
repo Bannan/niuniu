@@ -1,0 +1,11 @@
+/**
+  项目common公共js
+**/    
+layui.define(['jquery'], function(exports){
+  var $ = layui.jquery;
+  
+
+
+  //注册common到layui
+  exports('menu', {}); 
+});    

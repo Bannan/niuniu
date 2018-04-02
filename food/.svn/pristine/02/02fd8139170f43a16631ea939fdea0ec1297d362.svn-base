@@ -1,0 +1,68 @@
+/**
+  项目common公共js
+**/    
+layui.define(['jquery','laydate','element','form','layedit'], function(exports){
+  var element = layui.element; 
+  var $ = layui.jquery;
+  var form = layui.form;
+  var layedit = layui.layedit;
+  var laydate = layui.laydate;
+  //创建一个编辑器
+  var editIndex = layedit.build('LAY_demo_editor');
+
+  //常规用法时间选择器
+  laydate.render({
+    elem: '#time1'
+  });
+  laydate.render({
+    elem: '#time2'
+  });
+  laydate.render({
+    elem: '#time3'
+  });
+  laydate.render({
+    elem: '#time4'
+  });
+  //监听网站侧边栏导航点击
+  element.on('nav(demo)', function(elem){
+    //console.log(elem)
+    layer.msg(elem.text());
+  }); 
+
+  $('#layui_nav .layui-this').parent().parent().addClass('layui-nav-itemed');
+
+  /***************************手机端导航****************************/
+  $("#menu li").each(function() {
+    var $hasLayer = $(this).children("dl").parent();
+    $hasLayer.append('<div class="mNav-icon-btn"><span></span></div>');
+  });
+  $('.mNav-icon-btn').click(function() {
+    $(this).siblings('a').toggleClass('active');
+    $(this).siblings('.subMenu').stop().slideToggle();
+    $(this).toggleClass('active');
+
+    $(this).parent().siblings().find('.subMenu').stop().slideUp();
+    $(this).parent().siblings().find('a').removeClass('active');
+    $(this).parent().siblings().find('.mNav-icon-btn').removeClass('active');
+  });
+  //二级导航切换
+  $('#burger-btn').click(function() {
+    var data = $(this).attr('data-on');
+    if(data == 'on') {
+      $(this).addClass('active').attr('data-on', 'off');
+      $('.mNavSecond').removeClass('openMneu');
+      $('html').addClass('menuOpen').append('<div class="blackMask"></div>');
+    } else {
+      $(this).attr('data-on', 'on').removeClass('active');
+      $('.mNavSecond').addClass('openMneu');
+      $('html').removeClass('menuOpen');
+      $('.blackMask').remove();
+    }
+  });
+  /***************************手机端导航 end****************************/
+  
+  //注册common到layui
+  exports('common', {}); 
+});    
+
+

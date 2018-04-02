@@ -1,0 +1,13 @@
+/**
+  项目JS主入口
+**/    
+layui.define(['layer', 'form'], function(exports){
+  var layer = layui.layer,
+  form = layui.form();
+  
+   
+  
+ 
+  
+  exports('base', {}); 
+});    

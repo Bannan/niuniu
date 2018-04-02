@@ -1,0 +1,206 @@
+/*会员空位*/
+.member-list-vacancy .vacancy {
+    position: absolute;
+    width: 7.26vh;
+    height: 7.26vh;
+    line-height: 7.26vh;
+    text-align: center;
+    font-size: 2.2vmax;
+    color: rgba(255,255,255,.5);
+    border-radius: 2vw;
+    background-color: rgba(0,0,0,.5);
+    border: 0.2vw solid rgba(255,255,255,.5);
+}
+.member-list-vacancy .vacancy-1 { width: 6.26vh; height: 6.26vh; display: none;  }
+.member-list-vacancy .vacancy-1, .member1 {  bottom:8%; left: 2vw;  }
+.member-list-vacancy .vacancy-2, .member2 {  top:62%; right: 2vh;  }
+.member-list-vacancy .vacancy-3, .member3 {  top:48%; right: 2vh; }
+.member-list-vacancy .vacancy-4, .member4 {  top:34%; right: 2vh;  }
+.member-list-vacancy .vacancy-5, .member5 {  top:20%; right: 2vh;  }
+.member-list-vacancy .vacancy-6, .member6 {  top:4.5%; left:38vw;  }
+.member-list-vacancy .vacancy-7, .member7 {  top:20%; left:2vh;  }
+.member-list-vacancy .vacancy-8, .member8 {  top:34%; left:2vh;  }
+.member-list-vacancy .vacancy-9, .member9 {  top:48%; left:2vh;  }
+.member-list-vacancy .vacancy-10, .member10 {  top:62%; left:2vh; }
+/*会员空位 end*/
+.myCardTypeBG {
+    position: absolute;
+    bottom: 1%;
+    top: auto;
+    left: 38%;
+    width: 24%;
+    z-index: 91;
+    text-align: center;
+    color: #fff;
+    height: 3.6vh;
+    line-height: 3.6vh;
+    background-color: black;
+    border-radius: 1.8vh;
+    opacity: 0.5;
+}
+.myCardType {
+    position: absolute;
+    bottom: 1%;
+    top: auto;
+    left: 38%;
+    width: 24%;
+    z-index: 91;
+    text-align: center;
+    color: #fff;
+    height: 3.6vh;
+    line-height: 3.3vh;
+    border-radius: 1.8vh;
+    font-size: 2.2vh;
+}
+.return {
+    position: fixed;
+    top: 1.75vh;
+    right: 8.5vw;
+    width: 4.5vh;
+    z-index: 90;
+}
+.tabBottom {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8vh;
+    z-index: 89;
+}
+.roomCard {
+    position: fixed;
+    top: 1.15vh;
+    left: 3vh;
+    z-index: 90;
+    height: 4.5vh;
+}
+.bGameRule {
+    position: fixed;
+    top: 1.75vh;
+    right: 6vw;
+    width: 4.5vh;
+    z-index: 90;
+}
+.jiurenniuniu-return {
+    right: 25.5vw;
+}
+.jiurenniuniu-bGameRule {
+    right: 14vw;
+}
+.jiurenniuniu-return-index {
+    right: 2.5vw;
+}
+.round {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 25vw;
+    line-height: 24px;
+    font-size: 2.4vmax;
+    margin-left: -12.5vw;
+    color: #FFF;
+    z-index: 91;
+    text-align: center;
+    opacity: 1.0;
+}
+.bottomMessage {
+    position: fixed;
+    bottom: 12.75vh;
+    right: 4vw;
+    width: 10vw;
+    height: 10vw;
+    z-index: 91;
+}
+.bottomHistory {
+    position: fixed;
+    bottom: 2.75vh;
+    right: 4vw;
+    width: 10vw;
+    height: 10vw;
+    z-index: 90;
+}
+/*音效*/
+.message .textPartOuter {
+    position: absolute;
+    width: 37vh;
+    height: 58vh;
+    bottom: 18.5vh;
+    right: 2vh;
+    padding: 1vh 1vh 1vh 1vh;
+    background: rgba(255,255,255,0.2);
+    border-radius: 1vh;
+    border: 1px solid rgba(232, 225, 225, 0.38);
+}
+.message .textPart {
+    position: absolute;
+    width: 37vh;
+    height: 58vh !important;
+    bottom: 19.5vh;
+    right: 3.2vh;
+    background: #e6e2e2;
+    overflow: auto;
+    border-radius: 1vh;
+}
+.message .textPart .textList .textItem {
+    width: 85%;
+    height: 5vh;
+    line-height: 5vh;
+    font-size: 2.1vh;
+    background: #fff;
+    color: #8e4d30;
+    font-weight: bold;
+    padding: 0 5%;
+    position: relative;
+    font-family: simHei;
+    margin: 1.3vh auto;
+    border: 0;
+}
+.message .textPart .textList {
+    border: 0px solid #a684f2;
+}
+/*音效 end*/
+.messageSay {
+    position: absolute;
+    height: 3vh;
+    font-size: 2vh;
+    color: #fff;
+    background: #060408;
+    border-radius: 1.5vh;
+    padding: 0 1.5vh;
+    opacity: .75;
+    line-height: 3vh;
+    z-index: 97;
+}
+.operationButton-1 {
+    position: relative;
+}
+#operationButton{position: absolute; z-index: 100; top:73%; left: 0; width: 100%; text-align: center; height: 11vh; overflow: visible;}
+
+
+
+#memberFreeRobText {
+    display: none;
+}
+.jiurenniuniu-qiangzhuang {
+    position: absolute;
+    text-shadow: 0 0 .05vw rgba(0,0,0,.7);
+    -webkit-text-stroke: .05vw rgba(0,0,0,.8);
+    text-stroke: .05vw rgba(0,0,0,.8);
+    font-weight: bold;
+    top: 33%;
+    z-index: 99;
+    left: 0px;
+    width: 375px;
+    height: 30px;
+    display: none;
+    font-weight: bold;
+    color: #ffdc18;
+    text-align: center;
+    font-size: 3vh;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+

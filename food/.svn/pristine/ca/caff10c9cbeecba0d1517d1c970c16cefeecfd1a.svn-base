@@ -1,0 +1,57 @@
+<?php
+namespace app\index\controller;
+/*
+ *  库存
+ *
+ */
+class stock extends Common
+{
+    //当前库存
+    public function index()
+    {
+        //不同产品的不同数量总和，以及除余
+        $select = db("stock")->field("*,sum(number) as sum")->group("food")->select();
+        foreach($select as $k=>$v)
+        {
+            $select[$k]['bei'] = floor($v['sum']/40);
+            $select[$k]['yu']  = $v['sum']%40;
+        }
+        $this->assign($select);
+        return view();
+    }
+    //库存记录
+    public function record()
+    {
+        return view();
+    }
+    //新增货品/修改原料
+    public function add_food()
+    {
+        switch (input("type"))
+        {
+            case 'add':
+                $status = db("stock")->insert(array_merge(input("post."),['time'=>time()])) ? 1 : 0;
+                echo json_encode($status);die;
+                break;
+            case 'update':
+                $status = db("stock")->where(["id"=>input("post.id")])->update(input("post.id")) ? 1 : 0;
+                echo json_encode($status);die;
+                break;
+
+        }
+
+        return view();
+    }
+    //新增原料/修改原料
+    public function add_yl()
+    {
+        return view();
+    }
+
+
+}
+
+
+
+
+?>

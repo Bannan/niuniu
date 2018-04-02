@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>注册</title>
+  <!--公共样式与插件-->
+  <script type="text/javascript" src="__PUBLIC__js/rem.js"></script>
+  <link rel="stylesheet" href="__PUBLIC__css/layui.css">
+  <link rel="stylesheet" href="__PUBLIC__css/common.css">
+  <!--公共样式与插件 end-->
+  <link rel="stylesheet" href="__PUBLIC__css/base.css">
+</head>
+<body>
+<!--<style>-->
+  <!--/*分页*/-->
+  <!--.pagination {}-->
+  <!--.pagination li {display: inline-block;margin-right: -1px;padding: 5px;border: 1px solid #e2e2e2;min-width: 20px;text-align: center;}-->
+  <!--.pagination li.active {background: #009688;color: #fff;border: 1px solid #009688;}-->
+  <!--.pagination li a {display: block;text-align: center;}-->
+<!--</style>-->
+  <div class="wrap">
+    {include file="index/nav"/}
+    <div class="btnWrap" id="register_btn">
+      <a href="javascript:">新增注册</a>
+    </div>
+    <div class="inputWrap" style="display: none;">
+      <div class="back-wrap" id="back_btn">
+        <a href="javascript:">返回</a>
+      </div>
+      <div class="item-list">
+        <form id="register_form">
+         <div class="item">
+            <div class="form-label">号库</div>
+            <div class="input-block">
+              <input type="text" name="base_number" value="" class="input" id="base_number" placeholder="" >
+            </div>
+          </div>
+          <div class="item">
+            <div class="form-label">扫码数量</div>
+            <div class="input-block">
+              <input type="number" name="registrations" value="" class="input" placeholder="">
+            </div>
+          </div>
+          
+          <div class="item">
+            <a href="javascript:;" class="search-btn" id="register_form_btn">确定新增</a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="main-details">
+      <div class="inputWrap">
+			<div class="item-list">
+				<div class="item">
+					<div class="form-label">查询库</div>
+					<div class="input-block">
+						<input type="text" name="site_title" id="site_title" value="<?php if(isset($_GET['num'])) echo $_GET['num'];?>" class="input">
+					</div>
+<a href="javascript:;" class="search-btn" id="search_form_btn">查询</a>
+				</div>
+			</div>
+        
+		</div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>序号</th>
+            <th class="th-hk1">号库</th>
+            <th>注册数量</th>
+            <th>留存、死号、出库</th>
+            <th>注册日期</th>
+            <th>留存日期</th>
+            <th>操作</th>
+          </tr>
+        </thead>
+        <tbody>
+          <?php foreach($list as $k=>$v){?>
+          <tr>
+            <td><?php echo $v['id'];?></td>
+            <td class="hk-{$v.id}"><!--<input type="text" name="site_title" value="{$v.base_number}" class="input-btn-kh ll-{$v.id}" data-id="2" readonly="">-->{$v.base_number}</td>
+            <td>{$v.zc_num}</td>
+            <td class="num-{$v.id}">{$v.registrations}、{$v.bf_num}、{$v.ck_num}</td>
+            <td class="date-{$v.id}" date-val="<?php echo date('Y-m-d',strtotime($v['date']));?>">{$v.date}</td>
+            <td><button class="layui-btn layui-btn-sm layui-btn-lc" data-id="{$v.id}">留存</button>&nbsp;&nbsp;&nbsp;&nbsp;{$v.liucun_time}</td>
+            <td><button class="layui-btn layui-btn-sm layui-btn-chuku" data-id="{$v.id}">出库</button>
+              <button class="layui-btn layui-btn-sm layui-btn-liucun2" data-id="{$v.id}">更改</button>
+              <button class="layui-btn layui-btn-sm layui-btn-delete" data-id="{$v.id}">删除</button></td>
+          </tr>
+          <?php }?>
+        </tbody>
+      </table>  
+      <div class="pageSize">
+        <div class="box">
+      {$list->render()}
+        </div>
+      </div>
+      </div>
+  </div>
+  
+  <script src="__PUBLIC__js/jquery.min.js"></script>
+  <script src="__PUBLIC__js/layer/layer.js"></script>
+  <script>
+    $(function () {
+		$("#search_form_btn").on("click",function(){
+        	window.location.href = "{:url('index/zc')}?num="+$("#site_title").val();
+        
+        });
+      //修改数量
+      $(".layui-btn-liucun2").on("click",function(){
+        var html = '<div class="item"><div class="input-block">修改留存数<input type="number" class="input layer-input-lc2" placeholder="" ><br/>修改死号<input type="number" class="input layer-input-bf2" placeholder="" ></div></div><div class="btn-box"><button class="layui-btn layui-btn-sm" id="lc2_post">确定</button><button class="layui-btn layui-btn-sm layui-btn-primary layui-close">取消</button></div>';
+          var id = $(this).attr('data-id');
+        
+         layer.open({
+          type:1,
+          title: '留存',
+          content: html,
+          area: ['220px', '']
+        }); 
+        	$("#lc2_post").on("click",function(){
+        		$.post("{:url('index/zc')}",{"liucun2":$(".layer-input-lc2").val(),"bf":$(".layer-input-bf2").val(),"id":id},function(){
+           	  window.location.reload();
+            	});
+       	 });
+      		
+      
+      });
+      //修改库存
+      $(document).on('input propertychange','.input-btn-kh',function (e) {
+        var id = $(this).attr('data-id');
+        var url = '';
+        var data = {};
+
+        $.post(url, data, function(result) {
+          if (result.status == 1) {
+            layer.msg('新增成功');
+            window.location.reload();
+          //  window.localhost = url; //跳转链接
+          } else if (result.status == 0) {
+            layer.msg('新增失败');
+          }
+        },'JSON');
+      });
+
+      //关闭所有
+      $('body').on('click', '.layui-close', function() {
+        layer.closeAll();
+      });
+		//删除
+      $('.layui-btn-delete').on("click",function(){
+        var id = $(this).attr('data-id');
+      layer.confirm('确定删除该条数据？', {
+              btn: ['确定','取消'] //按钮
+            }, function(){
+       
+                 $.post("{:url('index/zc')}",{"delete": id},function(){
+            		  window.location.reload();
+            	});
+            });
+      
+      });
+      //修改留存
+      $('.layui-btn-lc').on('click', function() {
+        var html = '<div class="item"><div class="input-block"><input type="number" class="input layer-input-lc" placeholder="" ></div></div><div class="btn-box"><button class="layui-btn layui-btn-sm" id="lc_post" data-id='+$(this).attr('data-id')+'>确定</button><button class="layui-btn layui-btn-sm layui-btn-primary layui-close">取消</button></div>';
+        var id = $(this).attr('data-id');
+     
+        layer.open({
+          type:1,
+          title: '留存',
+          content: html,
+          area: ['220px', '']
+        }); 
+        $("#lc_post").on("click",function(){
+          if ($(".layer-input-lc").val() == "") {
+            layer.msg("留存数量不能为空！"); 
+            return false;
+          }
+          $.post("{:url('index/zc')}",{"liucun":$(".layer-input-lc").val(),"id":id,"date":$(".date-"+id).attr("date-val")},function(){
+              window.location.reload();
+            });
+        });
+      });
+
+      //出库
+      $('.layui-btn-chuku').on('click', function() {
+        var html = '<div class="item"><div class="input-block"><input type="number" class="input layer-input-hk" placeholder="" ></div></div><div class="btn-box"><button class="layui-btn layui-btn-sm" id="ck_post" data-id='+$(this).attr('data-id')+'>确定</button><button class="layui-btn layui-btn-sm layui-btn-primary layui-close">取消</button></div>';
+        var id = $(this).attr('data-id');
+     
+        layer.open({
+          type:1,
+          title: '出库',
+          content: html,
+          area: ['220px', '']
+        }); 
+        $("#ck_post").on("click",function(){
+          var num = $(".layer-input-hk").val();
+
+          if (num == "") {
+            layer.msg("出库数量不能为空！"); 
+            return false;
+          }
+
+       
+
+          $.post("{:url('index/zc')}",{"pid":$(".hk-"+id).text(),"ck":num,"id":id,"date":$(".date-"+id).attr("date-val")},function(){
+              window.location.reload();
+            });
+        });
+      });
+
+    });
+  </script>
+  <script>
+    $(function () {
+      //异步查询号库对接码和地区
+      $(".quiz").change(function(){
+        var opt_val = $('.quiz option:selected').val();
+
+        $.post("{:url('index/hkcz')}",{"num":opt_val,"select":1},function(e){
+            if(e.status == 2)
+            {
+              $("#docking_code").val(e.data['docking_code']);
+              $("#region").val(e.data['region']);
+            }
+        },"JSON");
+      });
+      $('#register_btn').on('click', function() {
+        $('.inputWrap').show();
+        $('.main-details').hide();
+      }); 
+
+      //点击返回关闭
+      $('#back_btn').on('click', function() {
+        $('.inputWrap').hide();
+        $('.main-details').show();
+      });
+
+      //ajax提交
+      $('#register_form_btn').on('click', function() {
+        var el = $('#register_form .input');
+        var array = ['库号','扫码数量'];
+        for (var i = 0; i < el.length; i++ ) {
+          if (el.eq(i).val() == "") {
+            layer.msg('请填写'+array[i]+'内容');
+            return false;
+          }
+        }
+
+        var url = "{:url('index/zc')}";
+        var data = $('#register_form').serialize();
+        
+        $.post(url, data, function(result) {
+          if (result.status == 1) {
+            layer.msg('新增成功');
+                        window.location.reload();
+          //  window.localhost = url; //跳转链接
+          } else if (result.status == 0) {
+            layer.msg('新增失败');
+          }
+        },'JSON');
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>订单详情</title>
+  <!--公共样式与插件-->
+  <link rel="stylesheet" href="__PUBLIC__js/layui/css/layui.css">
+  <link rel="stylesheet" href="__PUBLIC__css/common.css">
+  <!--公共样式与插件 end-->
+  <link rel="stylesheet" href="__PUBLIC__css/base.css">
+</head>
+<body>
+<div class="layui-layout layui-layout-admin">
+	{include file="public/head"/}
+	{include file="public/nav"/}
+	<!--主要内容-->
+	<div class="layui-body site-demo">
+		<!--tab标签-->
+		<div class="layui-main">
+			<blockquote class="layui-elem-quote">
+				<a class="layui-btn" href="{:url('order/index')}">返回</a>
+ 				<a class="layui-btn" href="javascript:;">订单详情</a>
+			</blockquote>
+			<form class="layui-form layui-form-pane" action="">
+				<div class="layui-form-item">
+					<label class="layui-form-label">订货人</label>
+					<div class="layui-input-inline">
+						<input type="text" name="title" placeholder="{$edit.order_user}" class="layui-input" readonly>
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<label class="layui-form-label">电话</label>
+					<div class="layui-input-inline">
+						<input type="text" name="username" lay-verify="required" placeholder="{$edit.phone}" class="layui-input" readonly>
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<label class="layui-form-label">账期（天）</label>
+					<div class="layui-input-inline">
+						<input type="text" name="username" lay-verify="required" placeholder="{$edit.after_day}" class="layui-input" readonly>
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<div class="layui-inline">
+						<label class="layui-form-label">下单日期</label>
+						<div class="layui-input-block">
+							<input type="text" name="date" id="date1" class="layui-input" lay-key="2" placeholder="{$edit.datea}" readonly>
+						</div>
+					</div>
+					<div class="layui-inline">
+						<label class="layui-form-label">回款日期</label>
+						<div class="layui-input-inline">
+							<input type="text" name="number" class="layui-input" placeholder="{$edit.dateb}" readonly>
+						</div>
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<label class="layui-form-label">地址</label>
+					<div class="layui-input-block">
+						<input type="text" name="text" placeholder="{$edit.address}" autocomplete="off" class="layui-input" readonly>
+					</div>
+				</div>
+			</form>
+			<div class="layui-tab-item layui-show" id="yan_menu_list">
+				<table class="layui-table layui-table-w">
+					<thead>
+						<tr>
+							<th class="w">排序</th>
+							<th>品名</th>
+							<th>袋数</th>
+							<th>渠道</th>
+							<th>单价</th>
+							<th>金额</th>
+						</tr>
+					</thead>
+					<tbody>
+					<?php foreach(json_decode($edit['json'],true) as $k=>$v){?>
+						<tr>
+							<td>{$k+1}</td>
+							<td>{:food_name($v['1'])['name']}</td>
+							<td>{$v[2]}</td>
+							<td>{:channel_name($v[3])['channel']}</td>
+							<td>{$v[4]}</td>
+							<td>{$v[5]}</td>
+						</tr> 
+					<?php }?>
+						
+					</tbody>
+				</table>
+			</div>
+			<div class="layui-form-item">
+				<?php echo $edit['kuan'] == 1 ? '<button class="layui-btn" type="button" lay-filter="demo2" id="sure_btn_sk">确认收款</button>' : '<button class="layui-btn layui-btn-disabled" type="button" lay-filter="demo2" >已收款</button>';?>
+
+				<?php echo $edit['ku'] == 1 ? '<button class="layui-btn" type="button" lay-filter="demo2" id="sure_btn_ck">确认出库</button>' : '<button class="layui-btn layui-btn-disabled" type="button" lay-filter="demo2" >已出库</button>';?>
+
+			</div>
+		</div>
+	</div>
+	<!--主要内容 end-->
+	{include file="public/footer"/}
+	<script>
+		$(function() {
+			$('#sure_btn_sk').on('click', function() {
+				layer.confirm('您是否确认收款？', {
+						btn: ['确认','取消'] //按钮
+					}, function(){
+                    $.post("{:url('order/order_info')}?type=kuan",{"id":"{$edit.id}"},function(result){
+                        if(result.status == 1)
+                        {
+                            layer.msg('确认收货成功');
+                            setTimeout(function () {
+                                window.location.href = "{:url('order/index')}";
+                            }, 1000);
+                        }else{
+                            layer.msg("操作失败！");
+                        }
+                    },"JSON");
+					}
+				);
+			});
+
+			$('#sure_btn_ck').on('click', function() {
+				layer.confirm('您是否确认出库？', {
+						btn: ['确认','取消'] //按钮
+					}, function(){
+				    	$.post("{:url('order/order_info')}?type=ku",{"id":"{$edit.id}"},function(result){
+                            if(result.status == 1)
+                            {
+                                layer.msg('确认出库成功');
+                                setTimeout(function () {
+                                    window.location.href = "{:url('order/index')}";
+                                }, 1000);
+                            }else{
+                                layer.msg("操作失败！");
+                            }
+						},"JSON");
+
+					}
+				);
+			});
+		});
+	</script>
+</div>
+</body>
+</html>

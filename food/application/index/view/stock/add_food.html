@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>新增货品</title>
+  <!--公共样式与插件-->
+  <link rel="stylesheet" href="__PUBLIC__js/layui/css/layui.css">
+  <link rel="stylesheet" href="__PUBLIC__css/common.css">
+  <!--公共样式与插件 end-->
+  <link rel="stylesheet" href="__PUBLIC__css/base.css">
+</head>
+<body>
+<div class="layui-layout layui-layout-admin">
+	{include file="public/head"/}
+	{include file="public/nav"/}
+	<!--主要内容-->
+	<div class="layui-body site-demo webWrap">
+		<!--tab标签-->
+		<div class="layui-main">
+			<blockquote class="layui-elem-quote">
+ 				<a class="layui-btn" href="{:url('stock/record_hp')}">返回</a>
+			</blockquote>
+			<fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+			  <legend>新增货品</legend>
+			</fieldset>
+			<div class="layui-tab-item layui-show layui-tab-item-20">
+				<form class="layui-form form-container" method="post" id="yan_add_form">
+					<div class="layui-form-item">
+						<label class="layui-form-label">品名</label>
+						<div class="layui-input-block">
+							<select name="parentid" lay-verify="required" id="food">
+								<?php foreach(food_name() as $k=>$v){?>
+									<option value="{$v.id}"  <?php if($v['id'] == $edit['food'])echo "selected";?>>{$v.name}</option>
+								<?php }?>
+							</select>
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label">单位</label>
+						<div class="layui-form-mid layui-word-aux" id="unit">袋</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label">数量</label>
+						<div class="layui-input-block">
+							<input type="Number" name="m" value="{$edit.number}" placeholder="请输入数量" class="layui-input" id="number">
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label">生产日期</label>
+						<div class="layui-input-block">
+							<input type="text" name="time1" value="{$edit.datea}" placeholder="请输入生产日期" class="layui-input" id="time1" readonly>
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label">保质期</label>
+						<div class="layui-input-block">
+							<select name="date_num" value="{$v.date_num}" lay-verify="required" id="date_num" lay-filter="save_time">
+								<option value="3">3个月</option>
+								<option value="6">6个月</option>
+								<option value="10">10个月</option>
+								<option value="12">12个月</option>	
+							</select>
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label">到期时间</label>
+						<div class="layui-form-mid layui-word-aux" id="end_time">2017年12月17日</div>
+					</div>
+					<div class="layui-form-item">
+						<div class="layui-input-block">
+							<button class="layui-btn" id="yan_add_btn" type="button">保存</button>
+							<button type="reset" class="layui-btn layui-btn-primary">取消</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!--主要内容 end-->
+	{include file="public/footer"/}
+	<script>
+		$(function() {
+			layui.use(['form'], function(){
+				var form = layui.form;
+				form.on('select(save_time)', function(data){
+					var time1 = $('#time1').val();
+					if (time1 == '') {
+						layer.msg("请选择生产日期");
+						return false;
+					}
+					var d = new Date(time1);
+					console.log(d.getMonth());
+					d.setMonth(d.getMonth() + Number(data.value));
+
+					var month = d.getMonth() + 1; 
+
+					var old_time = d.getFullYear() + "年" + month + "月" + d.getDate() + '日';
+					$('#end_time').html(old_time);
+				});
+			});
+            $('#yan_add_btn').on('click', function() {
+				var url = "{:url('stock/add_food')}?type=<?php echo $edit ? 'update&id='.$edit['id'] : 'add';?>";
+                $.post(url,{"food":$("#food").val(),"number":$("#number").val(),"date_num":$("#date_num").val(),"datea":$("#time1").val()},function(result){
+                    if(result.status == 1)
+                    {
+                        layer.msg("操作成功！");
+                        setTimeout(function () {
+                            window.location.href = "{:url('stock/record_hp')}";
+                        }, 1000);
+                    }else{
+                        layer.msg("操作失败！");
+                    }
+                },"JSON");
+            });
+		});
+	</script>
+
+</body>
+</html>

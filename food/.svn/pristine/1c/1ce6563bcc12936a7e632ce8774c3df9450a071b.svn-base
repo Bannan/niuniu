@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>货品列表</title>
+  <!--公共样式与插件-->
+  <link rel="stylesheet" href="__PUBLIC__js/layui/css/layui.css">
+  <link rel="stylesheet" href="__PUBLIC__css/common.css">
+  <!--公共样式与插件 end-->
+  <link rel="stylesheet" href="__PUBLIC__css/base.css">
+</head>
+<body>
+<div class="layui-layout layui-layout-admin">
+	{include file="public/head"/}
+	{include file="public/nav"/}
+	<!--主要内容-->
+	<div class="layui-body site-demo webWrap">
+		<!--tab标签-->
+		<div class="layui-main">
+			<blockquote class="layui-elem-quote">
+ 				<a class="layui-btn" href="javascript:;">货品列表</a>
+			</blockquote>
+			<div class="btnWrap" id="register_btn">
+				<a href="{:url('stock/add_food')}">新增货品</a>
+			</div>
+			<div class="layui-tab-item layui-show" id="yan_menu_list">
+				<table class="layui-table layui-table-w">
+					<thead>
+						<tr>
+							<th class="w">排序</th>
+							<th>品名</th>
+							<th>单位</th>
+							<th>数量</th>
+							<th>生产日期</th>
+							<th>保质期</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td><a href="#">尚品牛肉100g麻辣味</a></td>
+							<td>袋</td>
+							<td>100</td>
+							<td>2017年12月18日</td>
+							<td>2017年12月18日</td>
+						</tr> 
+						<tr>
+							<td>1</td>
+							<td><a href="#">尚品牛肉100g麻辣味</a></td>
+							<td>袋</td>
+							<td>100</td>
+							<td>2017年12月18日</td>
+							<td>2017年12月18日</td>
+						</tr> 
+
+					</tbody>
+				</table>  
+				<!--分页-->
+				<div class="pageSize">
+					<div class="box">
+						<a href="javascript:;" class="page-prev" data-page="0">上一页</a>
+						<a href="javascript:;" data-page="1" class="active">1</a>
+						<a href="javascript:;" data-page="2">2</a>
+						<a href="javascript:;" data-page="3">3</a>
+						<a href="javascript:;" data-page="4">4</a>
+						<a href="javascript:;" class="page-next" data-page="2">下一页</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--主要内容 end-->
+	{include file="public/footer"/}
+</div>
+</body>
+</html>

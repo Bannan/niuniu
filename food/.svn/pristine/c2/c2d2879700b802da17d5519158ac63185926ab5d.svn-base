@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>订单统计</title>
+  <!--公共样式与插件-->
+  <link rel="stylesheet" href="__PUBLIC__js/layui/css/layui.css">
+  <link rel="stylesheet" href="__PUBLIC__css/common.css">
+  <!--公共样式与插件 end-->
+  <link rel="stylesheet" href="__PUBLIC__css/base.css">
+</head>
+<body>
+<div class="layui-layout layui-layout-admin">
+	{include file="public/head"/}
+	{include file="public/nav"/}
+	<!--主要内容-->
+	<div class="layui-body site-demo">
+		<!--tab标签-->
+		<div class="layui-main">
+			<blockquote class="layui-elem-quote">
+ 				<a class="layui-btn" href="javascript:;">订单统计</a>
+			</blockquote>
+			<form class="layui-form layui-form-pane" action="">
+				<div class="layui-form-item">
+					<div class="layui-inline">
+						<label class="layui-form-label">下单起始日期</label>
+						<div class="layui-input-block">
+							<input type="text" name="date" id="time1" value="{$date['start'][0]}" class="layui-input" placeholder="" readonly="">
+						</div>
+					</div>
+					<div class="layui-inline">
+						<label class="layui-form-label">下单截止日期</label>
+						<div class="layui-input-inline">
+							<input type="text" name="number" value="{$date['start'][1]}" id="time2" class="layui-input" placeholder="" readonly>
+						</div>
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<div class="layui-inline">
+						<label class="layui-form-label">回款起始日期</label>
+						<div class="layui-input-block">
+							<input type="text" name="date" id="time3" value="{$date['end'][0]}" class="layui-input" placeholder="" readonly>
+						</div>
+					</div>
+					<div class="layui-inline">
+						<label class="layui-form-label">回款截止日期</label>
+						<div class="layui-input-inline">
+							<input type="text" name="number" id="time4" value="{$date['end'][1]}" class="layui-input" placeholder="" readonly>
+						</div>
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<button class="layui-btn" type="button" lay-filter="demo2" id="search_btn">搜索</button>
+				</div>
+				<div class="layui-form-item">
+					<div class="layui-inline">
+						<label class="layui-form-label">订单数量</label>
+						<div class="layui-input-block">
+							<input type="text" name="date" id="date1" class="layui-input" lay-key="2" placeholder="{$food[0]['count']}个" readonly>
+						</div>
+					</div>
+					<div class="layui-inline">
+						<label class="layui-form-label">订单金额</label>
+						<div class="layui-input-inline">
+							<input type="text" name="number" class="layui-input"  placeholder="{$food[0]['price']}元" readonly>
+						</div>
+					</div>
+				</div>
+			</form>
+			<div class="layui-tab-item layui-show">
+				<table class="layui-table layui-table-w">
+					<thead>
+						<tr>
+							<th class="w">排序</th>
+							<th>经办人</th>
+							<th>订单数量</th>
+							<th>订单金额</th>
+						</tr>
+					</thead>
+					<tbody>
+					<?php foreach($data as $k=>$v){?>
+						<tr>
+							<td>{$k+1}</td>
+							<td>{$v.admin_user}</td>
+							<td>{$v.count}</td>
+							<td>{$v.sum}</td>
+						</tr>
+					<?php }?>
+					</tbody>
+				</table>
+			</div>
+			<div class="layui-tab-item layui-show">
+				<table class="layui-table layui-table-w">
+					<thead>
+						<tr>
+							<th class="w">排序</th>
+							<th>品名</th>
+							<th>订单数量</th>
+							<th>订单金额</th>
+						</tr>
+					</thead>
+					<tbody>
+					<?php foreach($food_list as $k=>$v){?>
+						<tr>
+							<td>{$k+1}</td>
+							<td>{:food_name($v['fid'])['name']}</td>
+							<td>{$v.number}</td>
+							<td>{$v.price}</td>
+						</tr>
+					<?php }?>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<!--主要内容 end-->
+	{include file="public/footer"/}
+	<script>
+		$(function() {
+			$('#search_btn').on('click', function() {
+				var time1 = $('#time1').val();
+				var time2 = $('#time2').val();
+				var time3 = $('#time3').val();
+				var time4 = $('#time4').val();
+				var url = "/foodsmart/index.php/index/order/order_statis.html";
+				window.location.href = ''+url+'?start='+time1+'~'+time2+'&end='+time3+'~'+time4+'';
+			});
+		});
+	</script>
+</div>
+</body>
+</html>

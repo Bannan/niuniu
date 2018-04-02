@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>库存设置</title>
+  <!--公共样式与插件-->
+  <link rel="stylesheet" href="__PUBLIC__js/layui/css/layui.css">
+  <link rel="stylesheet" href="__PUBLIC__css/common.css">
+  <!--公共样式与插件 end-->
+  <link rel="stylesheet" href="__PUBLIC__css/base.css">
+</head>
+<body>
+<div class="layui-layout layui-layout-admin">
+	{include file="public/head"/}
+	{include file="public/nav"/}
+	<!--主要内容-->
+	<div class="layui-body site-demo webWrap">
+		<!--tab标签-->
+		<div class="layui-main">
+			<blockquote class="layui-elem-quote">
+ 				<a class="layui-btn" href="javascript:;">库存设置</a>
+			</blockquote>
+			<fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+			  <legend>货品管理</legend>
+			</fieldset>
+			<div class="layui-tab-item layui-show layui-tab-item-xzdd">
+				<table class="layui-table layui-table-w">
+					<thead>
+						<tr>
+							<th class="w">序列</th>
+							<th>品名</th>
+							<th>单位</th>
+							<th>操作</th>
+						</tr>
+					</thead>
+					<tbody>
+						<?php foreach(food_name() as $k=>$v){?>
+						<tr>
+							<td>{$k+1}</td>
+							<td>{$v.name}</td>
+							<td>{$v.unit}</td>
+							<td>
+								<a href="javascript:;" class="layui-btn layui-btn-xs layui-btn-normal yan_menu_edit" onclick="formTable(this,'edit1','{$v.id}')">编辑</a>
+							</td>
+						</tr>
+						<?php }?>
+					</tbody>
+				</table>
+			</div>
+			<div class="layui-form-item">
+				<button class="layui-btn" type="button" onclick="formTable(this,'?type=add1')"><i class="layui-icon">&#xe654;</i>添加</button>
+			</div>
+			<fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+			  <legend>样品管理</legend>
+			</fieldset>
+			<div class="layui-tab-item layui-show layui-tab-item-xzdd">
+				<table class="layui-table layui-table-w">
+					<thead>
+						<tr>
+							<th class="w">序列</th>
+							<th>品名</th>
+							<th>单位</th>
+							<th>操作</th>
+						</tr>
+					</thead>
+					<tbody>
+					<?php foreach($list2 as $k=>$v){?>
+						<tr>
+							<td>{$k+1}</td>
+							<td>{$v.name}</td>
+							<td>{$v.unit}</td>
+							<td>
+								<a href="javascript:;" class="layui-btn layui-btn-xs layui-btn-normal yan_menu_edit" onclick="formTable(this,'edit2','{$v.id}')">编辑</a>
+							</td>
+						</tr>
+						<?php }?>
+					</tbody>
+				</table>
+			</div>
+			<div class="layui-form-item">
+				<button class="layui-btn" type="button" onclick="formTable(this,'?type=add2')"><i class="layui-icon">&#xe654;</i>添加</button>
+			</div>
+		</div>
+	</div>
+	<!--主要内容 end-->
+	{include file="public/footer"/}
+	<script>
+		function formTable(_this,url,id="") {
+			var name = "";
+			var unit = "";
+			
+			if(url == 'edit1' || url=='edit2')
+			{
+				
+				 $.ajax({  
+	                cache:false,  
+	                async:false,//重要的关健点在于同步和异步的参数，
+	                dataType:"JSON",  
+	                type:'post',  
+	                url:"{:url('stock/setting')}?type="+url+"&id="+id,  
+	                success:function(msg){  
+	                    name = msg.name;
+	                    unit = msg.unit;
+	                    id   = msg.id;
+	                    if(url == 'edit1')
+	                    {
+	                    	url  = "?type=update1&id="+id;
+	                    }else{
+	                    	url  = "?type=update2&id="+id;
+	                    }
+                	}  
+            	}); 	
+
+			}
+		 var el='<form class="layui-form form-container" method="post">'+
+					'<div class="layui-form-item">'+
+						'<label class="layui-form-label">品名</label>'+
+						'<div class="layui-input-block"><input type="hidden" value="'+id+'" name="id">'+
+							'<input type="text" name="name" value="'+name+'" placeholder="请输入货品名" class="layui-input">'+
+						'</div>'+
+					'</div>'+
+					'<div class="layui-form-item">'+
+						'<label class="layui-form-label">单位</label>'+
+						'<div class="layui-input-block">'+
+							'<input type="text" name="unit" value="'+unit+'" placeholder="请输入单位" class="layui-input">'+
+						'</div>'+
+					'</div>'+
+					'<div class="layui-form-item">'+
+						'<div class="layui-input-block">'+
+							'<button class="layui-btn yan_add_btn_hp" url='+url+' type="button">添加</button>'+
+							'<button type="reset" class="layui-btn layui-btn-primary layui-btn-cancel">取消</button>'+
+						'</div>'+
+					'</div>'+
+				'</form>';
+			layer.open({
+				type: 1,
+				title: false,
+				area: ['320px', ], //宽高
+				content: el
+			});
+		}
+		$("body").on("click",".yan_add_btn_hp",function(){
+
+				if ($("input[name='name']").val() == '') {
+					layer.msg('货品名不能为空');
+					return false;
+				}
+				if ($("input[name='unit']").val() == '') {
+					layer.msg('单位不能为空');
+					return false;
+				}
+	
+				$.post("{:url('stock/setting')}"+$(this).attr("url"),{"id":$("input[name='id']").val(),"name":$("input[name='name']").val(),"unit":$("input[name='unit']").val()},function(result){
+						if(result.status == 1)
+						{
+							layer.msg("操作成功！");
+			                setTimeout(function () {
+			                 window.location.reload();
+			                }, 1500);
+						}else{
+							layer.msg("操作失败！");
+						}
+
+				},"JSON");
+			
+		});
+
+		$('body').on('click', '.layui-btn-cancel',function() {
+			layer.closeAll(); 
+		});
+	</script>
+</div>
+</body>
+</html>

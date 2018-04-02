@@ -1,0 +1,103 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:71:"E:\WWW\pro_wx_smartadmin\public/../application/index\view\index\dd.html";i:1513580475;s:72:"E:\WWW\pro_wx_smartadmin\public/../application/index\view\index\nav.html";i:1513327005;}*/ ?>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>订单</title>
+  <!--公共样式与插件-->
+  <script type="text/javascript" src="__PUBLIC__js/rem.js"></script>
+  <link rel="stylesheet" href="__PUBLIC__css/common.css">
+  <!--公共样式与插件 end-->
+  <link rel="stylesheet" href="__PUBLIC__css/base.css">
+</head>
+<body>
+	<div class="wrap">
+		<div class="headerWrap">
+	<ul>
+		<li class="<?php if($action == 'hkgl') echo 'active';?>">
+			<a href="<?php echo url('index/hkgl'); ?>">号库概览</a>
+		</li>
+		<li class="<?php if($action == 'hkxq') echo 'active';?>">
+			<a href="<?php echo url('index/hkxq'); ?>">号库详情</a>
+		</li>
+		<li class="<?php if($action == 'zc') echo 'active';?>">
+			<a href="<?php echo url('index/zc'); ?>">注册</a>
+		</li>
+		<li class="<?php if($action == 'lc') echo 'active';?>">
+			<a href="<?php echo url('index/lc'); ?>">留存</a>
+		</li>
+		<li class="<?php if($action == 'dd') echo 'active';?>">
+			<a href="<?php echo url('index/dd'); ?>">订单</a>
+		</li>
+		<li class="<?php if($action == 'hkcz') echo 'active';?>">
+			<a href="<?php echo url('index/hkcz'); ?>">号库操作</a>
+		</li>
+	</ul>
+</div>
+		<div class="search-time">
+			<label class="form-label">查询日期</label>
+			<div class="input-block">
+				<input type="text" name="site_title" value="" class="input" placeholder="请选择日期" id="test1">
+			</div>
+			<a href="javascript:;" class="search-btn" id="search_form_btn">查询</a>
+		</div>
+		<div class="main-details">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>订单号</th>
+						<th>客户微信号</th>
+						<th>售出微信号</th>
+						<th>售出手机号</th>
+						<th>标志位</th>
+					</tr>
+				</thead>
+				<tbody>
+				<foreach name="">
+					<tr>
+						<td>20171212</td>
+						<td>waa123</td>
+						<td>vtgh49841364196</td>
+						<td>18353621055</td>
+						<td>16</td>
+					</tr> 
+
+				</tbody>
+	          </table>  
+	    </div>
+
+	</div>
+	
+	<script src="__PUBLIC__js/jquery.min.js"></script>
+	<script src="__PUBLIC__js/laydate/laydate.js"></script>
+	<script src="__PUBLIC__js/layer/layer.js"></script>
+	<script>
+		//执行一个laydate实例
+		laydate.render({
+		  elem: '#test1' //指定元素
+		});
+
+		$(function () {
+			//ajax提交
+			$('#search_form_btn').on('click', function() {
+				var url = '';
+				var val = $('#test1').val();
+				var data = {'time':val};
+				
+				$.ajax(url, data, function(result) {
+					if (result == 1) {
+                        window.location.reload();
+					} else if (result == 0) {
+					}
+				});
+			});
+		});
+	</script>
+</body>
+</html>

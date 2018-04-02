@@ -1,0 +1,10 @@
+<div class="layui-footer footer footer-demo footerWrap">
+	<div class="layui-main">
+		<p>
+			2016 © <a href="#" target="_blank">Think Admin</a>
+		</p>
+	</div>
+</div>
+<script src="__PUBLIC__js/layui/layui.js"></script>
+<script>layui.config({base: '__PUBLIC__js/modules/' }).use('index');</script>
+<script src="__PUBLIC__js/jquery.min.js"></script>

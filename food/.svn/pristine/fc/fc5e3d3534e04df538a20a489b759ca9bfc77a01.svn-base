@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>新增样品</title>
+  <!--公共样式与插件-->
+  <link rel="stylesheet" href="js/layui/css/layui.css">
+  <link rel="stylesheet" href="css/common.css">
+  <!--公共样式与插件 end-->
+  <link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+<div class="layui-layout layui-layout-admin">
+	<div class="layui-header header header-demo headerWrap">
+		<div class="layui-main">
+			<a class="logo" href="/">
+			<img src="images/admin_logo.png" alt="layui">
+			</a>
+			<ul class="layui-nav">
+				<li class="layui-nav-item"><a href="#">AdminUser<span class="layui-badge-dot"></span></a></li>
+				<li class="layui-nav-item">
+					<a href="javascript:;">退出登录</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="layui-side layui-bg-black slideWrap">
+		<ul class="layui-nav layui-nav-tree" id="layui_nav">
+			<li class="layui-nav-item">
+				<a href="/" target="_blank">
+					<i class="layui-icon">&#xe615;</i> 网站信息
+				</a>
+			</li>
+			<li class="layui-nav-item">
+				<a href="javascript:;">
+					<i class="layui-icon">&#xe63c;</i>库存首页<span class="layui-nav-more"></span>
+				</a>
+				<dl class="layui-nav-child">
+					<dd class="">
+						<a href="main-kc-hp-l.html">库存记录</a>
+					</dd>
+					<dd class="">
+						<a href="#">库存设置</a>
+					</dd>
+				</dl>
+			</li>
+			<li class="layui-nav-item">
+				<a href="javascript:;">
+					<i class="layui-icon">&#xe64f;</i>订单首页<span class="layui-nav-more"></span>
+				</a>
+				<dl class="layui-nav-child layui-nav-itemed">
+					<dd class="layui-this">
+						<a href="#">订单记录</a>
+					</dd>
+					<dd class="">
+						<a href="#">样品记录</a>
+					</dd>
+					<dd class="">
+						<a href="#">订单统计</a>
+					</dd>
+				</dl>
+			</li>
+			<li class="layui-nav-item">
+				<a href="javascript:;">
+					<i class="layui-icon">&#xe65e;</i>财务首页<span class="layui-nav-more"></span>
+				</a>
+				<dl class="layui-nav-child">
+					<dd class="">
+						<a href="#">已收账款</a>
+					</dd>
+					<dd class="">
+						<a href="#">应收账款</a>
+					</dd>
+				</dl>
+			</li>
+			<span class="layui-nav-bar" style="top: 22.5px; height: 0px; opacity: 0;"></span>
+		</ul>
+	</div>
+	<!--主要内容-->
+	<div class="layui-body site-demo">
+		<!--tab标签-->
+		<div class="layui-main">
+			<blockquote class="layui-elem-quote">
+ 				<a class="layui-btn" href="main-kc-hp-l.html">订单详情</a>
+			</blockquote>
+			<form class="layui-form layui-form-pane" action="">
+				<div class="layui-form-item">
+					<label class="layui-form-label">订货人</label>
+					<div class="layui-input-inline">
+						<input type="text" name="title" placeholder="请输入订货人" class="layui-input">
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<label class="layui-form-label">电话</label>
+					<div class="layui-input-inline">
+						<input type="text" name="username" lay-verify="required" placeholder="请输入电话" class="layui-input">
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<div class="layui-inline">
+						<label class="layui-form-label">账期（天）</label>
+						<div class="layui-input-block">
+							<input type="text" name="date" id="date1" class="layui-input" lay-key="2" placeholder="请输入电话账期（天）">
+						</div>
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<label class="layui-form-label">地址</label>
+					<div class="layui-input-block">
+						<input type="text" name="text" placeholder="请输入电话账期地址" autocomplete="off" class="layui-input">
+					</div>
+				</div>
+				<div class="layui-tab-item layui-show layui-tab-item-xzdd">
+					<table class="layui-table layui-table-w">
+						<thead>
+							<tr>
+								<th class="w">排序</th>
+								<th>品名</th>
+								<th>袋数</th>
+								<th>正品</th>
+								<th>试吃</th>
+								<th>成本金额</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>
+									<div class="layui-form-item">
+										<div class="layui-input-block">
+											<select name="parentid" lay-verify="required">
+												<option value="0">尚品牛肉100g麻辣味1</option>
+												<option value="10">尚品牛肉100g麻辣味2</option>
+												<option value="8">尚品牛肉100g麻辣味3</option>
+												<option value="11">尚品牛肉100g麻辣味4</option>	
+											</select>
+											<div class="layui-unselect layui-form-select">
+												<div class="layui-select-title">
+													<input type="text" placeholder="尚品牛肉100g麻辣味1" value="" readonly="" class="layui-input layui-unselect"><i class="layui-edge"></i>
+												</div>
+												<dl class="layui-anim layui-anim-upbit">
+													<dd lay-value="0" class="layui-this">尚品牛肉100g麻辣味1</dd>
+													<dd lay-value="10" class="">尚品牛肉100g麻辣味2</dd>
+													<dd lay-value="8" class="">尚品牛肉100g麻辣味3</dd>
+													<dd lay-value="11" class="">尚品牛肉100g麻辣味4</dd>
+												</dl>
+											</div>
+										</div>
+									</div>
+								</td>
+								<td>3</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+							</tr> 						
+						</tbody>
+					</table>
+				</div>
+				<div class="layui-form-item">
+					<button class="layui-btn" lay-submit="" lay-filter="demo2">下单</button>
+					<button class="layui-btn" lay-submit="" lay-filter="demo2">取消</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!--主要内容 end-->
+	<div class="layui-footer footer footer-demo footerWrap">
+		<div class="layui-main">
+			<p>
+				2016 © <a href="#" target="_blank">Think Admin</a>
+			</p>
+		</div>
+	</div>
+	<script src="js/layui/layui.js"></script>
+	<script>layui.config({base: 'js/modules/' }).use('index');</script>
+</div>
+</body>
+</html>

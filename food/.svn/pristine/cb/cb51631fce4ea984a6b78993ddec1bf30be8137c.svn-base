@@ -1,0 +1,117 @@
+<?php
+namespace app\index\controller;
+/*
+ *  库存
+ *
+ */
+class stock extends Common
+{
+    //当前库存
+    public function index()
+    {
+        //不同产品的不同数量总和，以及除余
+        $hp = db("stock")->field("*,sum(number) as sum")->group("food")->select();
+        //找出已经出库的订单并且从库里扣除
+        $order_ku = db("order")->where(["ku"=>2])->select();
+        $reduce_sum = 0;
+        foreach($hp as $k=>$v)
+        {
+            foreach ($order_ku as $kk=>$vv)
+            {
+                 foreach (json_decode($vv["json"],true) as $jk=>$jv)
+                 {
+                     if($jv[1] == $v['food']){
+                         $hp[$k]['sum'] = $v['sum'] = $v['sum']-$jv[2];
+
+                     }
+                     $reduce_sum  = $reduce_sum+$jv[2];
+                 }
+            }
+            $hp[$k]['bei'] = floor($v['sum']/40);
+            $hp[$k]['yu']  = $v['sum']%40;
+        }
+        $yl = db("stock_yuan")->field("*,sum(number) as sum")->group("name")->select();
+        foreach($yl as $k=>$v)
+        {
+            $yl[$k]['bei'] = floor(($v['sum']-$reduce_sum)/40);
+            $yl[$k]['yu']  = ($v['sum']-$reduce_sum)%40;
+        }
+        $this->assign("select",["hp"=>$hp,"yl"=>$yl]);
+
+        return view();
+    }
+    //货物库存记录
+    public function record_hp()
+    {
+        $list = db("stock")->paginate(15);
+        $this->assign("list",$list);
+        return view();
+    }
+    //原料库存记录
+    public function record_yl()
+    {
+        $list = db("stock_yuan")->paginate(15);
+        $this->assign("list",$list);
+        return view();
+    }
+
+    //新增货品/修改原料
+    public function add_food()
+    {
+        $db = db("stock");
+        switch (input("type"))
+        {
+            case 'add':
+                $arr = array_merge(input("post."),['time'=>time(),'dateb'=>date("Y-m-d",strtotime("+".input("post.date_num")." month",strtotime(input("post.datea"))))]);
+//print_r($arr);die;
+                $status = $db->insert($arr) ? 1 : 0;
+                echo json_encode(["status"=>$status]);die;
+                break;
+            case 'update':
+                $arr = array_merge(input("post."),
+                    ['dateb'=>date("Y-m-d",strtotime("+".input("post.date_num")." month",strtotime(input("post.datea"))))]);
+                $status = $db->where(["id"=>input("id")])->update($arr) ? 1 : 0;
+                echo json_encode(["status"=>$status]);die;
+                break;
+            case 'edit':
+                $this->assign("edit",$db->where(["id"=>input("id")])->find());
+                break;
+
+        }
+
+        return view();
+    }
+    //新增原料/修改原料
+    public function add_yl()
+    {
+        $db = db("stock_yuan");
+        switch (input("type"))
+        {
+            case 'add':
+                $status = $db->insert(array_merge(input("post."),['time'=>time()])) ? 1 : 0;
+                echo json_encode(["status"=>$status]);die;
+                break;
+            case 'update':
+                $status = $db->where(["id"=>input("id")])->update(input("post.")) ? 1 : 0;
+                echo json_encode(["status"=>$status]);die;
+                break;
+            case 'delete':
+                db("stock_yuan")->where(["id"=>input("id")])->delete();
+                break;
+            case 'edit':
+
+                $this->assign("edit",$db->where(["id"=>input("id")])->find());
+                break;
+
+        }
+
+        return view();
+    }
+
+
+}
+
+
+
+
+?>

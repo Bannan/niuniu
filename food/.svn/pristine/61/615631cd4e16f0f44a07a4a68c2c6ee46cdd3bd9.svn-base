@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>编辑价格</title>
+  <!--公共样式与插件-->
+  <link rel="stylesheet" href="__PUBLIC__js/layui/css/layui.css">
+  <link rel="stylesheet" href="__PUBLIC__css/common.css">
+  <!--公共样式与插件 end-->
+  <link rel="stylesheet" href="__PUBLIC__css/base.css">
+</head>
+<body>
+<div class="layui-layout layui-layout-admin">
+	{include file="public/head"/}
+	{include file="public/nav"/}
+	<!--主要内容-->
+	<div class="layui-body site-demo webWrap">
+		<!--tab标签-->
+		<div class="layui-main layui-main-xzjg">
+			<blockquote class="layui-elem-quote">
+				<a class="layui-btn" href="{:url('finance/price')}">返回</a>
+ 				<a class="layui-btn" href="javascript:;">编辑价格</a>
+			</blockquote>
+			<div class="layui-form">
+				<div class="layui-form-item">
+				    <label class="layui-form-label">价格名</label>
+				    <div class="layui-input-block">
+				      <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="流通" class="layui-input" value="流通">
+				    </div>
+				</div>
+			</div>
+			<div class="layui-tab-item layui-show layui-tab-item-jgtx">
+				<form class="" method="post" id="yan_edit_form">
+					<table class="layui-table layui-table-w">
+						<thead>
+							<tr>
+								<th class="w">排序</th>
+								<th class="m">品名</th>
+								<th class="s">价格</th>
+								<th class="s">毛利</th>
+							</tr>
+						</thead>
+						<tbody  class="tbody">
+							<tr class="tr-1">
+								<td>
+									1<input type="hidden" name="id" value="1" class="layui-input">
+								</td>
+								<td>
+									<input type="text" name="name" value="尚品麻辣100g麻辣味" class="layui-input">
+								</td>
+								<td>
+									<input type="text" name="price" value="8.6" class="layui-input">
+								</td>
+								<td>
+									<input type="text" name="price-sm" value="1.6" class="layui-input">
+								</td>
+							</tr> 
+							<tr class="tr-2">
+								 <td>
+									2<input type="hidden" name="id" value="2" class="layui-input">
+								</td>
+								<td>
+									<input type="text" name="name" value="尚品麻辣100g麻辣味" class="layui-input">
+								</td>
+								<td>
+									<input type="text" name="price" value="8.6" class="layui-input">
+								</td>
+								<td>
+									<input type="text" name="price-sm" value="1.6" class="layui-input">
+								</td>
+							</tr> 
+
+							<tr class="tr-3">
+								<td>
+									3<input type="hidden" name="id" value="3" class="layui-input">
+								</td>
+								<td>
+									<input type="text" name="name" value="尚品麻辣100g麻辣味" class="layui-input">
+								</td>
+								<td>
+									<input type="text" name="price" value="8.6" class="layui-input">
+								</td>
+								<td>
+									<input type="text" name="price-sm" value="1.6" class="layui-input">
+								</td>
+							</tr> 
+							<tr class="tr-4">
+								<td>
+									4<input type="hidden" name="id" value="4" class="layui-input">
+								</td>
+								<td>
+									<input type="text" name="name" value="尚品麻辣100g麻辣味" class="layui-input">
+								</td>
+								<td>
+									<input type="text" name="price" value="8.6" class="layui-input">
+								</td>
+								<td>
+									<input type="text" name="price-sm" value="1.6" class="layui-input">
+								</td>
+							</tr> 
+							<tr class="tr-5">
+								<td>
+									5<input type="hidden" name="id" value="5" class="layui-input">
+								</td>
+								<td>
+									<input type="text" name="name" value="尚品麻辣100g麻辣味3" class="layui-input">
+								</td>
+								<td>
+									<input type="text" name="price" value="8.6" class="layui-input">
+								</td>
+								<td>
+									<input type="text" name="price-sm" value="1.6" class="layui-input">
+								</td>
+							</tr> 
+						</tbody>
+					</table>  
+				</form>
+			</div>
+			<div class="layui-form-item">
+				<div class="layui-input-block">
+					<button class="layui-btn" id="yan_edit_btn" type="button">修改</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--主要内容 end-->
+	{include file="public/footer"/}
+	<script>
+		$(function() {
+			$('#yan_edit_btn').click(function() {
+			  	var size = $(".tbody tr").size();
+			  	var postData = Object();
+			  	for (var i=1; i <= size; i++) {
+			  		postData[i] = new Object();
+			  		for (var j=0; j < 4; j++) {
+			  			var s = $('.tbody .tr-'+i).find('.layui-input').eq(j).val();
+			  			postData[i][j] = s;
+			  		}
+			  	}
+			  	//alert(postData);
+			  	//return false;
+			    var url = '{:url("finance/price_edit")}';
+			   // console.log(postData);
+			    $.post(url, {"JSON":postData}, function(result) {
+		
+			    
+			    	for(var i=1;i<result.JSON.length;i++)
+			    	{
+			    		//alert(result.JSON[1][2])
+			    	}
+			      if(result.status == 1) {
+			        layer.msg('');
+			        setTimeout(function () {
+			          window.location.href = '';
+			        }, 1000);
+			      }
+			      if(result.status == 0) {
+			        layer.msg('');
+			      }
+			    }, 'JSON');
+			  });
+
+		});
+	</script>
+</div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<?php
+namespace app\index\controller;
+/*
+ * 订单
+ *
+ */
+class order extends  Common
+{
+    //订单记录
+    public function index()
+    {
+        $list =  db('order')->order("id desc")->paginate(15);
+        $this->assign("list",$list);
+        return view();
+    }
+    //样品记录
+    public function order_yp()
+    {
+        return view();
+    }
+    //订单统计
+    public function order_statis()
+    {
+        return view();
+    }
+    //订单编辑/增加/修改
+    public function order_edit()
+    {
+        switch(input("type")){
+            case "edit"://编辑
+                $edit = db("order")->where(["id"=>input("id")])->find();
+                break;
+            case "update"://更新
+                $save["dateb"] = date("Y-m-d",strtotime("+".input("post.after_day")." day",strtotime(order_name(input("id"))["datea"])));
+                $save["price"] = 0;
+                $save["number"] = 0;
+                foreach(json_decode(input("post.json"),true) as $k=>$v)
+                {
+                    $save["number"] = $save["number"]+$v[2];
+                    $save["price"] = $save["price"]+$v[5];
+                }
+                $status = db("order")->where(["id"=>input("id")])->update(array_merge(input("post."),$save)) ? 1 : 0;
+                echo json_encode(["status"=>$status]);die;
+                break;
+            case "add"://添加
+                $date = date("Y-m-d");
+                $save["order_num"] = date("Ymd").(db("order")->where(["datea"=>$date])->count()+1);
+                $save["datea"] = $date;
+                $save["dateb"] = date("Y-m-d",strtotime("+".input("post.after_day")." day"));
+                $save["time"] = time();
+                $save["price"] = 0;
+                $save["number"] = 0;
+                $save["admin_user"] = $this->admin["name"];
+                foreach(json_decode(input("post.json"),true) as $k=>$v)
+                {
+                    $save["number"] = $save["number"]+$v[2];
+                    $save["price"] = $save["price"]+$v[5];
+                }
+                $save["status"] = 1;
+               // print_r($save);die;
+                $status = db("order")->insert(array_merge(input("post."),$save)) ? 1 : 0;
+                echo json_encode(["status"=>$status]);die;
+                break;
+            case "price"://清算价格
+                $channel_arr = channel_name(input("post.cid"));
+                foreach(json_decode($channel_arr['price'],true) as $k=>$v)
+                {
+                    if($v[0] == input("post.fid"))
+                    {
+                       $price = $v[1];
+                       $price_result = input("post.times") && $price ? input("post.times")*$price : 0;
+
+                    }
+                }
+                echo json_encode(["price"=>isset($price) ? $price : 0,"price_result"=>isset($price_result) ? $price_result :0 ]);
+                die;
+                break;
+            default:
+                break;
+        }
+        $this->assign("edit",isset($edit) ? $edit : []);
+
+        return view();
+    }
+    //订单样品编辑/增加/修改
+    public function order_yp_edit()
+    {
+        return view();
+    }
+
+
+
+
+}
+
+
+
+?>

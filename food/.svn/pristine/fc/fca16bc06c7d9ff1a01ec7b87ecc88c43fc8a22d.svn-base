@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>号库操作</title>
+  <!--公共样式与插件-->
+  <script type="text/javascript" src="__PUBLIC__js/rem.js"></script>
+  <link rel="stylesheet" href="__PUBLIC__css/common.css">
+  <!--公共样式与插件 end-->
+  <link rel="stylesheet" href="__PUBLIC__css/base.css">
+
+</head>
+<body>
+	<div class="wrap">
+		{include file="index/nav"/}
+		<div class="inputWrap">
+			<div class="item-list">
+				<div class="item">
+					<h2 class="form-label">修改号库对接码及地区</h2>
+				</div>
+				<div class="m-box">
+					<div class="form-label">已有库</div>
+					<div class="input-inline form-cl">
+						<select name="num" class="quiz">
+							<?php foreach($select as $k=>$v){?>
+							<option value="{$v.num}" <?php echo $v['num'] == '4000' ? 'selected=""' : '';?>>{$v.num}</option>
+							<?php }?>
+						</select>
+					</div>
+				</div>
+
+
+					<div class="input-block">
+						<input type="text" name="docking_code" id="docking_code" value="" class="input" placeholder="对接码">
+					</div>
+
+					<div class="input-block">
+						<input type="text" name="region" id="region" value="" class="input" placeholder="地区">
+					</div>
+					<a href="javascript:" class="search-btn search-btn-xg" id="btn_xg">修改</a>
+					<div class="m-box">
+				<div class="item">
+					<h2 class="form-label">激活号库</h2>
+				</div>
+				<div class="item">
+					<div class="form-label">原主库</div>
+					<div class="input-block">
+						<input type="text" name="site_title" value="4000" class="input" readonly>
+					</div>
+
+				</div>
+				<div class="item">
+					<div class="form-label">现主库</div>
+					<div class="input-block">
+						<input type="number" name="site_title" value="" class="input" placeholder="" id="xk_jh">
+					</div>
+				</div>
+				<div class="item">
+					<a href="javascript:" class="search-btn" id="btn_jh">执行</a>
+				</div>
+			</div>
+			<div class="item-list">
+				<div class="item">
+					<h2 class="form-label">迁移号库</h2>
+				</div>
+				<div class="item">
+					<div class="form-label">原主库</div>
+					<div class="input-block">
+						<input type="text" name="site_title" value="4000" class="input" readonly>
+					</div>
+
+				</div>
+				<div class="item">
+					<div class="form-label">源库</div>
+					<div class="input-block">
+						<input type="number" name="site_title" value="" class="input" placeholder="" id="yk_qy">
+					</div>
+				</div>
+				<div class="item">
+					<div class="form-label">目标库</div>
+					<div class="input-block">
+						<input type="number" name="site_title" value="" class="input" placeholder="" id="mb_qy">
+					</div>
+				</div>
+				<div class="item">
+					<a href="javascript:" class="search-btn" id="btn_qy">执行</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script src="__PUBLIC__js/jquery.min.js"></script>
+	<script src="__PUBLIC__js/layer/layer.js"></script>
+	<script>
+		$(function () {
+		    var url = "{:url('index/hkcz')}";
+		    //异步查询号库对接码和地区
+            $(".quiz").change(function(){
+                var opt_val = $('.quiz option:selected').val();
+
+                $.post(url,{"num":opt_val,"select":1},function(e){
+                    if(e.status == 2)
+					{
+						$("#docking_code").val(e.data['docking_code']);
+                        $("#region").val(e.data['region']);
+					}
+				},"JSON");
+            });
+            //异步修改号库的对接码和地区
+			$("#btn_xg").on('click',function(){
+                var opt_val = $('.quiz option:selected').val();
+                var data = {
+                    "num":opt_val,
+					"docking_code":$("#docking_code").val(),
+                	"region":$("#region").val(),
+                };
+                $.post(url,data,function(e){
+                    if(e.status == 1)
+                    {
+                		layer.msg("修改成功！");
+                    }else{
+                        layer.msg("修改失败！");
+					}
+                },"JSON");
+			});
+			//激活号库
+			$('#btn_jh').on('click', function() {
+				var xk_jh = $('#xk_jh').val();
+				if (xk_jh == "") {
+					layer.msg('现主库不能为空');
+					return false;
+				}
+
+				var url = '{:url(\'index/hkcz\')}';
+				var data = {'jhhk':1,'num': xk_jh};
+				
+				$.post(url, data, function(result) {
+					if (result.status == 1) {
+						layer.msg('新增成功');
+                        window.location.reload();
+						window.localhost = url; //跳转链接
+					} else if (result.status == 0) {
+						layer.msg('新增失败');
+					} else if(result.status == 2){
+					    layer.msg('号库已被激活！')
+					}
+				},'JSON');
+			});
+
+			//迁移号库
+			$('#btn_qy').on('click', function() {
+				var yk_qy = $('#yk_qy').val();
+				var mb_qy = $('#mb_qy').val();
+				if (yk_qy == "") {
+					layer.msg('源库不能为空');
+					return false;
+				}
+				if (mb_qy == "") {
+					layer.msg('目标库不能为空');
+					return false;
+				}
+
+				var url = "{:url('index/hkcz')}";
+				var data = {'yk_qy': yk_qy, 'mb_qy': mb_qy,'qyhk':1};
+				
+				$.post(url, data, function(result) {
+					if (result.status == 1) {
+						layer.msg('迁移成功！');
+						window.localhost = url; //跳转链接
+					} else if (result.status == 0) {
+						layer.msg('迁移失败！');
+					}
+				},'JSON');
+			});
+		});
+	</script>
+</body>
+</html>

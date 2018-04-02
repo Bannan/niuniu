@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>应收账款</title>
+  <!--公共样式与插件-->
+  <link rel="stylesheet" href="__PUBLIC__js/layui/css/layui.css">
+  <link rel="stylesheet" href="__PUBLIC__css/common.css">
+  <!--公共样式与插件 end-->
+  <link rel="stylesheet" href="__PUBLIC__css/base.css">
+</head>
+<body>
+<div class="layui-layout layui-layout-admin">
+	{include file="public/head"/}
+	{include file="public/nav"/}
+	<!--主要内容-->
+	<div class="layui-body site-demo webWrap">
+		<!--tab标签-->
+		<div class="layui-main">
+			<blockquote class="layui-elem-quote">
+ 				<a class="layui-btn" href="javascript:;">应收账款</a>
+			</blockquote>
+			<div class="layui-tab-item layui-show layui-tab-item-cw">
+				<form class="layui-form form-container" method="post" id="yan_search_form">
+					<div class="layui-form-item">
+						<label class="layui-form-label">起始日期</label>
+						<div class="layui-input-block">
+							<input type="text" name="time1" value="" placeholder="请输入起始日期" class="layui-input" id="time1">
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label">截止日期</label>
+						<div class="layui-input-block">
+							<input type="text" name="time2" value="" placeholder="请输入截止日期" class="layui-input" id="time2">
+						</div>
+					</div>
+					<div class="layui-form-item layui-form-item-cw">
+						<div class="layui-input-cw">
+							<button class="layui-btn" id="yan_search_btn" type="button">搜索</button>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="layui-tab-item layui-show" id="yan_menu_list">
+				<table class="layui-table layui-table-w">
+					<thead>
+						<tr>
+							<th class="w">排序</th>
+							<th>订单号</th>
+							<th>订货人</th>
+							<th>袋数</th>
+							<th>金额</th>
+							<th>经办人</th>
+							<th>下单日期</th>
+							<th>回款日期</th>
+							<th>操作</th>
+						</tr>
+					</thead>
+					<tbody>
+					<?php foreach($data as $k=>$v){?>
+					<tr>
+						<td>{$k}</td>
+						<td>{$v.order_num}</td>
+						<td>{$v.order_user}</td>
+						<td>{$v.number}</td>
+						<td>{$v.price}</td>
+						<td>大奔</td>
+						<td>{$v.datea}</td>
+						<td>{$v.dateb}</td>
+					</tr>
+					<?php }?>vbn
+					</tbody>
+				</table>  
+				<!--分页-->
+				<div class="pageSize">
+					<div class="box">
+						<a href="javascript:;" class="page-prev" data-page="0">上一页</a>
+						<a href="javascript:;" data-page="1" class="active">1</a>
+						<a href="javascript:;" data-page="2">2</a>
+						<a href="javascript:;" data-page="3">3</a>
+						<a href="javascript:;" data-page="4">4</a>
+						<a href="javascript:;" class="page-next" data-page="2">下一页</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--主要内容 end-->
+	{include file="public/footer"/}
+	<script>
+		$(function() {
+			$('#yan_search_btn').click(function() {
+			    var data = $('#yan_search_form').serializeArray();
+			    postData = {};
+			    $(data).each(function(i) {
+			      postData[this.name] = this.value;
+			    });
+
+			    var url = '';
+			    console.log(postData);
+			    $.post(url, postData, function(result) {
+			      if(result.status == 1) {
+			        layer.msg('');
+			        setTimeout(function () {
+			          window.location.href = '';
+			        }, 1000);
+			      }
+			      if(result.status == 0) {
+			        layer.msg('');
+			      }
+			    }, 'JSON');
+			  });
+		});
+	</script>
+</div>
+</body>
+</html>

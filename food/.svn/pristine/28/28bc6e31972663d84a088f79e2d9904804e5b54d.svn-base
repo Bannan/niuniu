@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>留存</title>
+  <!--公共样式与插件-->
+  <script type="text/javascript" src="__PUBLIC__js/rem.js"></script>
+  <link rel="stylesheet" href="__PUBLIC__css/common.css">
+  <!--公共样式与插件 end-->
+  <link rel="stylesheet" href="__PUBLIC__css/base.css">
+</head>
+<body>
+	<div class="wrap">
+		{include file="index/nav"/}
+		<div class="main-details">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>库号</th>
+						<th>对接码</th>
+						<th>地区</th>
+						<th>注册数</th>
+						<th>1日</th>
+						<th>3日</th>
+						<th>7日</th>
+						<th>15日</th>
+						<th>30日</th>
+						<th>注册日期</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>4000</td>
+						<td>491657941249</td>
+						<td>成都</td>
+						<td>150</td>
+						<td>100%</td>
+						<td>80%</td>
+						<td>70%</td>
+						<td>60%</td>
+						<td>50%</td>
+						<td>2017年12月14日</td>
+					</tr> 
+				</tbody>
+	          </table>  
+	    </div>
+	    <!--分页-->
+	    <div class="pageSize">
+			<div class="box">
+				<a href="javascript:;" class="page-prev" data-page="0">上一页</a>
+				<a href="javascript:;" data-page="1" class="active">1</a>
+				<a href="javascript:;" data-page="2">2</a>
+				<a href="javascript:;" data-page="3">3</a>
+				<a href="javascript:;" data-page="4">4</a>
+				<a href="javascript:;" class="page-next" data-page="2">下一页</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+/**
+  项目common公共js
+**/    
+layui.define(['jquery','laydate','element','form','layedit'], function(exports){
+  var element = layui.element; 
+  var $ = layui.jquery;
+  var form = layui.form;
+  var layedit = layui.layedit;
+  var laydate = layui.laydate;
+  //创建一个编辑器
+  var editIndex = layedit.build('LAY_demo_editor');
+
+  //常规用法时间选择器
+  laydate.render({
+    elem: '#time1'
+  });
+  laydate.render({
+    elem: '#time2'
+  });
+  laydate.render({
+    elem: '#time3'
+  });
+  laydate.render({
+    elem: '#time4'
+  });
+  //监听网站侧边栏导航点击
+  element.on('nav(demo)', function(elem){
+    //console.log(elem)
+    layer.msg(elem.text());
+  }); 
+
+  $('#layui_nav .layui-this').parent().parent().addClass('layui-nav-itemed');
+
+  //注册common到layui
+  exports('common', {}); 
+});    
+
+

@@ -1,0 +1,3570 @@
+[ 2017-12-14T11:14:27+08:00 ] ::1 ::1 GET /wx-lib/public/
+[ log ] localhost/wx-lib/public/ [运行时间：0.225221s][吞吐率：4.44req/s] [内存消耗：1,341.84kb] [文件加载：38]
+[ info ] [ LANG ] E:\WWW\wx-lib\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\WWW\wx-lib\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-12-14T11:15:58+08:00 ] ::1 ::1 GET /wx-lib/
+[ log ] localhost/wx-lib/ [运行时间：0.173635s][吞吐率：5.76req/s] [内存消耗：1,342.06kb] [文件加载：38]
+[ info ] [ LANG ] E:\WWW\wx-lib\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\WWW\wx-lib\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-12-14T11:32:07+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/
+[ log ] localhost/pro_wx_smartadmin/ [运行时间：0.117147s][吞吐率：8.54req/s] [内存消耗：1,347.77kb] [文件加载：38]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-12-14T11:34:41+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/
+[ log ] localhost/pro_wx_smartadmin/ [运行时间：0.242752s][吞吐率：4.12req/s] [内存消耗：2,042.99kb] [文件加载：45]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013158s ] mysql:dbname=wx_lib;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.031520s ]
+[ sql ] [ SQL ] SELECT * FROM `user` [ RunTime:0.000947s ]
+
+---------------------------------------------------------------
+[ 2017-12-14T11:35:26+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/
+[ log ] localhost/pro_wx_smartadmin/ [运行时间：0.154671s][吞吐率：6.47req/s] [内存消耗：2,043.21kb] [文件加载：45]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002249s ] mysql:dbname=wx_lib;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.023397s ]
+[ sql ] [ SQL ] SELECT * FROM `user` [ RunTime:0.000867s ]
+
+---------------------------------------------------------------
+[ 2017-12-14T11:45:39+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/
+[ log ] localhost/pro_wx_smartadmin/ [运行时间：0.176158s][吞吐率：5.68req/s] [内存消耗：2,043.21kb] [文件加载：45]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003326s ] mysql:dbname=wx_lib;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.023475s ]
+[ sql ] [ SQL ] SELECT * FROM `user` [ RunTime:0.000870s ]
+
+---------------------------------------------------------------
+[ 2017-12-14T11:45:41+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/
+[ log ] localhost/pro_wx_smartadmin/ [运行时间：0.158958s][吞吐率：6.29req/s] [内存消耗：2,043.21kb] [文件加载：45]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002856s ] mysql:dbname=wx_lib;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.022218s ]
+[ sql ] [ SQL ] SELECT * FROM `user` [ RunTime:0.001017s ]
+
+---------------------------------------------------------------
+[ 2017-12-14T11:45:42+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/
+[ log ] localhost/pro_wx_smartadmin/ [运行时间：0.160234s][吞吐率：6.24req/s] [内存消耗：2,043.21kb] [文件加载：45]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002837s ] mysql:dbname=wx_lib;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.024668s ]
+[ sql ] [ SQL ] SELECT * FROM `user` [ RunTime:0.001476s ]
+
+---------------------------------------------------------------
+[ 2017-12-14T11:45:42+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/
+[ log ] localhost/pro_wx_smartadmin/ [运行时间：0.155665s][吞吐率：6.42req/s] [内存消耗：2,043.21kb] [文件加载：45]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002387s ] mysql:dbname=wx_lib;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.022572s ]
+[ sql ] [ SQL ] SELECT * FROM `user` [ RunTime:0.001708s ]
+
+---------------------------------------------------------------
+[ 2017-12-14T11:45:42+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/
+[ log ] localhost/pro_wx_smartadmin/ [运行时间：0.159174s][吞吐率：6.28req/s] [内存消耗：2,043.21kb] [文件加载：45]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012343s ] mysql:dbname=wx_lib;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.022372s ]
+[ sql ] [ SQL ] SELECT * FROM `user` [ RunTime:0.000875s ]
+
+---------------------------------------------------------------
+[ 2017-12-14T11:45:43+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/
+[ log ] localhost/pro_wx_smartadmin/ [运行时间：0.159774s][吞吐率：6.26req/s] [内存消耗：2,043.21kb] [文件加载：45]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002168s ] mysql:dbname=wx_lib;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.023110s ]
+[ sql ] [ SQL ] SELECT * FROM `user` [ RunTime:0.001405s ]
+
+---------------------------------------------------------------
+[ 2017-12-14T11:45:44+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/
+[ log ] localhost/pro_wx_smartadmin/ [运行时间：0.162426s][吞吐率：6.16req/s] [内存消耗：2,043.21kb] [文件加载：45]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002497s ] mysql:dbname=wx_lib;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.024354s ]
+[ sql ] [ SQL ] SELECT * FROM `user` [ RunTime:0.001314s ]
+
+---------------------------------------------------------------
+[ 2017-12-14T14:02:16+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/
+[ log ] localhost/pro_wx_smartadmin/ [运行时间：2.692145s][吞吐率：0.37req/s] [内存消耗：1,347.09kb] [文件加载：38]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-12-14T14:02:21+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/
+[ log ] localhost/pro_wx_smartadmin/ [运行时间：0.713422s][吞吐率：1.40req/s] [内存消耗：1,347.25kb] [文件加载：38]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-12-14T15:11:52+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/
+[ log ] localhost/pro_wx_smartadmin/ [运行时间：0.635427s][吞吐率：1.57req/s] [内存消耗：1,629.35kb] [文件加载：46]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]模板文件不存在:E:\WWW\pro_wx_smartadmin/application/index\view\index\index.html[E:\WWW\pro_wx_smartadmin\thinkphp\library\think\view\driver\Think.php:80]
+
+---------------------------------------------------------------
+[ 2017-12-14T15:13:15+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/
+[ log ] localhost/pro_wx_smartadmin/ [运行时间：0.138542s][吞吐率：7.22req/s] [内存消耗：1,355.64kb] [文件加载：38]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-12-14T15:13:23+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index
+[ log ] localhost/pro_wx_smartadmin/index.php/index [运行时间：0.095324s][吞吐率：10.49req/s] [内存消耗：1,355.59kb] [文件加载：38]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-12-14T15:13:34+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/hkxq
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/hkxq [运行时间：0.094760s][吞吐率：10.55req/s] [内存消耗：1,276.57kb] [文件加载：36]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'hkxq',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->hkxq[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-12-14T15:13:41+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/hkxq
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/hkxq [运行时间：0.848487s][吞吐率：1.18req/s] [内存消耗：2,093.27kb] [文件加载：49]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'hkxq',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->hkxq[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.059544s ] mysql:dbname=wx_lib;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ku_num` [ RunTime:0.039053s ]
+[ sql ] [ SQL ] SELECT * FROM `ku_num` [ RunTime:0.001338s ]
+[ error ] [2]file_get_contents(http://api.dindingame.com:5050/wx/1/stock_aged_wx_count?uid=4000&amp;jjxy610&amp;min=1&amp;max=8): failed to open stream: HTTP request failed! HTTP/1.1 500 Internal Server Error
+[E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php:29]
+
+---------------------------------------------------------------
+[ 2017-12-14T15:14:37+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/hkxq
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/hkxq [运行时间：1.226653s][吞吐率：0.82req/s] [内存消耗：2,323.58kb] [文件加载：53]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'hkxq',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->hkxq[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012423s ] mysql:dbname=wx_lib;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ku_num` [ RunTime:0.021759s ]
+[ sql ] [ SQL ] SELECT * FROM `ku_num` [ RunTime:0.001355s ]
+[ error ] [0]模板文件不存在:E:\WWW\pro_wx_smartadmin/application/index\view\index\hkxq.html[E:\WWW\pro_wx_smartadmin\thinkphp\library\think\view\driver\Think.php:80]
+
+---------------------------------------------------------------
+[ 2017-12-14T15:15:03+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/hkxq
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/hkxq [运行时间：1.138673s][吞吐率：0.88req/s] [内存消耗：2,049.95kb] [文件加载：45]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'hkxq',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->hkxq[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002336s ] mysql:dbname=wx_lib;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ku_num` [ RunTime:0.021682s ]
+[ sql ] [ SQL ] SELECT * FROM `ku_num` [ RunTime:0.000834s ]
+
+---------------------------------------------------------------
+[ 2017-12-14T15:15:06+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/hkxq
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/hkxq [运行时间：1.142985s][吞吐率：0.87req/s] [内存消耗：2,049.95kb] [文件加载：45]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'hkxq',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->hkxq[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012314s ] mysql:dbname=wx_lib;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ku_num` [ RunTime:0.022997s ]
+[ sql ] [ SQL ] SELECT * FROM `ku_num` [ RunTime:0.000832s ]
+
+---------------------------------------------------------------
+[ 2017-12-14T15:15:10+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/hkxq
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/hkxq [运行时间：1.207974s][吞吐率：0.83req/s] [内存消耗：2,049.95kb] [文件加载：45]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'hkxq',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->hkxq[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002352s ] mysql:dbname=wx_lib;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ku_num` [ RunTime:0.025760s ]
+[ sql ] [ SQL ] SELECT * FROM `ku_num` [ RunTime:0.001241s ]
+
+---------------------------------------------------------------
+[ 2017-12-14T15:15:13+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/hkxq
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/hkxq [运行时间：1.179203s][吞吐率：0.85req/s] [内存消耗：2,049.95kb] [文件加载：45]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'hkxq',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->hkxq[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003195s ] mysql:dbname=wx_lib;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ku_num` [ RunTime:0.021354s ]
+[ sql ] [ SQL ] SELECT * FROM `ku_num` [ RunTime:0.001070s ]
+
+---------------------------------------------------------------
+[ 2017-12-14T15:15:17+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/hkxq
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/hkxq [运行时间：1.118190s][吞吐率：0.89req/s] [内存消耗：2,049.95kb] [文件加载：45]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'hkxq',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->hkxq[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002929s ] mysql:dbname=wx_lib;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ku_num` [ RunTime:0.023376s ]
+[ sql ] [ SQL ] SELECT * FROM `ku_num` [ RunTime:0.001046s ]
+
+---------------------------------------------------------------
+[ 2017-12-14T15:15:20+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/hkxq
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/hkxq [运行时间：1.124529s][吞吐率：0.89req/s] [内存消耗：2,049.95kb] [文件加载：45]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'hkxq',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->hkxq[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003247s ] mysql:dbname=wx_lib;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ku_num` [ RunTime:0.022787s ]
+[ sql ] [ SQL ] SELECT * FROM `ku_num` [ RunTime:0.001208s ]
+
+---------------------------------------------------------------
+[ 2017-12-14T15:16:32+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/hkxq
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/hkxq [运行时间：4.626661s][吞吐率：0.22req/s] [内存消耗：2,050.26kb] [文件加载：45]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'hkxq',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->hkxq[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003237s ] mysql:dbname=wx_lib;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ku_num` [ RunTime:0.025734s ]
+[ sql ] [ SQL ] SELECT * FROM `ku_num` [ RunTime:0.001017s ]
+
+---------------------------------------------------------------
+[ 2017-12-14T15:18:42+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/hkxq
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/hkxq [运行时间：5.771933s][吞吐率：0.17req/s] [内存消耗：2,050.26kb] [文件加载：45]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'hkxq',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->hkxq[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003935s ] mysql:dbname=wx_lib;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ku_num` [ RunTime:0.024820s ]
+[ sql ] [ SQL ] SELECT * FROM `ku_num` [ RunTime:0.001051s ]
+
+---------------------------------------------------------------
+[ 2017-12-14T15:24:10+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/dd
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/dd [运行时间：0.295994s][吞吐率：3.38req/s] [内存消耗：1,355.92kb] [文件加载：38]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'dd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->dd[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-12-14T15:31:14+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/dd
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/dd [运行时间：1.497689s][吞吐率：0.67req/s] [内存消耗：1,356.55kb] [文件加载：38]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'dd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->dd[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-12-14T15:32:38+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/dd
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/dd [运行时间：0.351509s][吞吐率：2.84req/s] [内存消耗：1,399.37kb] [文件加载：42]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'dd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->dd[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]explode(): Empty delimiter[E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php:49]
+
+---------------------------------------------------------------
+[ 2017-12-14T15:33:43+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/index
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/index [运行时间：0.101740s][吞吐率：9.83req/s] [内存消耗：1,356.19kb] [文件加载：38]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-12-14T15:33:44+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/index
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/index [运行时间：0.089754s][吞吐率：11.14req/s] [内存消耗：1,356.46kb] [文件加载：38]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-12-14T15:33:45+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/index
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/index [运行时间：0.093133s][吞吐率：10.74req/s] [内存消耗：1,356.46kb] [文件加载：38]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-12-14T15:33:46+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/index
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/index [运行时间：0.091822s][吞吐率：10.89req/s] [内存消耗：1,356.46kb] [文件加载：38]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-12-14T15:33:46+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/index
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/index [运行时间：0.093493s][吞吐率：10.70req/s] [内存消耗：1,356.46kb] [文件加载：38]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-12-14T15:33:47+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/index
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/index [运行时间：0.088906s][吞吐率：11.25req/s] [内存消耗：1,356.46kb] [文件加载：38]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-12-14T15:33:47+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/index
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/index [运行时间：0.095564s][吞吐率：10.46req/s] [内存消耗：1,356.46kb] [文件加载：38]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-12-14T15:33:47+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/index
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/index [运行时间：0.085586s][吞吐率：11.68req/s] [内存消耗：1,356.46kb] [文件加载：38]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-12-14T15:33:48+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/index
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/index [运行时间：0.090757s][吞吐率：11.02req/s] [内存消耗：1,356.46kb] [文件加载：38]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-12-14T15:33:48+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/index
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/index [运行时间：0.095229s][吞吐率：10.50req/s] [内存消耗：1,356.46kb] [文件加载：38]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-12-14T15:33:48+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/index
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/index [运行时间：0.086155s][吞吐率：11.61req/s] [内存消耗：1,356.46kb] [文件加载：38]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-12-14T15:33:48+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/index
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/index [运行时间：0.088382s][吞吐率：11.31req/s] [内存消耗：1,356.46kb] [文件加载：38]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-12-14T15:35:14+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/hkxq
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/hkxq [运行时间：5.014561s][吞吐率：0.20req/s] [内存消耗：2,050.88kb] [文件加载：45]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'hkxq',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->hkxq[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.256587s ] mysql:dbname=wx_lib;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ku_num` [ RunTime:0.162435s ]
+[ sql ] [ SQL ] SELECT * FROM `ku_num` [ RunTime:0.001144s ]
+
+---------------------------------------------------------------
+[ 2017-12-14T15:37:05+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/hkxq
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/hkxq [运行时间：4.662279s][吞吐率：0.21req/s] [内存消耗：2,051.07kb] [文件加载：45]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'hkxq',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->hkxq[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002463s ] mysql:dbname=wx_lib;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ku_num` [ RunTime:0.055794s ]
+[ sql ] [ SQL ] SELECT * FROM `ku_num` [ RunTime:0.003276s ]
+
+---------------------------------------------------------------
+[ 2017-12-14T15:37:13+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/hkxq
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/hkxq [运行时间：4.762460s][吞吐率：0.21req/s] [内存消耗：2,051.07kb] [文件加载：45]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'hkxq',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->hkxq[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002873s ] mysql:dbname=wx_lib;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ku_num` [ RunTime:0.043999s ]
+[ sql ] [ SQL ] SELECT * FROM `ku_num` [ RunTime:0.001177s ]
+
+---------------------------------------------------------------
+[ 2017-12-14T15:40:38+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/hkxq
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/hkxq [运行时间：2.876993s][吞吐率：0.35req/s] [内存消耗：2,054.19kb] [文件加载：45]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'hkxq',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->hkxq[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002355s ] mysql:dbname=wx_lib;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ku_num` [ RunTime:0.028824s ]
+[ sql ] [ SQL ] SELECT * FROM `ku_num` [ RunTime:0.000889s ]
+
+---------------------------------------------------------------
+[ 2017-12-14T15:42:15+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/hkxq
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/hkxq [运行时间：2.821810s][吞吐率：0.35req/s] [内存消耗：2,053.88kb] [文件加载：45]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'hkxq',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->hkxq[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002505s ] mysql:dbname=wx_lib;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ku_num` [ RunTime:0.034896s ]
+[ sql ] [ SQL ] SELECT * FROM `ku_num` [ RunTime:0.001386s ]
+
+---------------------------------------------------------------
+[ 2017-12-14T15:42:46+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/hkxq
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/hkxq [运行时间：3.007627s][吞吐率：0.33req/s] [内存消耗：2,052.53kb] [文件加载：45]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'hkxq',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->hkxq[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002605s ] mysql:dbname=wx_lib;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ku_num` [ RunTime:0.022120s ]
+[ sql ] [ SQL ] SELECT * FROM `ku_num` [ RunTime:0.001008s ]
+
+---------------------------------------------------------------
+[ 2017-12-14T15:43:20+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/hkxq
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/hkxq [运行时间：2.929452s][吞吐率：0.34req/s] [内存消耗：2,052.53kb] [文件加载：45]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'hkxq',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->hkxq[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002677s ] mysql:dbname=wx_lib;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ku_num` [ RunTime:0.047720s ]
+[ sql ] [ SQL ] SELECT * FROM `ku_num` [ RunTime:0.000975s ]
+
+---------------------------------------------------------------
+[ 2017-12-14T15:43:37+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/hkxq
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/hkxq [运行时间：4.567701s][吞吐率：0.22req/s] [内存消耗：2,051.07kb] [文件加载：45]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'hkxq',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->hkxq[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003350s ] mysql:dbname=wx_lib;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ku_num` [ RunTime:0.024061s ]
+[ sql ] [ SQL ] SELECT * FROM `ku_num` [ RunTime:0.001143s ]
+
+---------------------------------------------------------------
+[ 2017-12-14T15:44:03+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/hkxq
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/hkxq [运行时间：4.867228s][吞吐率：0.21req/s] [内存消耗：2,051.07kb] [文件加载：45]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'hkxq',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->hkxq[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011201s ] mysql:dbname=wx_lib;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ku_num` [ RunTime:0.041642s ]
+[ sql ] [ SQL ] SELECT * FROM `ku_num` [ RunTime:0.001139s ]
+
+---------------------------------------------------------------
+[ 2017-12-14T15:44:03+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/hkxq
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/hkxq [运行时间：4.669876s][吞吐率：0.21req/s] [内存消耗：2,051.07kb] [文件加载：45]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'hkxq',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->hkxq[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.036151s ] mysql:dbname=wx_lib;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ku_num` [ RunTime:0.023754s ]
+[ sql ] [ SQL ] SELECT * FROM `ku_num` [ RunTime:0.001368s ]
+
+---------------------------------------------------------------
+[ 2017-12-14T15:44:05+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/hkxq
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/hkxq [运行时间：4.567931s][吞吐率：0.22req/s] [内存消耗：2,051.17kb] [文件加载：45]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'hkxq',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->hkxq[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011677s ] mysql:dbname=wx_lib;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ku_num` [ RunTime:0.024690s ]
+[ sql ] [ SQL ] SELECT * FROM `ku_num` [ RunTime:0.001522s ]
+
+---------------------------------------------------------------
+[ 2017-12-14T15:44:11+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/hkxq
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/hkxq [运行时间：4.633703s][吞吐率：0.22req/s] [内存消耗：2,051.07kb] [文件加载：45]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'hkxq',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->hkxq[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002370s ] mysql:dbname=wx_lib;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ku_num` [ RunTime:0.023015s ]
+[ sql ] [ SQL ] SELECT * FROM `ku_num` [ RunTime:0.001164s ]
+
+---------------------------------------------------------------
+[ 2017-12-14T15:44:18+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/hkxq
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/hkxq [运行时间：4.637446s][吞吐率：0.22req/s] [内存消耗：2,051.07kb] [文件加载：45]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'hkxq',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->hkxq[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002578s ] mysql:dbname=wx_lib;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ku_num` [ RunTime:0.023996s ]
+[ sql ] [ SQL ] SELECT * FROM `ku_num` [ RunTime:0.001202s ]
+
+---------------------------------------------------------------
+[ 2017-12-14T15:44:30+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/hkxq
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/hkxq [运行时间：4.619811s][吞吐率：0.22req/s] [内存消耗：2,051.17kb] [文件加载：45]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'hkxq',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->hkxq[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002578s ] mysql:dbname=wx_lib;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ku_num` [ RunTime:0.022664s ]
+[ sql ] [ SQL ] SELECT * FROM `ku_num` [ RunTime:0.001162s ]
+
+---------------------------------------------------------------
+[ 2017-12-14T15:44:38+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/hkxq
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/hkxq [运行时间：4.605804s][吞吐率：0.22req/s] [内存消耗：2,051.07kb] [文件加载：45]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'hkxq',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->hkxq[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002766s ] mysql:dbname=wx_lib;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ku_num` [ RunTime:0.023358s ]
+[ sql ] [ SQL ] SELECT * FROM `ku_num` [ RunTime:0.001367s ]
+
+---------------------------------------------------------------
+[ 2017-12-14T15:45:16+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/hkxq
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/hkxq [运行时间：4.576983s][吞吐率：0.22req/s] [内存消耗：2,051.07kb] [文件加载：45]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'hkxq',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->hkxq[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003052s ] mysql:dbname=wx_lib;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ku_num` [ RunTime:0.078152s ]
+[ sql ] [ SQL ] SELECT * FROM `ku_num` [ RunTime:0.001086s ]
+
+---------------------------------------------------------------
+[ 2017-12-14T15:49:56+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/hkxq
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/hkxq [运行时间：4.726393s][吞吐率：0.21req/s] [内存消耗：2,051.07kb] [文件加载：45]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'hkxq',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->hkxq[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002975s ] mysql:dbname=wx_lib;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ku_num` [ RunTime:0.022513s ]
+[ sql ] [ SQL ] SELECT * FROM `ku_num` [ RunTime:0.001161s ]
+
+---------------------------------------------------------------
+[ 2017-12-14T15:53:51+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/dd
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/dd [运行时间：0.292231s][吞吐率：3.42req/s] [内存消耗：1,356.08kb] [文件加载：38]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'dd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->dd[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-12-14T15:54:21+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/dd
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/dd [运行时间：0.369151s][吞吐率：2.71req/s] [内存消耗：1,356.77kb] [文件加载：38]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'dd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->dd[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-12-14T15:57:10+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/dd
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/dd [运行时间：0.274011s][吞吐率：3.65req/s] [内存消耗：1,356.77kb] [文件加载：38]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'dd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->dd[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-12-14T15:57:12+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/dd
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/dd [运行时间：0.248073s][吞吐率：4.03req/s] [内存消耗：1,356.77kb] [文件加载：38]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'dd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->dd[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-12-14T15:57:38+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/dd
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/dd [运行时间：0.260801s][吞吐率：3.83req/s] [内存消耗：1,356.77kb] [文件加载：38]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'dd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->dd[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-12-14T15:57:41+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/dd
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/dd [运行时间：0.350118s][吞吐率：2.86req/s] [内存消耗：1,356.77kb] [文件加载：38]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'dd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->dd[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-12-14T15:57:46+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/dd
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/dd [运行时间：0.246572s][吞吐率：4.06req/s] [内存消耗：1,356.77kb] [文件加载：38]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'dd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->dd[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-12-14T15:57:53+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/dd
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/dd [运行时间：0.276243s][吞吐率：3.62req/s] [内存消耗：1,356.77kb] [文件加载：38]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'dd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->dd[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-12-14T15:58:09+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/dd
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/dd [运行时间：0.274127s][吞吐率：3.65req/s] [内存消耗：1,356.77kb] [文件加载：38]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'dd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->dd[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-12-14T15:58:11+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/dd
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/dd [运行时间：0.277879s][吞吐率：3.60req/s] [内存消耗：1,356.77kb] [文件加载：38]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'dd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->dd[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-12-14T15:58:17+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/dd
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/dd [运行时间：0.260217s][吞吐率：3.84req/s] [内存消耗：1,356.77kb] [文件加载：38]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'dd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->dd[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-12-14T16:00:03+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/dd
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/dd [运行时间：0.274807s][吞吐率：3.64req/s] [内存消耗：1,356.77kb] [文件加载：38]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'dd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->dd[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-12-14T16:00:41+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/dd
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/dd [运行时间：0.282976s][吞吐率：3.53req/s] [内存消耗：1,356.77kb] [文件加载：38]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'dd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->dd[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-12-14T16:01:08+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/dd
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/dd [运行时间：0.237085s][吞吐率：4.22req/s] [内存消耗：1,356.78kb] [文件加载：38]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'dd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->dd[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-12-14T16:01:59+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/dd
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/dd [运行时间：0.282143s][吞吐率：3.54req/s] [内存消耗：1,399.65kb] [文件加载：42]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'dd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->dd[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]explode(): Empty delimiter[E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php:36]
+
+---------------------------------------------------------------
+[ 2017-12-14T16:02:12+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/dd
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/dd [运行时间：0.292334s][吞吐率：3.42req/s] [内存消耗：1,356.77kb] [文件加载：38]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'dd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->dd[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-12-14T16:21:16+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/hkgl
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/hkgl [运行时间：0.140789s][吞吐率：7.10req/s] [内存消耗：1,402.16kb] [文件加载：42]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'hkgl',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->hkgl[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Undefined property: app\index\controller\Index::$ku_list[E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php:20]
+
+---------------------------------------------------------------
+[ 2017-12-14T16:21:29+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/hkgl
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/hkgl [运行时间：4.697482s][吞吐率：0.21req/s] [内存消耗：2,054.19kb] [文件加载：45]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'hkgl',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->hkgl[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003484s ] mysql:dbname=wx_lib;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ku_num` [ RunTime:0.028523s ]
+[ sql ] [ SQL ] SELECT * FROM `ku_num` [ RunTime:0.001130s ]
+
+---------------------------------------------------------------
+[ 2017-12-14T16:22:01+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/hkgl
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/hkgl [运行时间：4.606266s][吞吐率：0.22req/s] [内存消耗：2,053.79kb] [文件加载：45]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'hkgl',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->hkgl[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002771s ] mysql:dbname=wx_lib;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ku_num` [ RunTime:0.023776s ]
+[ sql ] [ SQL ] SELECT * FROM `ku_num` [ RunTime:0.001093s ]
+
+---------------------------------------------------------------
+[ 2017-12-14T16:35:43+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/zc
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/zc [运行时间：0.395622s][吞吐率：2.53req/s] [内存消耗：2,214.07kb] [文件加载：52]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'zc',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->zc[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003229s ] mysql:dbname=wx_lib;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `register` [ RunTime:0.025152s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `register` LIMIT 1 [ RunTime:0.007819s ]
+[ sql ] [ SQL ] SELECT * FROM `register` LIMIT 0,15 [ RunTime:0.001217s ]
+[ error ] [1]Call to undefined method app\index\controller\Index::assign()[E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php:43]
+
+---------------------------------------------------------------
+[ 2017-12-14T16:36:12+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/index.php/index/index/zc
+[ log ] localhost/pro_wx_smartadmin/index.php/index/index/zc [运行时间：0.120377s][吞吐率：8.31req/s] [内存消耗：1,408.66kb] [文件加载：42]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'zc',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [1]Class 'Think\Controller' not found[E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php:8]
+
+---------------------------------------------------------------
+[ 2017-12-14T16:36:50+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/public/index.php/index/index/zc
+[ log ] localhost/pro_wx_smartadmin/public/index.php/index/index/zc [运行时间：0.099310s][吞吐率：10.07req/s] [内存消耗：1,408.43kb] [文件加载：42]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'zc',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [1]Class 'Think\Controller' not found[E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php:8]
+
+---------------------------------------------------------------
+[ 2017-12-14T16:37:09+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/public/index.php/index/index/zc
+[ log ] localhost/pro_wx_smartadmin/public/index.php/index/index/zc [运行时间：0.107230s][吞吐率：9.33req/s] [内存消耗：1,408.63kb] [文件加载：42]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'zc',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [1]Class 'Think\controller' not found[E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php:8]
+
+---------------------------------------------------------------
+[ 2017-12-14T16:37:14+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/public/index.php/index/index/zc
+[ log ] localhost/pro_wx_smartadmin/public/index.php/index/index/zc [运行时间：0.104427s][吞吐率：9.58req/s] [内存消耗：1,408.63kb] [文件加载：42]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'zc',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [1]Class 'Think\Controller' not found[E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php:8]
+
+---------------------------------------------------------------
+[ 2017-12-14T16:38:08+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/public/index.php/index/index/zc
+[ log ] localhost/pro_wx_smartadmin/public/index.php/index/index/zc [运行时间：0.120374s][吞吐率：8.31req/s] [内存消耗：1,408.65kb] [文件加载：42]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'zc',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [1]Class 'Think\Controller' not found[E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php:7]
+
+---------------------------------------------------------------
+[ 2017-12-14T16:38:10+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/public/index.php/index/index/zc
+[ log ] localhost/pro_wx_smartadmin/public/index.php/index/index/zc [运行时间：0.119133s][吞吐率：8.39req/s] [内存消耗：1,408.65kb] [文件加载：42]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'zc',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [1]Class 'Think\Controller' not found[E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php:7]
+
+---------------------------------------------------------------
+[ 2017-12-14T16:38:11+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/public/index.php/index/index/zc
+[ log ] localhost/pro_wx_smartadmin/public/index.php/index/index/zc [运行时间：0.143987s][吞吐率：6.95req/s] [内存消耗：1,408.65kb] [文件加载：42]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'zc',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [1]Class 'Think\Controller' not found[E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php:7]
+
+---------------------------------------------------------------
+[ 2017-12-14T16:38:31+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/public/index.php/index/index/zc
+[ log ] localhost/pro_wx_smartadmin/public/index.php/index/index/zc [运行时间：0.337151s][吞吐率：2.97req/s] [内存消耗：2,442.87kb] [文件加载：54]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'zc',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\index->zc[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002794s ] mysql:dbname=wx_lib;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `register` [ RunTime:0.023910s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `register` LIMIT 1 [ RunTime:0.000805s ]
+[ sql ] [ SQL ] SELECT * FROM `register` LIMIT 0,15 [ RunTime:0.001350s ]
+
+---------------------------------------------------------------
+[ 2017-12-14T16:39:27+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/public/index.php/index/index/zc
+[ log ] localhost/pro_wx_smartadmin/public/index.php/index/index/zc [运行时间：0.225746s][吞吐率：4.43req/s] [内存消耗：2,445.36kb] [文件加载：54]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'zc',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\index->zc[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002585s ] mysql:dbname=wx_lib;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `register` [ RunTime:0.023249s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `register` LIMIT 1 [ RunTime:0.001152s ]
+[ sql ] [ SQL ] SELECT * FROM `register` LIMIT 0,1 [ RunTime:0.001356s ]
+
+---------------------------------------------------------------
+[ 2017-12-14T16:39:42+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/public/index.php/index/index/zc?page=2
+[ log ] localhost/pro_wx_smartadmin/public/index.php/index/index/zc?page=2 [运行时间：0.239353s][吞吐率：4.18req/s] [内存消耗：2,445.88kb] [文件加载：54]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'zc',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/pro_wx_smartadmin/public/index.php/index/index/zc',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ RUN ] app\index\controller\index->zc[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002513s ] mysql:dbname=wx_lib;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `register` [ RunTime:0.073426s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `register` LIMIT 1 [ RunTime:0.000863s ]
+[ sql ] [ SQL ] SELECT * FROM `register` LIMIT 1,1 [ RunTime:0.001424s ]
+
+---------------------------------------------------------------
+[ 2017-12-14T16:39:43+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/public/index.php/index/index/zc?page=3
+[ log ] localhost/pro_wx_smartadmin/public/index.php/index/index/zc?page=3 [运行时间：0.182779s][吞吐率：5.47req/s] [内存消耗：2,445.90kb] [文件加载：54]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'zc',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/pro_wx_smartadmin/public/index.php/index/index/zc?page=2',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+  'page' => '3',
+)
+[ info ] [ RUN ] app\index\controller\index->zc[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002253s ] mysql:dbname=wx_lib;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `register` [ RunTime:0.022704s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `register` LIMIT 1 [ RunTime:0.000925s ]
+[ sql ] [ SQL ] SELECT * FROM `register` LIMIT 2,1 [ RunTime:0.001752s ]
+
+---------------------------------------------------------------
+[ 2017-12-14T16:39:45+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/public/index.php/index/index/zc?page=1
+[ log ] localhost/pro_wx_smartadmin/public/index.php/index/index/zc?page=1 [运行时间：0.188020s][吞吐率：5.32req/s] [内存消耗：2,445.90kb] [文件加载：54]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'zc',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/pro_wx_smartadmin/public/index.php/index/index/zc?page=3',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+)
+[ info ] [ RUN ] app\index\controller\index->zc[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003006s ] mysql:dbname=wx_lib;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `register` [ RunTime:0.023732s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `register` LIMIT 1 [ RunTime:0.000758s ]
+[ sql ] [ SQL ] SELECT * FROM `register` LIMIT 0,1 [ RunTime:0.001040s ]
+
+---------------------------------------------------------------
+[ 2017-12-14T16:39:46+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/public/index.php/index/index/zc?page=2
+[ log ] localhost/pro_wx_smartadmin/public/index.php/index/index/zc?page=2 [运行时间：0.198083s][吞吐率：5.05req/s] [内存消耗：2,445.92kb] [文件加载：54]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'zc',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/pro_wx_smartadmin/public/index.php/index/index/zc?page=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ RUN ] app\index\controller\index->zc[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002677s ] mysql:dbname=wx_lib;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `register` [ RunTime:0.025805s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `register` LIMIT 1 [ RunTime:0.001039s ]
+[ sql ] [ SQL ] SELECT * FROM `register` LIMIT 1,1 [ RunTime:0.001149s ]
+
+---------------------------------------------------------------
+[ 2017-12-14T16:51:35+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/public/index.php/index/index/zc
+[ log ] localhost/pro_wx_smartadmin/public/index.php/index/index/zc [运行时间：0.146496s][吞吐率：6.83req/s] [内存消耗：1,679.21kb] [文件加载：48]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'zc',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\index->zc[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: pag[E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php:43]
+
+---------------------------------------------------------------
+[ 2017-12-14T16:51:45+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/public/index.php/index/index/zc
+[ log ] localhost/pro_wx_smartadmin/public/index.php/index/index/zc [运行时间：0.171707s][吞吐率：5.82req/s] [内存消耗：2,336.94kb] [文件加载：51]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'zc',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\index->zc[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003010s ] mysql:dbname=wx_lib;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `register` [ RunTime:0.023091s ]
+[ sql ] [ SQL ] SELECT * FROM `register` LIMIT 0,10 [ RunTime:0.001389s ]
+
+---------------------------------------------------------------
+[ 2017-12-14T16:51:55+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/public/index.php/index/index/zc
+[ log ] localhost/pro_wx_smartadmin/public/index.php/index/index/zc [运行时间：0.178013s][吞吐率：5.62req/s] [内存消耗：2,336.19kb] [文件加载：51]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'zc',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\index->zc[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002621s ] mysql:dbname=wx_lib;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `register` [ RunTime:0.025462s ]
+[ sql ] [ SQL ] SELECT * FROM `register` LIMIT 0,1 [ RunTime:0.001296s ]
+
+---------------------------------------------------------------
+[ 2017-12-14T16:52:10+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/public/index.php/index/index/zc/pag/1
+[ log ] localhost/pro_wx_smartadmin/public/index.php/index/index/zc/pag/1 [运行时间：0.217396s][吞吐率：4.60req/s] [内存消耗：2,336.31kb] [文件加载：51]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'zc',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+  'pag' => '1',
+)
+[ info ] [ RUN ] app\index\controller\index->zc[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011722s ] mysql:dbname=wx_lib;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `register` [ RunTime:0.021120s ]
+[ sql ] [ SQL ] SELECT * FROM `register` LIMIT 0,1 [ RunTime:0.001612s ]
+
+---------------------------------------------------------------
+[ 2017-12-14T16:52:13+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/public/index.php/index/index/zc/pag/2
+[ log ] localhost/pro_wx_smartadmin/public/index.php/index/index/zc/pag/2 [运行时间：0.170308s][吞吐率：5.87req/s] [内存消耗：2,336.31kb] [文件加载：51]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'zc',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+  'pag' => '2',
+)
+[ info ] [ RUN ] app\index\controller\index->zc[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002536s ] mysql:dbname=wx_lib;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `register` [ RunTime:0.023756s ]
+[ sql ] [ SQL ] SELECT * FROM `register` LIMIT 0,1 [ RunTime:0.001295s ]
+
+---------------------------------------------------------------
+[ 2017-12-14T16:52:34+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/public/index.php/index/index/zc.html?pag=1
+[ log ] localhost/pro_wx_smartadmin/public/index.php/index/index/zc.html?pag=1 [运行时间：0.194214s][吞吐率：5.15req/s] [内存消耗：2,336.34kb] [文件加载：51]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'zc',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+  'pag' => '1',
+)
+[ info ] [ RUN ] app\index\controller\index->zc[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002911s ] mysql:dbname=wx_lib;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `register` [ RunTime:0.021147s ]
+[ sql ] [ SQL ] SELECT * FROM `register` LIMIT 0,1 [ RunTime:0.001633s ]
+
+---------------------------------------------------------------
+[ 2017-12-14T16:52:36+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/public/index.php/index/index/zc.html?pag=2
+[ log ] localhost/pro_wx_smartadmin/public/index.php/index/index/zc.html?pag=2 [运行时间：0.173256s][吞吐率：5.77req/s] [内存消耗：2,336.34kb] [文件加载：51]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'zc',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+  'pag' => '2',
+)
+[ info ] [ RUN ] app\index\controller\index->zc[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002650s ] mysql:dbname=wx_lib;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `register` [ RunTime:0.025419s ]
+[ sql ] [ SQL ] SELECT * FROM `register` LIMIT 1,1 [ RunTime:0.001464s ]
+
+---------------------------------------------------------------
+[ 2017-12-14T16:52:39+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/public/index.php/index/index/zc.html?pag=3
+[ log ] localhost/pro_wx_smartadmin/public/index.php/index/index/zc.html?pag=3 [运行时间：0.168917s][吞吐率：5.92req/s] [内存消耗：2,336.34kb] [文件加载：51]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'zc',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+  'pag' => '3',
+)
+[ info ] [ RUN ] app\index\controller\index->zc[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003002s ] mysql:dbname=wx_lib;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `register` [ RunTime:0.022657s ]
+[ sql ] [ SQL ] SELECT * FROM `register` LIMIT 2,1 [ RunTime:0.001337s ]
+
+---------------------------------------------------------------
+[ 2017-12-14T16:52:49+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/public/index.php/index/index/zc.html?pag=1
+[ log ] localhost/pro_wx_smartadmin/public/index.php/index/index/zc.html?pag=1 [运行时间：0.172610s][吞吐率：5.79req/s] [内存消耗：2,336.75kb] [文件加载：51]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'zc',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+  'pag' => '1',
+)
+[ info ] [ RUN ] app\index\controller\index->zc[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002770s ] mysql:dbname=wx_lib;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `register` [ RunTime:0.025792s ]
+[ sql ] [ SQL ] SELECT * FROM `register` LIMIT 0,2 [ RunTime:0.001292s ]
+
+---------------------------------------------------------------
+[ 2017-12-14T16:52:52+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/public/index.php/index/index/zc.html?pag=2
+[ log ] localhost/pro_wx_smartadmin/public/index.php/index/index/zc.html?pag=2 [运行时间：0.176596s][吞吐率：5.66req/s] [内存消耗：2,336.75kb] [文件加载：51]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'zc',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+  'pag' => '2',
+)
+[ info ] [ RUN ] app\index\controller\index->zc[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002575s ] mysql:dbname=wx_lib;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `register` [ RunTime:0.027246s ]
+[ sql ] [ SQL ] SELECT * FROM `register` LIMIT 1,2 [ RunTime:0.001207s ]
+
+---------------------------------------------------------------
+[ 2017-12-14T16:53:26+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/public/index.php/index/index/zc.html?pag=2
+[ log ] localhost/pro_wx_smartadmin/public/index.php/index/index/zc.html?pag=2 [运行时间：0.189286s][吞吐率：5.28req/s] [内存消耗：2,336.88kb] [文件加载：51]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'zc',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+  'pag' => '2',
+)
+[ info ] [ RUN ] app\index\controller\index->zc[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002544s ] mysql:dbname=wx_lib;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `register` [ RunTime:0.023144s ]
+[ sql ] [ SQL ] SELECT * FROM `register` LIMIT 0,2 [ RunTime:0.001221s ]
+
+---------------------------------------------------------------
+[ 2017-12-14T16:53:35+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/public/index.php/index/index/zc.html?pag=2
+[ log ] localhost/pro_wx_smartadmin/public/index.php/index/index/zc.html?pag=2 [运行时间：0.176849s][吞吐率：5.65req/s] [内存消耗：2,336.52kb] [文件加载：51]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'zc',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+  'pag' => '2',
+)
+[ info ] [ RUN ] app\index\controller\index->zc[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002562s ] mysql:dbname=wx_lib;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `register` [ RunTime:0.021702s ]
+[ sql ] [ SQL ] SELECT * FROM `register` LIMIT 2,2 [ RunTime:0.001166s ]
+
+---------------------------------------------------------------
+[ 2017-12-14T16:53:37+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/public/index.php/index/index/zc.html?pag=1
+[ log ] localhost/pro_wx_smartadmin/public/index.php/index/index/zc.html?pag=1 [运行时间：0.202780s][吞吐率：4.93req/s] [内存消耗：2,336.77kb] [文件加载：51]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'zc',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+  'pag' => '1',
+)
+[ info ] [ RUN ] app\index\controller\index->zc[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002799s ] mysql:dbname=wx_lib;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `register` [ RunTime:0.021386s ]
+[ sql ] [ SQL ] SELECT * FROM `register` LIMIT 1,2 [ RunTime:0.001084s ]
+
+---------------------------------------------------------------
+[ 2017-12-14T16:53:54+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/public/index.php/index/index/zc.html?pag=1
+[ log ] localhost/pro_wx_smartadmin/public/index.php/index/index/zc.html?pag=1 [运行时间：0.176633s][吞吐率：5.66req/s] [内存消耗：2,336.80kb] [文件加载：51]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'zc',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+  'pag' => '1',
+)
+[ info ] [ RUN ] app\index\controller\index->zc[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003232s ] mysql:dbname=wx_lib;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `register` [ RunTime:0.023747s ]
+[ sql ] [ SQL ] SELECT * FROM `register` LIMIT 1,2 [ RunTime:0.001857s ]
+
+---------------------------------------------------------------
+[ 2017-12-14T16:53:58+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/public/index.php/index/index/zc.html?pag=1
+[ log ] localhost/pro_wx_smartadmin/public/index.php/index/index/zc.html?pag=1 [运行时间：0.188698s][吞吐率：5.30req/s] [内存消耗：2,336.80kb] [文件加载：51]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'zc',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+  'pag' => '1',
+)
+[ info ] [ RUN ] app\index\controller\index->zc[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002608s ] mysql:dbname=wx_lib;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `register` [ RunTime:0.024106s ]
+[ sql ] [ SQL ] SELECT * FROM `register` LIMIT 1,2 [ RunTime:0.001292s ]
+
+---------------------------------------------------------------
+[ 2017-12-14T16:54:04+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/public/index.php/index/index/zc.html?pag=1
+[ log ] localhost/pro_wx_smartadmin/public/index.php/index/index/zc.html?pag=1 [运行时间：0.168319s][吞吐率：5.94req/s] [内存消耗：2,336.88kb] [文件加载：51]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'zc',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+  'pag' => '1',
+)
+[ info ] [ RUN ] app\index\controller\index->zc[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002752s ] mysql:dbname=wx_lib;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `register` [ RunTime:0.023012s ]
+[ sql ] [ SQL ] SELECT * FROM `register` LIMIT 0,2 [ RunTime:0.001280s ]
+
+---------------------------------------------------------------
+[ 2017-12-14T16:54:08+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/public/index.php/index/index/zc.html?pag=12
+[ log ] localhost/pro_wx_smartadmin/public/index.php/index/index/zc.html?pag=12 [运行时间：0.177623s][吞吐率：5.63req/s] [内存消耗：2,335.98kb] [文件加载：51]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'zc',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+  'pag' => '12',
+)
+[ info ] [ RUN ] app\index\controller\index->zc[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012774s ] mysql:dbname=wx_lib;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `register` [ RunTime:0.023119s ]
+[ sql ] [ SQL ] SELECT * FROM `register` LIMIT 11,2 [ RunTime:0.001373s ]
+
+---------------------------------------------------------------
+[ 2017-12-14T16:54:13+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/public/index.php/index/index/zc.html?pag=2
+[ log ] localhost/pro_wx_smartadmin/public/index.php/index/index/zc.html?pag=2 [运行时间：0.180951s][吞吐率：5.53req/s] [内存消耗：2,336.75kb] [文件加载：51]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'zc',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+  'pag' => '2',
+)
+[ info ] [ RUN ] app\index\controller\index->zc[ E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002346s ] mysql:dbname=wx_lib;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `register` [ RunTime:0.022003s ]
+[ sql ] [ SQL ] SELECT * FROM `register` LIMIT 1,2 [ RunTime:0.001293s ]
+
+---------------------------------------------------------------
+[ 2017-12-14T17:30:28+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/public/index.php/index/index/zc
+[ log ] localhost/pro_wx_smartadmin/public/index.php/index/index/zc [运行时间：0.174405s][吞吐率：5.73req/s] [内存消耗：1,411.95kb] [文件加载：42]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'zc',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [1]Class 'app\index\Common' not found[E:\WWW\pro_wx_smartadmin\application\index\controller\Index.php:6]
+
+---------------------------------------------------------------
+[ 2017-12-14T17:30:36+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/public/index.php/index/index/zc
+[ log ] localhost/pro_wx_smartadmin/public/index.php/index/index/zc [运行时间：0.335599s][吞吐率：2.98req/s] [内存消耗：1,499.08kb] [文件加载：44]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'zc',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-12-14T17:30:36+08:00 ] ::1 ::1 GET /pro_wx_smartadmin/public/index.php/index/login/index.html
+[ log ] localhost/pro_wx_smartadmin/public/index.php/index/login/index.html [运行时间：0.109722s][吞吐率：9.11req/s] [内存消耗：1,622.76kb] [文件加载：44]
+[ info ] [ LANG ] E:\WWW\pro_wx_smartadmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; pgv_si=s9202974720; PHPSESSID=gejure7eqdvapq2map89ncald0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\login->index[ E:\WWW\pro_wx_smartadmin\application\index\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>新增价格</title>
+  <!--公共样式与插件-->
+  <link rel="stylesheet" href="__PUBLIC__js/layui/css/layui.css">
+  <link rel="stylesheet" href="__PUBLIC__css/common.css">
+  <!--公共样式与插件 end-->
+  <link rel="stylesheet" href="__PUBLIC__css/base.css">
+</head>
+<body>
+<div class="layui-layout layui-layout-admin">
+	{include file="public/head"/}
+	{include file="public/nav"/}
+	<!--主要内容-->
+	<div class="layui-body site-demo webWrap">
+		<!--tab标签-->
+		<div class="layui-main layui-main-xzjg">
+			<blockquote class="layui-elem-quote">
+				<a class="layui-btn" href="{:url('finance/price')}">返回</a>
+ 				<a class="layui-btn" href="javascript:;">新增价格</a>
+			</blockquote>
+			<div class="layui-form">
+				<div class="layui-form-item">
+				    <label class="layui-form-label">价格名</label>
+				    <div class="layui-input-block">
+				      <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入价格名" class="layui-input">
+				    </div>
+				</div>
+			</div>
+			<div class="layui-tab-item layui-show layui-tab-item-jgtx">
+				<table class="layui-table layui-table-w">
+					<thead>
+						<tr>
+							<th class="w">排序</th>
+							<th class="m">品名</th>
+							<th class="s">价格</th>
+							<th class="s">毛利</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>
+								<input type="text" name="title" value="" class="layui-input">
+							</td>
+							<td>
+								<input type="text" name="title" value="" class="layui-input">
+							</td>
+							<td>
+								<input type="text" name="title" value="" class="layui-input">
+							</td>
+						</tr> 
+						<tr>
+							<td>2</td>
+							<td>
+								<input type="text" name="title" value="" class="layui-input">
+							</td>
+							<td>
+								<input type="text" name="title" value="" class="layui-input">
+							</td>
+							<td>
+								<input type="text" name="title" value="" class="layui-input">
+							</td>
+						</tr> 
+						<tr>
+							<td>3</td>
+							<td>
+								<input type="text" name="title" value="" class="layui-input">
+							</td>
+							<td>
+								<input type="text" name="title" value="" class="layui-input">
+							</td>
+							<td>
+								<input type="text" name="title" value="" class="layui-input">
+							</td>
+						</tr> 
+						<tr>
+							<td>4</td>
+							<td>
+								<input type="text" name="title" value="" class="layui-input">
+							</td>
+							<td>
+								<input type="text" name="title" value="" class="layui-input">
+							</td>
+							<td>
+								<input type="text" name="title" value="" class="layui-input">
+							</td>
+						</tr> 
+						<tr>
+							<td>5</td>
+							<td>
+								<input type="text" name="title" value="" class="layui-input">
+							</td>
+							<td>
+								<input type="text" name="title" value="" class="layui-input">
+							</td>
+							<td>
+								<input type="text" name="title" value="" class="layui-input">
+							</td>
+						</tr> 
+					</tbody>
+				</table>  
+			</div>
+			<div class="layui-form-item">
+				<div class="layui-input-block">
+					<button class="layui-btn" id="yan_add_btn" type="button">新增</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--主要内容 end-->
+	{include file="public/footer"/}
+</div>
+</body>
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>新增订单</title>
+  <!--公共样式与插件-->
+  <link rel="stylesheet" href="__PUBLIC__js/layui/css/layui.css">
+  <link rel="stylesheet" href="__PUBLIC__css/common.css">
+  <!--公共样式与插件 end-->
+  <link rel="stylesheet" href="__PUBLIC__css/base.css">
+</head>
+<body>
+<div class="layui-layout layui-layout-admin">
+	{include file="public/head"/}
+	{include file="public/nav"/}
+	<!--主要内容-->
+	<div class="layui-body site-demo">
+		<!--tab标签-->
+		<div class="layui-main">
+			<blockquote class="layui-elem-quote">
+				<a class="layui-btn" href="{:url('order/index')}">返回</a>
+ 				<a class="layui-btn" href="javascript:;">新增订单</a>
+			</blockquote>
+			<form class="layui-form layui-form-pane" action="">
+				<div class="layui-form-item">
+					<label class="layui-form-label">订货人</label>
+					<div class="layui-input-inline">
+						<input type="text" name="title" value="{$edit.order_user}" placeholder="请输入订货人" class="layui-input" id="order_name">
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<label class="layui-form-label">电话</label>
+					<div class="layui-input-inline">
+						<input type="text" name="username" value="{$edit.phone}" lay-verify="required" placeholder="请输入电话" class="layui-input" id="order_tel">
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<div class="layui-inline">
+						<label class="layui-form-label">账期（天）</label>
+						<div class="layui-input-block">
+							<input type="text" name="date" value="{$edit.after_day}" class="layui-input" lay-key="2" placeholder="请输入账期（天）" id="order_day">
+						</div>
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<label class="layui-form-label">地址</label>
+					<div class="layui-input-block">
+						<input type="text" name="text" value="{$edit.address}" placeholder="请输入地址" autocomplete="off" class="layui-input" id="order_address">
+					</div>
+				</div>
+				<div class="layui-tab-item layui-show layui-tab-item-xzdd">
+					<table class="layui-table layui-table-w">
+						<thead>
+							<tr>
+								<th>品名</th>
+								<th class="s">袋数</th>
+								<th>渠道</th>
+								<th>单价</th>
+								<th>金额</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="add_table_default">
+								<td>
+									<div class="layui-form-item">
+										<div class="layui-input-block">
+											<select lay-filter="food" name="parentid" id="qweqwe" lay-verify="required" class="layui-input layui-input-1">
+												<?php foreach(food_name() as $k=>$v){?>
+													<option value="{$v.id}">{$v.name}</option>
+												<?php }?>
+											</select>
+										</div>
+									</div>
+								</td>
+								<td>
+									<input type="number" name="title" value="" class="layui-input layui-input-2">
+								</td>
+								<td>
+									<div class="layui-form-item layui-form-item-1">
+										<div class="layui-input-block">
+											<select lay-filter="food"  name="parentid" lay-verify="required" class="layui-input layui-input-3">
+
+												<?php foreach(channel_name() as $k=>$v){?>
+													<option value="{$v.id}">{$v.channel}</option>
+												<?php }?>
+											</select>
+										</div>
+									</div>
+								</td>
+								<td class="layui-input-4">0</td>
+								<td class="layui-input-5">0</td>
+							</tr> 										
+						</tbody>
+					</table>
+				</div>
+				<div class="layui-form-item">
+					<button class="layui-btn" id="add_table_btn" type="button"><i class="layui-icon">&#xe654;</i>添加至商品列表</button>
+				</div>
+				<fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+				  <legend>商品列表</legend>
+				</fieldset>
+				<div class="layui-tab-item layui-show layui-tab-item-xzdd">
+					<table class="layui-table layui-table-w">
+						<thead>
+							<tr>
+								<th>序列</th>
+								<th>品名</th>
+								<th class="s" >袋数</th>
+								<th>渠道</th>
+								<th>单价</th>
+								<th>金额</th>
+								<th>操作</th>
+							</tr>
+						</thead>
+						<tbody id="add_table_tbody">
+						<?php foreach(json_decode($edit['json'],true) as $k=>$v){?>
+							<tr class="default">
+							<td data-form="{$k}">{$k}</td>
+							<td data-form="{$v[1]}">{:food_name($v[1])['name']}</td>
+							<td data-form="{$v[2]}">{$v[2]}</td>
+							<td data-form="{$v[3]}">{:channel_name($v[3])['channel']}</td>
+							<td data-form="{$v[4]}">{$v[4]}</td>
+							<td data-form="{$v[5]}">{$v[5]}</td>
+							<td>
+								<a href="javascript:" class="layui-btn layui-btn-xs layui-btn-danger yan-form-delete">删除</a>
+								</td>
+							</tr>
+						<?php }?>
+
+						</tbody>
+					</table>
+				</div>
+				<fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+				  <legend>结算</legend>
+				</fieldset>
+				<div class="layui-form-item">
+
+					<button class="layui-btn" id="add_table_place_order" type="button"><?php echo !empty($edit) ? "修改订单" : "生成订单";?></button>
+
+					<button class="layui-btn" id="add_table_cancel_btn" type="button">取消</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!--主要内容 end-->
+	{include file="public/footer"/}
+	<script>
+
+        $(function() {
+            layui.define(['form'], function(exports){
+                var form = layui.form;
+
+                form.on('select(food)', function(data){
+                    $.post("{:url('order/order_edit')}?type=price",{"cid":getval("form_val"),"fid":getval("name_val"),"times":getval("num")},function(e){
+                        $('.add_table_default').find('.layui-input-4').text(e.price);
+                        $('.add_table_default').find('.layui-input-5').text(e.price_result);
+                    },"JSON");
+                });
+            });
+            function getval(v) {
+                var el = $('.add_table_default');
+                var data = [];
+                data['name_text'] = el.find('.layui-input-1 option:selected').text();
+                data['name_val'] = el.find('.layui-input-1 option:selected').val();
+                data['num'] = el.find('.layui-input-2').val();
+                data['form_text'] = el.find('.layui-input-3  option:selected').text();
+                data['form_val'] = el.find('.layui-input-3  option:selected').val();
+                data['price'] = el.find('.layui-input-4').text();
+                data['money'] = el.find('.layui-input-5').text();
+                if (data['num'] == "") {
+                    layer.msg('袋数不能为空');
+                    return false;
+                }else{
+
+                    return v ? data[v] : data;
+                }
+
+            }
+			//序列
+			function myFunction() {
+				var num = $('#add_table_tbody tr').size();
+				for (var i = 0; i < num; i++) {
+					$('#add_table_tbody tr').eq(i).find('td').eq(0).html(i+1);
+				}
+			}
+			$(".layui-input-2").bind('input propertychange',function(){
+			    $.post("{:url('order/order_edit')}?type=price",{"cid":getval("form_val"),"fid":getval("name_val"),"times":getval("num")},function(e){
+                    $('.add_table_default').find('.layui-input-4').text(e.price);
+                    $('.add_table_default').find('.layui-input-5').text(e.price_result);
+				},"JSON");
+			   // alert(1)
+			});
+			//添加订单列表
+			$('#add_table_btn').on('click', function() {
+				if(getval())
+				{
+                    var data = getval()
+				}else{
+				    return false;
+				}
+				var html = ''+
+					'<tr class="default">'+
+						'<td data-form=""></td>'+
+						'<td data-form="'+data['name_val']+'">'+data['name_text']+'</td>'+
+						'<td data-form="'+data['num']+'">'+data['num']+'</td>'+
+						'<td data-form="'+data['form_val']+'">'+data['form_text']+'</td>'+
+						'<td data-form="'+data['price']+'">'+data['price']+'</td>'+
+						'<td data-form="'+data['money']+'">'+data['money']+'</td>'+
+						'<td>'+
+		                    '<a href="javascript:" class="layui-btn layui-btn-xs layui-btn-danger yan-form-delete">删除</a>'+
+	                  	'</td>'+
+					'</tr>';
+				$('#add_table_tbody').append(html);
+                $('.add_table_default').find('.layui-input-2').val('');
+				myFunction();
+			});
+
+
+			//删除订单列表
+			$('#add_table_tbody').on('click','.yan-form-delete',function() {
+				$(this).parents('tr').remove();
+				myFunction();
+			});
+
+			//商品列表
+			function postData() {
+				var size = $("#add_table_tbody tr").size();
+				var size1 = $("#add_table_tbody tr td").size();
+				var postData = Object();
+				for (var i=0; i < size; i++) {
+					postData[i] = new Object();
+					for (var j=1; j <= (size1-2); j++) {
+						var s = $('#add_table_tbody tr').eq(i).find('td').eq(j).attr('data-form');
+						postData[i][j] = s;
+					}
+				}
+				return JSON.stringify(postData);
+			}
+
+			//下单操作
+			$('#add_table_place_order').on('click', function() {
+				var order_name = $('#order_name').val();
+				var order_tel = $('#order_tel').val();
+				var order_day = $('#order_day').val();
+				var order_address = $('#order_address').val();
+				var order_table_tbody = $('#add_table_tbody').html();
+				if (order_name == '') {
+					layer.msg('订货人不能为空');
+				}
+				if (order_table_tbody == '') {
+					layer.msg('商品列表不能为空');
+				}
+				var url = "{:url('order/order_edit')}?type=<?php echo !empty($edit) ? 'update&id='.$edit['id']: 'add';?>";
+
+				$.post(url,{"json":postData(),"order_user":order_name,"phone":order_tel,"after_day":order_day,"address":order_address},function(result){
+				    if(result.status == 1)
+					{
+					    layer.msg("操作成功！");
+                        setTimeout(function () {
+                            window.location.href = "{:url('order/index')}";
+                        }, 1000);
+					}else{
+				        layer.msg("操作失败！");
+					}
+				},"JSON");
+
+				console.log(postData());
+			});
+
+			//取消操作
+			$('#add_table_cancel_btn').on('click', function() {
+				window.location.reload();
+			});
+		});
+	</script>
+</div>
+</body>
+</html>

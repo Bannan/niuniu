@@ -1,0 +1,17 @@
+<?php
+namespace app\index\controller;
+use think\Controller;
+use think\Session;
+use think\Verify;
+class login extends Controller
+{
+        public function index()
+        {
+
+            return view();
+        }
+
+
+}
+
+?>

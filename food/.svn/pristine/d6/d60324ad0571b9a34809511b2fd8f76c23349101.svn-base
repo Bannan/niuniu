@@ -1,0 +1,96 @@
+<?php
+namespace app\index\controller;
+/*
+ *  库存
+ *
+ */
+class stock extends Common
+{
+    //当前库存
+    public function index()
+    {
+        //不同产品的不同数量总和，以及除余
+        $select = db("stock")->field("*,sum(number) as sum")->group("food")->select();
+        foreach($select as $k=>$v)
+        {
+            $select[$k]['bei'] = floor($v['sum']/40);
+            $select[$k]['yu']  = $v['sum']%40;
+        }
+        $this->assign($select);
+        return view();
+    }
+    //货物库存记录
+    public function record_hp()
+    {
+        $list = db("stock")->paginate(15);
+        $this->assign("list",$list);
+        return view();
+    }
+    //原料库存记录
+    public function record_yl()
+    {
+        $list = db("stock_yuan")->paginate(15);
+        $this->assign("list",$list);
+        return view();
+    }
+
+    //新增货品/修改原料
+    public function add_food()
+    {
+        $db = db("stock");
+        switch (input("type"))
+        {
+            case 'add':
+                $arr = array_merge(input("post."),['time'=>time(),'dateb'=>date("Y-m-d",strtotime("+".input("post.date_num")." month",strtotime(input("post.datea"))))]);
+//print_r($arr);die;
+                $status = $db->insert($arr) ? 1 : 0;
+                echo json_encode(["status"=>$status]);die;
+                break;
+            case 'update':
+                $arr = array_merge(input("post."),
+                    ['dateb'=>date("Y-m-d",strtotime("+".input("post.date_num")." month",strtotime(input("post.datea"))))]);
+                $status = $db->where(["id"=>input("id")])->update($arr) ? 1 : 0;
+                echo json_encode(["status"=>$status]);die;
+                break;
+            case 'edit':
+                $this->assign("edit",$db->where(["id"=>input("id")])->find());
+                break;
+
+        }
+
+        return view();
+    }
+    //新增原料/修改原料
+    public function add_yl()
+    {
+        $db = db("stock_yuan");
+        switch (input("type"))
+        {
+            case 'add':
+                $status = $db->insert(array_merge(input("post."),['time'=>time()])) ? 1 : 0;
+                echo json_encode(["status"=>$status]);die;
+                break;
+            case 'update':
+                $status = $db->where(["id"=>input("id")])->update(input("post.")) ? 1 : 0;
+                echo json_encode(["status"=>$status]);die;
+                break;
+            case 'delete':
+                db("stock_yuan")->where(["id"=>input("id")])->delete();
+                break;
+            case 'edit':
+
+                $this->assign("edit",$db->where(["id"=>input("id")])->find());
+                break;
+
+        }
+
+        return view();
+    }
+
+
+}
+
+
+
+
+?>

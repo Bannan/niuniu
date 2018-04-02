@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>注册</title>
+  <!--公共样式与插件-->
+  <script type="text/javascript" src="__PUBLIC__js/rem.js"></script>
+  <link rel="stylesheet" href="__PUBLIC__css/common.css">
+  <!--公共样式与插件 end-->
+  <link rel="stylesheet" href="__PUBLIC__css/base.css">
+</head>
+<body>
+<!--<style>-->
+	<!--/*分页*/-->
+	<!--.pagination {}-->
+	<!--.pagination li {display: inline-block;margin-right: -1px;padding: 5px;border: 1px solid #e2e2e2;min-width: 20px;text-align: center;}-->
+	<!--.pagination li.active {background: #009688;color: #fff;border: 1px solid #009688;}-->
+	<!--.pagination li a {display: block;text-align: center;}-->
+<!--</style>-->
+	<div class="wrap">
+		{include file="index/nav"/}
+		<div class="btnWrap" id="register_btn">
+			<a href="javascript:">新增注册</a>
+		</div>
+		<div class="inputWrap" style="display: none;">
+			<div class="back-wrap" id="back_btn">
+				<a href="javascript:">返回</a>
+			</div>
+			<div class="item-list">
+				<form id="register_form">
+					<div class="item">
+						<div class="form-label">库号</div>
+						<div class="input-block">
+							<input type="text" name="base_number" value="" class="input">
+						</div>
+					</div>
+					<div class="item">
+						<div class="form-label">对接码</div>
+						<div class="input-block">
+							<input type="text" name="docking_code" value="" class="input" placeholder="">
+						</div>
+					</div>
+					<div class="item">
+						<div class="form-label">号卡归属地</div>
+						<div class="input-block">
+							<input type="text" name="region" value="" class="input" placeholder="">
+						</div>
+					</div>
+					<div class="item">
+						<div class="form-label">扫码数量</div>
+						<div class="input-block">
+							<input type="number" name="registrations" value="" class="input" placeholder="">
+						</div>
+					</div>
+					<div class="item">
+						<div class="form-label">注册成功数</div>
+						<div class="input-block">
+							<input type="number" name="success" value="" class="input" placeholder="">
+						</div>
+					</div>
+					<div class="item">
+						<div class="form-label">单价</div>
+						<div class="input-block">
+							<input type="number" name="unit_price" value="" class="input" placeholder="">
+						</div>
+					</div>
+					<div class="item">
+						<a href="javascript:;" class="search-btn" id="register_form_btn">确定新增</a>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="main-details">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>库号</th>
+						<th>对接码</th>
+						<th>地区</th>
+						<th>单价</th>
+						<th>注册数</th>
+						<th>注册率</th>
+						<th>注册日期</th>
+					</tr>
+				</thead>
+				<tbody>
+				<?php foreach($list as $k=>$v){?>
+					<tr>
+						<td>{$v.base_number}</td>
+						<td>{$v.docking_code}</td>
+						<td>{$v.region}</td>
+						<td>{$v.unit_price}</td>
+						<td>{$v.registrations}</td>
+						<td>{$v.rate}</td>
+						<td>{$v.date}</td>
+					</tr> 
+				<?php }?>
+				</tbody>
+	        </table>  
+	     	<!--分页-->
+		    <!--<div class="pageSize">-->
+				<!--<div class="box">-->
+					<!--<a href="javascript:;" class="page-prev" data-page="0">上一页</a>-->
+					<!--<a href="javascript:;" data-page="1" class="active">1</a>-->
+					<!--<a href="javascript:;" data-page="2">2</a>-->
+					<!--<a href="javascript:;" data-page="3">3</a>-->
+					<!--<a href="javascript:;" data-page="4">4</a>-->
+					<!--<a href="javascript:;" class="page-next" data-page="2">下一页</a>-->
+				<!--</div>-->
+			<!--</div>-->
+			<div class="commonpage">
+			{$list->render()}
+			</div>
+	    </div>
+	</div>
+	
+	<script src="__PUBLIC__js/jquery.min.js"></script>
+	<script src="__PUBLIC__js/layer/layer.js"></script>
+	<script>
+		$(function () {
+			$('#register_btn').on('click', function() {
+				$('.inputWrap').show();
+				$('.main-details').hide();
+			}); 
+
+			//点击返回关闭
+			$('#back_btn').on('click', function() {
+				$('.inputWrap').hide();
+				$('.main-details').show();
+			});
+
+
+			//ajax提交
+			$('#register_form_btn').on('click', function() {
+				var el = $('#register_form .input');
+				var array = ['库号','对接码','号卡归属地','扫码数量','注册成功数','单价'];
+				for (var i = 0; i < el.length; i++ ) {
+					if (el.eq(i).val() == "") {
+						layer.msg('请填写'+array[i]+'内容');
+						return false;
+					}
+				}
+
+				var url = "{:url('index/zc')}";
+				var data = $('#register_form').serialize();
+				
+				$.post(url, data, function(result) {
+					if (result.status == 1) {
+						layer.msg('新增成功');
+						window.localhost = ""; //跳转链接
+					} else if (result.status == 0) {
+						layer.msg('新增失败');
+					}
+				},'JSON');
+			});
+		});
+	</script>
+</body>
+</html>

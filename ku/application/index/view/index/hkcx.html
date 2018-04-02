@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>订单</title>
+  <!--公共样式与插件-->
+  <script type="text/javascript" src="__PUBLIC__js/rem.js"></script>
+  <link rel="stylesheet" href="__PUBLIC__css/common.css">
+  <!--公共样式与插件 end-->
+  <link rel="stylesheet" href="__PUBLIC__css/base.css">
+</head>
+<body>
+	<div class="wrap">
+		{include file="index/nav"/}
+		<div class="search-time search-time-1">
+			<div class="input-block">
+				<input type="text" id="searcha" value="{$search.searcha}" class="input" placeholder="起始">
+			</div>
+          	<label class="form-label">---</label>
+          	<div class="input-block">
+				<input type="text" id="searchb" value="{$search.searchb}" class="input" placeholder="截止">
+			</div>
+          	<label class="form-label">天</label>
+			<a href="javascript:;" class="search-btn" id="search_form_btn">查询</a>
+		</div>
+		<div class="main-details">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>序列</th>
+						<th>库号</th>
+						<th>数量</th>
+                      <th>注册时间</th>
+					</tr>
+				</thead>
+				<tbody>
+                  <?php if(isset($data)){foreach($data as $k=>$v){?>
+					<tr>
+						<td>{$v.id}</td>
+						<td>{$v.base_number}</td>
+						<td>{$v.registrations}</td>
+                      <td>{$v.date}</td>
+                      </tr>
+                  <?php }}?>
+				</tbody>
+	          </table>  
+	    </div>
+
+	</div>
+	
+	<script src="__PUBLIC__js/jquery.min.js"></script>
+	<script src="__PUBLIC__js/laydate/laydate.js"></script>
+	<script src="__PUBLIC__js/layer/layer.js"></script>
+	<script>
+		$(function () {
+         	
+			$('#search_form_btn').on('click', function() {
+             
+				window.location.href="{:url('index/hkcx')}?searcha="+$("#searcha").val()+"&searchb="+$("#searchb").val();
+                
+			});
+		});
+	</script>
+</body>
+</html>

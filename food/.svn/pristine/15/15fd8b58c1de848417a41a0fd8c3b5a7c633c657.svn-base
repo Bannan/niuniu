@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>留存</title>
+  <!--公共样式与插件-->
+  <script type="text/javascript" src="__PUBLIC__js/rem.js"></script>
+  <link rel="stylesheet" href="__PUBLIC__css/common.css">
+  <!--公共样式与插件 end-->
+  <link rel="stylesheet" href="__PUBLIC__css/base.css">
+</head>
+<body>
+	<div class="wrap">
+		{include file="index/nav"/}
+		<div class="main-details">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>库号</th>
+						<th>对接码</th>
+						<th>地区</th>
+						<th>注册数</th>
+						<th>1日</th>
+						<th>3日</th>
+						<th>7日</th>
+						<th>15日</th>
+						<th>30日</th>
+						<th>注册日期</th>
+					</tr>
+				</thead>
+				<tbody>
+				<?php foreach($list as $k=>$v){?>
+					<tr>
+						<td>{$v.base_number}</td>
+						<td>对接码</td>
+						<td>地区</td>
+						<td>{$v.max}</td>
+						<td>{$v.1day}</td>
+						<td>{$v.3day}</td>
+						<td>{$v.7day}</td>
+						<td>{$v.half_a_moon}</td>
+						<td>{$v.full_moon}</td>
+						<td><?php echo date('Y-m-d H:i:s',$v['time']);?></td>
+					</tr>
+				<?php }?>
+				</tbody>
+	          </table>  
+	    </div>
+	    <!--分页-->
+
+	</div>
+</body>
+</html>

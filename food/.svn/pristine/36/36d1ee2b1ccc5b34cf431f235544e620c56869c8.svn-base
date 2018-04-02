@@ -1,0 +1,17 @@
+<?php
+namespace app\index\controller;
+/*
+ * 控制器内所有为号库操作
+ */
+class index extends Common
+{
+
+
+    public function index()
+    {
+        return view();
+    }
+    //号库概览
+
+
+}

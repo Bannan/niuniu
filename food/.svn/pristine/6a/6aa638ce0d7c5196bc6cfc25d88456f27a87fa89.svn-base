@@ -1,0 +1,36 @@
+<?php
+namespace app\index\controller;
+/*
+ *  库存
+ *
+ */
+class stock extends Common
+{
+    //当前库存
+    public function index()
+    {
+        return view();
+    }
+    //库存记录
+    public function record()
+    {
+        return view();
+    }
+    //新增货品/修改原料
+    public function add_food()
+    {
+        return view();
+    }
+    //新增原料/修改原料
+    public function add_yl()
+    {
+        return view();
+    }
+
+
+}
+
+
+
+
+?>

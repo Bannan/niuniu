@@ -1,0 +1,58 @@
+<div class="layui-side layui-bg-black slideWrap">
+	<ul class="layui-nav layui-nav-tree" id="layui_nav">
+		<li class="layui-nav-item">
+			<a href="#" target="_blank">
+				<i class="layui-icon">&#xe615;</i> 网站信息
+			</a>
+		</li>
+		<li class="layui-nav-item">
+			<a href="javascript:;">
+				<i class="layui-icon">&#xe63c;</i>库存首页<span class="layui-nav-more"></span>
+			</a>
+			<dl class="layui-nav-child">
+				<dd class="">
+					<a href="#">库存记录</a>
+				</dd>
+				<dd class="">
+					<a href="#">库存设置</a>
+				</dd>
+			</dl>
+		</li>
+		<li class="layui-nav-item">
+			<a href="javascript:;">
+				<i class="layui-icon">&#xe64f;</i>订单首页<span class="layui-nav-more"></span>
+			</a>
+			<dl class="layui-nav-child">
+				<dd class="<?php if($action == 'indexOrder') echo 'layui-this';?>">
+					<a href="{:url('order/index')}">样品记录</a>
+				</dd>
+				<dd class="<?php if($action == 'order_statisOrder') echo 'layui-this';?>">
+					<a href="{:url('order/order_statis')}">订单统计</a>
+				</dd>
+				<dd class="">
+					<a href="#">订单统计</a>
+				</dd>
+			</dl>
+		</li>
+		<li class="layui-nav-item">
+			<a href="javascript:;">
+				<i class="layui-icon">&#xe65e;</i>财务首页<span class="layui-nav-more"></span>
+			</a>
+			<dl class="layui-nav-child ">
+				<dd class="<?php if($action == 'indexFinance') echo 'layui-this';?>">
+					<a href="{:url('finance/index')}">营业收入</a>
+				</dd>
+				<dd class="<?php if($action == 'accountFinance') echo 'layui-this';?>">
+					<a href="{:url('finance/account')}">已收账款</a>
+				</dd>
+				<dd class="<?php if($action == 'account_okFinance') echo 'layui-this';?>">
+					<a href="{:url('finance/account_ok')}">应收账款</a>
+				</dd>
+				<dd class="<?php if($action == 'priceFinance') echo 'layui-this';?>">
+					<a href="{:url('finance/price')}">价格体系</a>
+				</dd>
+			</dl>
+		</li>
+		<span class="layui-nav-bar" style="top: 22.5px; height: 0px; opacity: 0;"></span>
+	</ul>
+</div>

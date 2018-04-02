@@ -1,0 +1,18 @@
+<?php
+namespace app\index\controller;
+use think\Controller;
+
+class login extends Controller
+{
+        public function index()
+        {
+            echo '登陆';
+        }
+        public function login()
+        {
+
+        }
+
+}
+
+?>

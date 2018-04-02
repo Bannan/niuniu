@@ -1,0 +1,119 @@
+[ 2017-12-19T10:03:25+08:00 ] ::1 ::1 GET /foodsmart/index.php
+[ log ] localhost/foodsmart/index.php [运行时间：0.570920s][吞吐率：1.75req/s] [内存消耗：1,638.44kb] [文件加载：47]
+[ info ] [ LANG ] E:\WWW\foodsmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\index->index[ E:\WWW\foodsmart\application\index\controller\Index.php ]
+[ info ] [ VIEW ] E:\WWW\foodsmart/application/index\view\index\index.html [ array (
+  0 => 'action',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-12-19T10:03:25+08:00 ] ::1 ::1 GET /foodsmart/index.php
+[ log ] localhost/foodsmart/index.php [运行时间：0.124758s][吞吐率：8.02req/s] [内存消耗：1,636.91kb] [文件加载：47]
+[ info ] [ LANG ] E:\WWW\foodsmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'accept-encoding' => 'compress,gzip',
+  'connection' => 'Close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\index->index[ E:\WWW\foodsmart\application\index\controller\Index.php ]
+[ info ] [ VIEW ] E:\WWW\foodsmart/application/index\view\index\index.html [ array (
+  0 => 'action',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-12-19T15:54:33+08:00 ] ::1 ::1 GET /foodsmart/index.php
+[ log ] localhost/foodsmart/index.php [运行时间：0.383268s][吞吐率：2.61req/s] [内存消耗：1,637.78kb] [文件加载：47]
+[ info ] [ LANG ] E:\WWW\foodsmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; PHPSESSID=0ululajo5ogj880khf1jhn9ef2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\index->index[ E:\WWW\foodsmart\application\index\controller\Index.php ]
+[ info ] [ VIEW ] E:\WWW\foodsmart/application/index\view\index\index.html [ array (
+  0 => 'action',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-12-19T15:55:22+08:00 ] ::1 ::1 GET /foodsmart/index.php/index/finance
+[ log ] localhost/foodsmart/index.php/index/finance [运行时间：0.156402s][吞吐率：6.39req/s] [内存消耗：1,776.92kb] [文件加载：49]
+[ info ] [ LANG ] E:\WWW\foodsmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'finance',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=6142290944; PHPSESSID=0ululajo5ogj880khf1jhn9ef2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\finance->index[ E:\WWW\foodsmart\application\index\controller\Finance.php ]
+[ info ] [ VIEW ] E:\WWW\foodsmart/application/index\view\finance\index.html [ array (
+  0 => 'action',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

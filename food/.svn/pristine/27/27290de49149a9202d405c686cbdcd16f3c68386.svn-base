@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>订单</title>
+  <!--公共样式与插件-->
+  <script type="text/javascript" src="/public/static/js/rem.js"></script>
+  <link rel="stylesheet" href="/public/static/css/common.css">
+  <!--公共样式与插件 end-->
+  <link rel="stylesheet" href="/public/static/css/base.css">
+</head>
+<body>
+	<div class="wrap">
+		{include file="nav"/}
+		<div class="search-time">
+			<label class="form-label">查询日期</label>
+			<div class="input-block">
+				<input type="text" name="site_title" value="" class="input" placeholder="请选择日期" id="test1">
+			</div>
+			<a href="javascript:;" class="search-btn" id="search_form_btn">查询</a>
+		</div>
+		<div class="main-details">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>订单号</th>
+						<th>客户微信号</th>
+						<th>售出微信号</th>
+						<th>售出手机号</th>
+						<th>标志位</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>20171212</td>
+						<td>waa123</td>
+						<td>vtgh49841364196</td>
+						<td>18353621055</td>
+						<td>16</td>
+					</tr> 
+					<tr>
+						<td>20171212</td>
+						<td>waa123</td>
+						<td>vtgh49841364196</td>
+						<td>18353621055</td>
+						<td>16</td>
+					</tr> 
+					<tr>
+						<td>20171212</td>
+						<td>waa123</td>
+						<td>vtgh49841364196</td>
+						<td>18353621055</td>
+						<td>16</td>
+					</tr> 
+					<tr>
+						<td>20171212</td>
+						<td>waa123</td>
+						<td>vtgh49841364196</td>
+						<td>18353621055</td>
+						<td>16</td>
+					</tr> 
+				</tbody>
+	          </table>  
+	    </div>
+	    <!--分页-->
+	    <div class="pageSize">
+			<div class="box">
+				<a href="javascript:;" class="page-prev" data-page="0">上一页</a>
+				<a href="javascript:;" data-page="1" class="active">1</a>
+				<a href="javascript:;" data-page="2">2</a>
+				<a href="javascript:;" data-page="3">3</a>
+				<a href="javascript:;" data-page="4">4</a>
+				<a href="javascript:;" class="page-next" data-page="2">下一页</a>
+			</div>
+		</div>
+	</div>
+	
+	<script src="/public/static/js/jquery.min.js"></script>
+	<script src="/public/static/js/laydate/laydate.js"></script> 
+	<script src="/public/static/js/layer/layer.js"></script>
+	<script>
+		//执行一个laydate实例
+		laydate.render({
+		  elem: '#test1' //指定元素
+		});
+
+		$(function () {
+			//ajax提交
+			$('#search_form_btn').on('click', function() {
+				var url = '';
+				var val = $('#test1').val();
+				var data = {'time':val};
+				
+				$.ajax(url, data, function(result) {
+					if (result == 1) {
+						window.localhost = ""; //跳转链接
+					} else if (result == 0) {
+					}
+				});
+			});
+		});
+	</script>
+</body>
+</html>

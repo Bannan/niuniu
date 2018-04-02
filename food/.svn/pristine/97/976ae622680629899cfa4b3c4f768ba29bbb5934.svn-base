@@ -1,0 +1,31 @@
+/**
+  项目JS主入口
+  模块管理基础库
+**/  
+
+layui.define(function(exports){
+  //注册common到layui
+  exports('index', {}); 
+});
+
+layui.use('common', function(){
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

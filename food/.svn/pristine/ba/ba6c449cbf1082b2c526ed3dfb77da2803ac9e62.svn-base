@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>号库详情</title>
+  <!--公共样式与插件-->
+  <script type="text/javascript" src="/public/static/js/rem.js"></script>
+  <link rel="stylesheet" href="/public/static/css/common.css">
+  <!--公共样式与插件 end-->
+  <link rel="stylesheet" href="/public/static/css/base.css">
+</head>
+<body>
+	<div class="wrap">
+		{include file="nav"/}
+		<div class="main-details">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>库号</th>
+						<th>数量</th>
+						<th>8日号</th>
+						<th>半月号</th>
+						<th>满月号</th>
+						<th>半年号</th>
+						<th>历史记录</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>4000</td>
+						<td>1000</td>
+						<td>800</td>
+						<td>150</td>
+						<td>40</td>
+						<td>10</td>
+						<td><a href="main-details-detail.html">查看历史记录</a></td>
+					</tr> 
+					<tr>
+						<td>4000</td>
+						<td>1000</td>
+						<td>800</td>
+						<td>150</td>
+						<td>40</td>
+						<td>10</td>
+						<td><a href="main-details-detail.html">查看历史记录</a></td>
+					</tr> 
+					<tr>
+						<td>4000</td>
+						<td>1000</td>
+						<td>800</td>
+						<td>150</td>
+						<td>40</td>
+						<td>10</td>
+						<td><a href="main-details-detail.html">查看历史记录</a></td>
+					</tr> 
+				</tbody>
+	        </table>  
+	    </div>
+      	<!--分页-->
+        <div class="pageSize">
+			<div class="box">
+				<a href="javascript:;" class="page-prev" data-page="0">上一页</a>
+				<a href="javascript:;" data-page="1" class="active">1</a>
+				<a href="javascript:;" data-page="2">2</a>
+				<a href="javascript:;" data-page="3">3</a>
+				<a href="javascript:;" data-page="4">4</a>
+				<a href="javascript:;" class="page-next" data-page="2">下一页</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

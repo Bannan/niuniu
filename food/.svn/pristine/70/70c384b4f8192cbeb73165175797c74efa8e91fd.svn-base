@@ -1,0 +1,327 @@
+@charset 'utf-8';
+body{font-size:12px;font-family:"Microsoft YaHei";color:#1f1a17;background: #fff;text-decoration:none;color: #333333;}
+blockquote,body,button,dd,dl,dt,fieldset,form,img,input,legend,li,ol,pre,td,textarea,th,ul{border:medium none;margin:0;padding:0;outline:0}
+button,input,select,textarea{font:14px,"Microsoft YaHei",tahoma,Srial,helvetica,sans-serif;outline:0}
+h1,h2,h3,h4,h5,h6{margin:0}
+li,ol,ul{list-style:none}
+a{text-decoration:none;color: #333333;transition-duration: .3s;
+  -webkit-transition-duration: .3s;}
+a:hover{text-decoration:none;color: #0095eb;}
+p{margin:0}
+img{border:0;display:block}
+table{border-spacing:0;border-collapse:collapse}
+input{border:0}
+textarea{resize:none;padding:0}
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#editor_singcms {width: 100%;}
+
+.login {background: url(../images/login-bg.png) #56bc94;}
+.login .login-title {color: #fff;text-align: center;font-size: 20px;margin-top: 200px;}
+.login .login-form {max-width: 450px;margin: 10px auto;position: relative;left: -50px;color: #fff;}
+.login .login-form .captcha {width: 140px;height: 38px;}
+.login .login-form input {background-color: rgba(255, 255, 255, 0.3);border: 1px solid rgba(255, 255, 255, 0.3);color: #fff;}
+.login .login-form button {width: 100%;background-color: #048f74;}
+
+.headerWrap .logo {
+  position: absolute;
+  left: 0px;
+  top: 22px;
+}
+.headerWrap .layui-nav {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0;
+  background: none;
+}
+.site-demo .layui-main {
+  margin: 15px;
+  line-height: 22px;
+}
+.footerWrap {
+  line-height: 44px;
+  font-size: 14px;
+}
+.slideWrap .layui-icon {
+  font-size: 20px;
+  margin-top: 2px;
+  margin-right: 5px;
+  float: left;
+}
+.layui-layout-admin .layui-side {
+  overflow: hidden;
+}
+.layui-nav-tree .layui-nav-child dd a {
+  text-indent: 24px;
+}
+.layui-elem-quote {
+  font-size: 14px;
+}
+.layui-elem-quote a {
+  margin-right: 10px;
+}
+.pagination {}
+.pagination li {display: inline-block;margin-right: -1px;padding: 5px;border: 1px solid #e2e2e2;min-width: 20px;text-align: center;}
+.pagination li.active {background: #009688;color: #fff;border: 1px solid #009688;}
+.pagination li a {display: block;text-align: center;}
+
+.photo-list {margin: 5px 0;}
+
+.form-container {
+  max-width: 400px;
+}
+.webWrap .layui-form-label {
+  width: 100px;
+  font-size: 14px;
+}
+#yan_menu_list .status {
+  cursor: pointer;
+}
+.yan-listorder-btn {
+  text-align: center;
+  padding: 0px;
+  height: 30px;
+  font-size: 12px
+}
+
+.webuploader-container {
+  position: relative;
+}
+.webuploader-element-invisible {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px,1px,1px,1px);
+}
+.webuploader-pick {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  background: #009688;
+  padding: 8px 15px;
+  color: #fff;
+  text-align: center;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.webuploader-pick-hover {
+  background: #009689;
+}
+.webuploader-pick-disable {
+  opacity: 0.6;
+  pointer-events:none;
+}
+/*ç™¾åº¦ä¸Šä¼ æŽ§ä»¶ end*/
+
+
+.login {    width: 100%;
+    height: 100%;
+    position: fixed;background: url(../images/login-bg.png) #56bc94;}
+.login .login-title {color: #fff;text-align: center;font-size: 20px;margin-top: 200px;}
+.login .login-form {max-width: 450px;margin: 10px auto;position: relative;left: -50px;color: #fff;}
+.login .login-form .captcha {width: 140px;height: 38px;}
+.login .login-form input {background-color: rgba(255, 255, 255, 0.3);border: 1px solid rgba(255, 255, 255, 0.3);color: #fff;}
+.login .login-form button {width: 100%;background-color: #048f74;}
+
+/*手机端导航*/
+.mHeader {
+  background-color: #fff;
+  box-shadow: -1px 0 3px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  left: 0px;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  overflow: hidden;
+  z-index: 999;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  display: none;
+}
+.mHeader .logo {
+  margin: 14px auto;
+  width: 120px;
+  display: block;
+  color: #009688;
+  font-size: 16px;
+  text-align: center;
+}
+.mHeader .logo img {
+  width: 100%;
+  display: block;
+}
+.mHeader .toggle {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 1300;
+}
+.mHeader .toggle .burger-btn {
+  display: block;
+  height: 54px;
+  padding: 0px 27px;
+  line-height: 54px;
+}
+.mHeader .toggle .burger {
+  width: 22px;
+  height: 2px;
+  background: #009688;
+  display: block;
+  position: absolute;
+  z-index: 5;
+  top: 21px;
+  left: 15px;
+  margin: 0px 0px 0px 0px;
+  transform-origin: center;
+  -webkit-transform-origin: center;
+  -moz-transform-origin: center;
+  -o-transform-origin: center;
+  -ms-transform-origin: center;
+  -webkit-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+  -moz-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+  -o-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+  transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+  -ms-transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+}
+.mHeader .toggle .burger-3 {
+  top: 31px;
+}
+.burger-btn.active .burger-1 {
+  top: 26px;
+  -moz-transform: rotate(225deg);
+  -webkit-transform: rotate(225deg);
+  -o-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  transform: rotate(45deg);
+  background-color: #fff;
+}
+.burger-btn.active .burger-3 {
+  top: 26px;
+  -moz-transform: rotate(-225deg);
+  -webkit-transform: rotate(-225deg);
+  -o-transform: rotate(-225deg);
+  -ms-transform: rotate(-225deg);
+  transform: rotate(-45deg);
+  background-color: #fff;
+}
+.menuOpen .mHeader {
+  position: absolute;
+  z-index: inherit;
+}
+.mNavSecond {
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 1008;
+  box-shadow: 0 -10px 20px 0 rgba(0, 0, 0, 0.2);
+  font-family: "microsoft yahei","微软雅黑";
+  text-align: center;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: block;
+}
+.openMneu {
+  display: none;
+}
+.mNavSecond .main {
+  margin: 60px auto;
+  width: 90%;
+  background-color: #fff;
+}
+.mNavSecond .menu {
+  padding: 42px 0px 22px;
+}
+.mNavSecond .menu>li {
+  position: relative;
+}
+.mNavSecond .menu>li>a {
+  font-size: 16px;
+  height: 45px;
+  line-height: 45px;
+  display: block;
+  position: relative;
+}
+.mNavSecond .menu>li>a.active {
+  background-color: #eeeeee;
+  border-left: 4px solid #009688;
+  box-sizing: border-box;
+}
+.mNavSecond .menu .ico {
+  color: #009688;
+  padding: 0px 26px;
+}
+.mNavSecond .bottom {
+  background: #009688;
+  display: block;
+  height: 42px;
+  line-height: 42px;
+  display: block;
+      font-size: 16px;
+}
+.mNavSecond .bottom span {
+  color: #fff;
+}
+.subMenu {
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 12px 0px;
+  margin-bottom: 15px;
+  display: none;
+}
+.subMenu dd {
+  margin-bottom: 8px;
+}
+.menuBox a:link, .menuBox a:visited {
+  color: #646464;
+}
+.subMenu dd a {
+  font-size: 16px;
+  line-height: 30px;
+      display: inline-block;
+    width: 100%;
+}
+.mNav-icon-btn {
+  width: 100%;
+  height: 45px;
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  z-index: 999;
+}
+.mNav-icon-btn span {
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  display: block;
+  background: url(../images/menu_ico2.png) no-repeat  center;
+  width: 45px;
+  height: 45px;
+  transition: 0.6s;
+  -webkit-transition: 0.6s;
+  transform: rotate(-360deg);
+  -webkit-transform: rotate(-180deg);
+}
+.mNav-icon-btn.active span {
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  background: url(../images/menu_ico1.png) no-repeat  center;
+}
+.blackMask {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  background: none rgba(0,0,0,0.9);
+  z-index: 1002;
+}
+/*手机端导航 end*/

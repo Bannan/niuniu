@@ -1,0 +1,42 @@
+<?php
+namespace app\index\controller;
+/*
+ * 订单
+ *
+ */
+class order extends  Common
+{
+    //订单记录
+    public function index()
+    {
+        return view();
+    }
+    //样品记录
+    public function order_yp()
+    {
+        return view();
+    }
+    //订单统计
+    public function order_statis()
+    {
+        return view();
+    }
+    //订单编辑/增加/修改
+    public function order_edit()
+    {
+        return view();
+    }
+    //订单样品编辑/增加/修改
+    public function order_yp_edit()
+    {
+        return view();
+    }
+
+
+
+
+}
+
+
+
+?>

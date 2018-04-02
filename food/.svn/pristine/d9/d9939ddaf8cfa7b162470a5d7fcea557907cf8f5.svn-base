@@ -1,0 +1,66 @@
+<?php
+namespace app\index\controller;
+/*
+ *  财务
+ *
+ */
+class finance extends Common
+{
+    //营业收入
+    public function index()
+    {
+        return view();
+    }
+    //应收账款
+    public function account()
+    {
+        return view();
+    }
+    //已收账款
+    public function account_ok()
+    {
+        return view();
+    }
+    //价格体系
+    public function price()
+    {
+//        $db = db('channel_price');
+//
+//        if(isset($_GET['channel']))
+//        {
+//            $json = db('channel_price')->where(['id'=>$_GET['channel']])->find()['price'];
+//            //当前渠道商的对应[品名，价格，毛利]
+//            if($json)
+//            {
+//                foreach(json_decode($json) as $k=>$v)
+//                {
+//
+//                }
+//            }
+//
+//        }
+//        $this->assign('option',$db->field("id,channel")->select());
+//        $this->assign('data',isset($data) ? $data : "");
+        return view();
+    }
+    //价格编辑   新增或者编辑
+    public function price_edit()
+    {
+//          switch (input("type")){
+//              case 'add':
+//
+//                  break;
+//              case 'update':
+//
+//                  break;
+//
+//          }
+        return view();
+    }
+
+}
+
+
+
+
+?>

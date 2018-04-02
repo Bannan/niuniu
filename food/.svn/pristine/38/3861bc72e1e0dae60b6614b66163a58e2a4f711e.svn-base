@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>号库概览</title>
+  <!--公共样式与插件-->
+  <script type="text/javascript" src="__PUBLIC__js/rem.js"></script>
+  <link rel="stylesheet" href="__PUBLIC__css/common.css">
+  <!--公共样式与插件 end-->
+  <link rel="stylesheet" href="__PUBLIC__css/base.css">
+</head>
+<body>
+	<div class="wrap">
+		{include file="index/nav"/}
+
+		<div class="inputWrap">
+			<div class="item-list">
+				<div class="item">
+					<h2 class="form-label">统计查询</h2>
+				</div>
+				<div class="item">
+					<div class="form-label">账号数</div>
+					<div class="input-block">
+						<input type="text" name="site_title" value="{$data.number}" class="input" readonly>
+					</div>
+				</div>
+				<div class="item">
+					<div class="form-label">8日号</div>
+					<div class="input-block">
+						<input type="text" name="site_title" value="{$data.8day}" class="input" readonly>
+					</div>
+				</div>
+				<div class="item">
+					<div class="form-label">半月号</div>
+					<div class="input-block">
+						<input type="text" name="site_title" value="{$data.half_a_moon}" class="input" readonly>
+					</div>
+				</div>
+				<div class="item">
+					<div class="form-label">满月号</div>
+					<div class="input-block">
+						<input type="text" name="site_title" value="{$data.full_moon}" class="input" readonly>
+					</div>
+				</div>
+				<div class="item">
+					<div class="form-label">半年号</div>
+					<div class="input-block">
+						<input type="text" name="site_title" value="{$data.half_a_year}" class="input" readonly>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
